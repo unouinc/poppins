@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>スケジュール｜ポピンズシッター エンジニア採用サイト</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1E3A5F;--navy2:#2A3A4D;--blue:#2F6FD1;--gray:#6B7280;--line:#D6DAE0;--card:#F5F6F8;--green:#2E7D32;--orange:#E8833A;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#e9ebee;font-family:"Noto Sans JP",sans-serif;color:#1F2933;padding:24px;-webkit-font-smoothing:antialiased}
+.slide{width:1280px;height:720px;background:#fff;margin:0 auto;position:relative;padding:44px 52px}
+h1{font-size:30px;font-weight:700;letter-spacing:.04em}
+.lead{font-size:13px;color:var(--gray);margin-top:10px;letter-spacing:.03em;line-height:1.7}
+.lead b{color:var(--navy);font-weight:700}
+.gantt{margin-top:16px;display:grid;grid-template-columns:64px 250px repeat(13,66px);grid-auto-rows:22px;font-size:11.5px}
+.gantt>div{display:flex;align-items:center}
+.mh{background:var(--navy2);color:#fff;justify-content:center;font-weight:700;font-size:13px;border-right:1px solid #fff}
+.wk{background:var(--card);justify-content:center;font-size:10px;color:#4B5563;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cat{background:var(--card);justify-content:center;font-weight:700;color:var(--navy);font-size:11px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lb{padding-left:8px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);white-space:nowrap}
+.cell{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cell.mb{border-right:1px solid #9aa3ad}
+.bar{z-index:2;margin:4px 2px;height:14px;border-radius:2px;background:var(--navy2)}
+.bar.c{background:var(--blue)}
+.tag{z-index:3;margin:2px 4px;height:18px;border-radius:3px;font-size:10.5px;font-weight:700;justify-content:center;white-space:nowrap}
+.tp{border:1.5px solid var(--green);background:#fff;color:var(--green)}
+.fd{background:var(--orange);color:#fff}
+.key{background:#C2410C;color:#fff;letter-spacing:.04em}
+.hol{z-index:4;background:repeating-linear-gradient(45deg,#eef0f3 0 6px,#e3e6ea 6px 12px);justify-content:center;writing-mode:vertical-rl;letter-spacing:.3em;font-size:12px;font-weight:700;color:#6B7280}
+.legend{position:absolute;left:52px;bottom:40px;display:flex;gap:30px;font-size:11.5px;align-items:center}
+.legend i{display:inline-block;width:34px;height:11px;background:var(--navy2);vertical-align:middle;margin-right:7px;border-radius:2px}
+.legend i.c{background:var(--blue)}
+.legend b{display:inline-block;font-size:10.5px;padding:1px 7px;border-radius:3px;margin-right:7px}
+.legend b.tp{border:1.5px solid var(--green)}
+.legend b.fd{border:1.5px solid var(--orange)}
+.legend b.key{border:1.5px solid #C2410C}
+.note{position:absolute;left:52px;bottom:16px;font-size:10.5px;color:#4B5563}
+.foot{position:absolute;right:52px;bottom:16px;font-size:10px;color:#9aa3ad;font-family:Inter,"Noto Sans JP",sans-serif;letter-spacing:.06em}
+</style></head><body>
+<div class="slide">
+  <h1>スケジュール</h1>
+  <p class="lead">11月13日時点。<b>撮影は12/23（水）に確定</b>。WFまでを年内に納品し、1月にデザイン・実装と記事制作を並行して、<b>2/1（月）に採用サイト・Deckを公開</b>します。</p>
+  <div class="gantt" id="g"></div>
+  <div class="legend">
+    <span><i></i>unouタスク</span><span><i class="c"></i>ポピンズシッター様タスク（FB・確認・検収）</span>
+    <span><b class="tp">✓①</b>タッチポイント（MTG）</span><span><b class="fd">提出</b>提出・FIX</span><span><b class="key">撮影</b>確定日</span>
+  </div>
+  <p class="note">※ Kick Offの日程は調整中（11/16の週を想定）。各週の表記は週の月曜日です。</p>
+  <div class="foot">unou inc.｜株式会社ポピンズシッター 御中</div>
+</div>
+<script>
+// weeks (Mon): 0=11/9 1=11/16 2=11/23 3=11/30 4=12/7 5=12/14 6=12/21 7=12/28 8=1/4 9=1/11 10=1/18 11=1/25 12=2/1
+const months=[["11月",4],["12月",4],["2027年1月",4],["2月",1]];
+const weeks=["9日","16日","23日","30日","7日","14日","21日","28日","4日","11日","18日","25日","1日"];
+const monthEnd=[3,7,11];
+// [category, label, bars[[s,e,client?]], tags[[w,text,class]]]
+const rows=[
+ ["要件定義","Kick Off（体制・進め方・素材のご共有）",[],[[1,"✓①","tp"]]],
+ ["","現状ヒアリング・求人／媒体データの確認",[[1,2]],[]],
+ ["","コンセプト要件定義書の作成",[[1,3]],[[3,"提出","fd"]]],
+ ["","要件定義書のFB → FIX",[[3,4,1]],[[3,"✓②","tp"],[4,"FIX","fd"]]],
+ ["撮影・記事","撮影プラン・質問案の作成",[[2,3]],[[3,"提出","fd"]]],
+ ["","プラン・質問案のご確認／事前アンケート",[[4,5,1]],[[4,"✓③","tp"]]],
+ ["","撮影・インタビュー（12/23 広尾・新宿）",[],[[6,"撮影","key"]]],
+ ["","写真セレクト・レタッチ",[[8,8]],[]],
+ ["","インタビュー記事の執筆",[[8,9]],[[9,"初稿","fd"]]],
+ ["","記事のご確認 → FIX",[[10,10,1]],[[10,"FIX","fd"]]],
+ ["デザイン","ワイヤーフレーム作成（年内納品）",[[4,6]],[[5,"提出","fd"],[6,"FIX","fd"]]],
+ ["","WFのFB",[[5,6,1]],[[5,"✓④","tp"]]],
+ ["","トップページ（撮影写真を反映）",[[8,9]],[[8,"初稿","fd"],[9,"FIX","fd"]]],
+ ["","下層ページ・記事テンプレート",[[9,10]],[[10,"FIX","fd"]]],
+ ["","採用Deck（表紙・扉・中面）",[[9,11]],[]],
+ ["","デザインFB → FIX",[[8,10,1]],[[8,"✓⑤","tp"]]],
+ ["開発","コーディング",[[9,11]],[]],
+ ["","ヘッドレスCMS構築・記事入稿",[[10,11]],[]],
+ ["","テスト・検収",[[11,11,1]],[[11,"✓⑥","tp"]]],
+ ["","公開（採用サイト・採用Deck）",[],[[12,"2/1","key"]]],
+];
+const g=document.getElementById('g');const R0=3;let h='';
+h+='<div style="grid-column:1/3;grid-row:1/3"></div>';
+let c=3;months.forEach(([m,n])=>{h+=`<div class="mh" style="grid-column:${c}/${c+n};grid-row:1">${m}</div>`;c+=n;});
+weeks.forEach((w,i)=>{h+=`<div class="wk" style="grid-column:${i+3};grid-row:2">${w}</div>`;});
+const cats=[];rows.forEach((r,i)=>{if(r[0])cats.push([r[0],i,i]);else cats[cats.length-1][2]=i;});
+cats.forEach(([k,s,e])=>{h+=`<div class="cat" style="grid-column:1;grid-row:${s+R0}/${e+R0+1}">${k}</div>`;});
+rows.forEach((r,i)=>{const row=i+R0;
+ h+=`<div class="lb" style="grid-column:2;grid-row:${row}">${r[1]}</div>`;
+ for(let w=0;w<13;w++)h+=`<div class="cell${monthEnd.includes(w)?' mb':''}" style="grid-column:${w+3};grid-row:${row}"></div>`;
+ r[2].forEach(([s,e,cl])=>{h+=`<div class="bar${cl?' c':''}" style="grid-column:${s+3}/${e+4};grid-row:${row}"></div>`;});
+ r[3].forEach(([w,t,cl])=>{h+=`<div class="tag ${cl}" style="grid-column:${w+3};grid-row:${row}">${t}</div>`;});
+});
+h+=`<div class="hol" style="grid-column:${7+3};grid-row:${R0}/${rows.length+R0}">年末年始休暇</div>`;
+g.innerHTML=h;
+const fit=()=>{const sl=document.querySelector('.slide');const sc=Math.min(1,(window.innerWidth-48)/1280);sl.style.transformOrigin='top left';sl.style.transform=`scale(${sc})`;sl.style.marginLeft=Math.max(0,(window.innerWidth-48-1280*sc)/2)+'px';document.body.style.height=(720*sc+48)+'px';};
+addEventListener('resize',fit);fit();
+</script>
+</body></html>
