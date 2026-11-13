@@ -115,372 +115,127 @@ td:first-child{font-weight:700;color:var(--navy2);white-space:nowrap}
 .kpi div{background:var(--card);padding:16px 18px}
 .kpi b{display:block;font-size:26px;font-weight:700;color:var(--navy2);font-family:Inter,"Noto Sans JP",sans-serif;letter-spacing:.02em}
 .kpi span{font-size:12px;color:var(--sec)}
+
+.issue{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.issue .box{min-height:300px}
+.issue .num{font-family:Inter,sans-serif;font-size:44px;font-weight:600;color:var(--navy2);letter-spacing:.01em;line-height:1.1;margin:6px 0 4px}
+.issue .num small{font-size:16px;margin-left:4px;font-family:"Noto Sans JP"}
+.issue .cap{font-size:11.5px;color:var(--gray);margin-bottom:14px}
+.sol{display:grid;grid-template-columns:1fr 40px 1fr 40px 1fr;align-items:stretch;margin-top:28px}
+.sol .arr{display:flex;align-items:center;justify-content:center;color:var(--navy2);font-size:22px}
+.crew{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:30px}
+.crew .m{border:1px solid var(--line);padding:22px 20px;min-height:300px}
+.crew .m.k{border-color:var(--navy2)}
+.crew .r{font-family:Inter,sans-serif;font-size:10px;letter-spacing:.22em;color:var(--gray)}
+.crew .j{font-size:13px;color:var(--navy2);font-weight:700;margin-top:4px}
+.crew .n{font-size:24px;font-weight:700;letter-spacing:.12em;margin:14px 0 16px}
+.crew p{font-size:12.5px;line-height:1.85;color:var(--sec)}
+.ph-img{margin-top:26px;height:470px;border:1.5px dashed #b8c0ca;background:var(--card);display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--gray);font-size:14px;letter-spacing:.06em}
+.ph-img small{font-size:11.5px;margin-top:8px}
+.six{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.six .p6{border:1px solid var(--line);padding:16px 18px;min-height:208px}
+.six .p6.ex{border-color:var(--navy2)}
+.six .r{font-size:11px;color:var(--gray)}
+.six .n{font-size:18px;font-weight:700;letter-spacing:.08em;margin:2px 0 8px}
+.six .t{font-size:13px;font-weight:700;color:var(--navy2);line-height:1.6;margin-bottom:6px}
+.six p{font-size:12px;line-height:1.8;color:var(--sec)}
+.six .w{display:inline-block;font-size:10.5px;background:var(--card);padding:1px 8px;margin-bottom:8px;color:var(--sec)}
 </style></head><body>
 <div class="wrap" id="wrap">
 <section class="slide navy cover">
 <p class="eyebrow">ENGINEER RECRUITING ｜ PROJECT GUIDE</p>
 <h1>エンジニア採用サイト・採用Deck<br>制作 進行資料</h1>
-<p class="sub">要件定義から公開（2027年2月1日）まで、撮影・インタビューを含む全体の進め方</p>
+<p class="sub">プロジェクトメンバーの皆さまへ</p>
 <div class="meta"><span>株式会社ポピンズシッター 御中</span><span>unou inc.｜2026年11月13日版</span></div>
 </section>
 <section class="slide">
-<p class="no">CONTENTS</p>
-<h2>目次</h2>
-<p class="lead">本資料は、プロジェクトの進め方を双方で共有するためのものです。日程・内容は進行にあわせて更新します。</p>
-<div class="toc">
-<div><b>01</b><span>プロジェクトの概要<small>目的・スコープ・ゴール</small></span></div>
-<div><b>05</b><span>採用Deck<small>構成と作り方</small></span></div>
-<div><b>02</b><span>体制と役割分担<small>ポピンズシッター様・unou</small></span></div>
-<div><b>06</b><span>開発・CMS・納品<small>ヘッドレスCMS、サーバー納品</small></span></div>
-<div><b>03</b><span>全体の進め方<small>5つのフェーズとお願いしたいこと</small></span></div>
-<div><b>07</b><span>撮影・インタビュー（12/23）<small>タイムテーブル・カット・質問案</small></span></div>
-<div><b>04</b><span>マイルストーンと納品物<small>MTG・提出・FIXの日程</small></span></div>
-<div><b>08</b><span>ご準備いただきたいもの・確認事項<small>Kick Offまでにすり合わせたいこと</small></span></div>
+<p class="no">01 ／ ISSUE</p>
+<h2>課題</h2>
+<p class="lead">エンジニア採用は、求職者1人を多くの企業が奪い合う市場です。媒体に求人を出すだけでは、出会える層も、面談・承諾に進む確率も頭打ちになります。</p>
+<div class="issue">
+<div class="box k"><p class="lbl">MARKET</p><h3>売り手市場で、比べられる</h3><div class="num">10.68<small>倍</small></div><p class="cap">エンジニア（IT・通信）の転職求人倍率（doda、2026年3月）</p><ul><li>求職者1人に約11社の求人がある状態</li><li>競合は開発体制の整ったIT企業。条件・働き方で比べられる</li></ul></div>
+<div class="box"><p class="lbl">REACH</p><h3>求めている層に、媒体では届かない</h3><div class="num">CTO<small>クラス</small></div><p class="cap">紹介・直接の声かけ・ヘッドハントで決まる層</p><ul><li>優秀なエンジニアほど転職媒体に登録しない</li><li>媒体で届くのは登録している層だけ</li></ul></div>
+<div class="box"><p class="lbl">CONVERSION</p><h3>応募があっても、判断材料がない</h3><div class="num">68<small>件 → 0名</small></div><p class="cap">上期のEM・TL求人の応募数と、ハイクラスの採用数</p><ul><li>求人票だけでは、任せる範囲・技術・体制・働き方が伝わらない</li><li>面談に進まない／途中で離脱する</li></ul></div>
 </div>
 <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
 </section>
 <section class="slide">
-<p class="no">01 ／ OVERVIEW</p>
-<h2>プロジェクトの概要</h2>
-<p class="lead">採用サイトは母集団を増やす道具ではなく、少ない母集団の決定確率を上げる採用インフラです。どのチャネルで出会っても、候補者が判断できる情報をそろえます。</p>
-<div class="grid3">
-<div class="box k"><p class="lbl">GOAL</p><h3>目指す状態</h3><ul><li>CTO・EM・テックリード候補が、任せる範囲・技術・体制・働き方を判断できる</li><li>媒体・LinkedIn・YOUTRUST・紹介など、どこから来ても同じ情報にたどり着く</li><li>応募から面談・承諾に進む確率を上げる</li></ul></div>
-<div class="box"><p class="lbl">SCOPE 01</p><h3>採用サイト＋採用Deck</h3><ul><li>エンジニア採用に特化した6コンテンツ</li><li>コンセプト要件定義 → WF → デザイン → 実装・公開</li><li>Deckはサイトの内容から構成</li><li>300万円（2026年200万円＋2027年100万円）</li></ul></div>
-<div class="box"><p class="lbl">SCOPE 02</p><h3>撮影＋事例インタビュー記事</h3><ul><li>人物中心の撮影（12/23 広尾・新宿）</li><li>経営陣・各部門マネージャーのインタビュー記事</li><li>サイトの「働く人」とDeckに掲載</li><li>100万円（2027年）</li></ul></div>
+<p class="no">02 ／ SOLUTION</p>
+<h2>解決策（今回の施策）</h2>
+<p class="lead">チャネルを広げ、どこから来ても会社への認識を変えられる「受け皿」をつくります。母集団を増やすのではなく、少ない母集団の決定確率を上げる採用インフラです。</p>
+<div class="sol">
+<div class="box k"><p class="lbl">01</p><h3>採用サイト</h3><ul><li>エンジニア採用に特化した6つのコンテンツ</li><li>任せる範囲・技術・体制・働き方を、候補者が判断できる形で伝える</li><li>記事を自社で更新し続けられる（ヘッドレスCMS）</li></ul></div>
+<div class="arr">＋</div>
+<div class="box"><p class="lbl">02</p><h3>採用Deck</h3><ul><li>サイトと同じ内容を1冊にまとめた資料</li><li>カジュアル面談・スカウト後の送付・社員紹介で使う</li><li>どの場面でも、伝わる内容をそろえる</li></ul></div>
+<div class="arr">＋</div>
+<div class="box"><p class="lbl">03</p><h3>撮影・インタビュー記事</h3><ul><li>経営陣と各部門のマネージャー6名の言葉と写真</li><li>入社後に一緒に働く人の顔が見える</li><li>サイトの「働く人」とDeckに掲載</li></ul></div>
 </div>
-<div class="kpi"><div><b>2027.2.1</b><span>採用サイト・採用Deck 公開</span></div><div><b>12.23</b><span>撮影・インタビュー（6名）</span></div><div><b>400万円</b><span>合計（税別）／2026年200万円・2027年200万円</span></div></div>
+<div class="concl"><b>使い方：</b>媒体に加えて、LinkedIn・YOUTRUST・コミュニティ・イベント・紹介で出会った候補者を、サイトとDeckに案内します。一度つくれば全チャネルで効く資産になります。</div>
 <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
 </section>
 <section class="slide">
-<p class="no">02 ／ TEAM</p>
-<h2>体制と役割分担</h2>
-<p class="lead">意思決定と確認の窓口を一本化し、FBは窓口のご担当者さまにまとめていただく形を想定しています。</p>
-<div class="team">
-<table><tr><th style="width:150px">ポピンズシッター様</th><th>役割</th></tr>
-<tr><td>意思決定者</td><td>コンセプト・デザインの最終判断（田村CEO・小栗COOを想定）<span class="tbd">要確認</span></td></tr>
-<tr><td>窓口ご担当者</td><td>日程調整、FBの取りまとめ、社内確認<span class="tbd">ご指名ください</span></td></tr>
-<tr><td>開発ご担当者</td><td>サーバー・技術スタック・セキュリティ要件のすり合わせ（齋藤MGRを想定）<span class="tbd">要確認</span></td></tr>
-<tr><td>出演者</td><td>撮影・インタビュー（6名）、記事内容の確認</td></tr></table>
-<table><tr><th style="width:150px">unou</th><th>役割</th></tr>
-<tr><td>プロデューサー<br>ディレクター</td><td>西坂。全体の進行、要件定義、コンセプト、品質管理</td></tr>
-<tr><td>デザイナー</td><td>WF、サイト・Deckのデザイン</td></tr>
-<tr><td>エンジニア</td><td>コーディング、ヘッドレスCMS構築、納品</td></tr>
-<tr><td>ライター</td><td>インタビュー、記事・サイトの文章</td></tr>
-<tr><td>フォトグラファー</td><td>撮影・レタッチ</td></tr></table>
-</div>
-<div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<section class="slide">
-<p class="no">03 ／ PHASES</p>
-<h2>全体の進め方</h2>
-<p class="lead">5つのフェーズで進めます。各フェーズで、ポピンズシッター様にお願いしたいことも記載しています。</p>
-<div class="ph">
-<div class="c"><div class="h"><b>要件定義</b><span>11/16 – 12/11</span></div><div class="s"><p class="l">UNOU</p>現状ヒアリング、求人・媒体データの確認、採用コンセプト・ターゲット要件・6コンテンツの方針を定義</div><div class="s"><p class="l">OUTPUT</p>コンセプト要件定義書</div><div class="s cl"><p class="l">お願い</p>既存資料のご共有、ヒアリングへのご参加、定義書のFB</div></div>
-<div class="c"><div class="h"><b>WF</b><span>12/7 – 12/25</span></div><div class="s"><p class="l">UNOU</p>6コンテンツの構成・情報設計、ページ遷移、記事テンプレートの構成</div><div class="s"><p class="l">OUTPUT</p>ワイヤーフレーム（年内納品）</div><div class="s cl"><p class="l">お願い</p>掲載内容（制度・数字・技術情報）のご確認とFB</div></div>
-<div class="c k"><div class="h"><b>撮影・記事</b><span>11/23 – 1/22</span></div><div class="s"><p class="l">UNOU</p>撮影プラン・質問案、12/23の撮影、写真セレクト、記事執筆</div><div class="s"><p class="l">OUTPUT</p>撮影データ・インタビュー記事</div><div class="s cl"><p class="l">お願い</p>会場・出演者の調整、事前アンケート、記事のご確認</div></div>
-<div class="c"><div class="h"><b>デザイン</b><span>1/4 – 1/29</span></div><div class="s"><p class="l">UNOU</p>トップページ（撮影写真を反映）→ 下層ページ → 採用Deck</div><div class="s"><p class="l">OUTPUT</p>サイト・Deckのデザイン</div><div class="s cl"><p class="l">お願い</p>デザインFB（まとめて1回ずつ）とFIXのご判断</div></div>
-<div class="c"><div class="h"><b>開発・公開</b><span>1/11 – 2/1</span></div><div class="s"><p class="l">UNOU</p>コーディング、ヘッドレスCMS構築、記事入稿、テスト、貴社サーバーへ納品</div><div class="s"><p class="l">OUTPUT</p>採用サイト公開・Deck納品</div><div class="s cl"><p class="l">お願い</p>サーバー・ドメイン情報のご提供、検収</div></div>
-</div>
-<div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<section class="slide">
-<p class="no">04 ／ MILESTONES</p>
-<h2>マイルストーン</h2>
-<p class="lead">打ち合わせ（✓）と、提出・FIXの日程です。年末年始をはさむため、年内にWFまで固め、1月はデザインと実装を並行します。</p>
+<p class="no">03 ／ OVERVIEW</p>
+<h2>プロジェクト概要</h2>
+<p class="lead">2027年2月1日の公開に向けて、11月から要件定義を始めます。12月23日に撮影・インタビューを行います。</p>
 <table>
-<tr><th style="width:120px">時期</th><th style="width:90px">種別</th><th>内容</th><th style="width:280px">ご参加・ご対応（案）</th></tr>
-<tr><td>11/16の週</td><td>✓① MTG</td><td>Kick Off：体制・進め方・資料のご共有、現状ヒアリング<span class="tbd">日程調整中</span></td><td>窓口・意思決定者・開発ご担当者</td></tr>
-<tr><td>11/30の週</td><td>提出・✓②</td><td>コンセプト要件定義書・撮影プラン・質問案のご提出と、要件定義書のご説明（12/11 FIX）</td><td>意思決定者・窓口</td></tr>
-<tr><td>12/7の週</td><td>✓③ MTG</td><td>撮影プラン・質問案のすり合わせ</td><td>窓口・出演者の代表</td></tr>
-<tr><td>12/14の週</td><td>✓④ MTG</td><td>WFのご説明・FB（12/25 FIX・年内納品）</td><td>意思決定者・窓口</td></tr>
-<tr><td style="color:#C2410C">12/23（水）</td><td style="color:#C2410C">撮影</td><td>撮影・インタビュー（午前 広尾／午後 新宿）</td><td>出演者6名</td></tr>
-<tr><td>1/4の週</td><td>✓⑤ MTG</td><td>トップページのデザイン（初稿）・写真セレクトのご共有</td><td>意思決定者・窓口</td></tr>
-<tr><td>1/18の週</td><td>FIX</td><td>下層ページ・記事のFIX、Deckのご確認</td><td>窓口・出演者</td></tr>
-<tr><td>1/25の週</td><td>✓⑥ MTG</td><td>テスト環境での確認・検収</td><td>窓口・開発ご担当者</td></tr>
-<tr><td style="color:#C2410C">2/1（月）</td><td style="color:#C2410C">公開</td><td>採用サイト公開・採用Deck納品</td><td>—</td></tr>
+<tr><th style="width:220px">項目</th><th>内容</th></tr>
+<tr><td>目的</td><td>CTO・EM・テックリード候補が、ポピンズシッターで働くことを判断できる情報をそろえ、面談・承諾に進む確率を上げる</td></tr>
+<tr><td>ターゲット</td><td>CTO・EM・テックリード候補（転職媒体に登録していない層を含む）</td></tr>
+<tr><td>つくるもの</td><td>採用サイト（6コンテンツ）、採用Deck、撮影写真、インタビュー記事</td></tr>
+<tr><td>期間</td><td>2026年11月 〜 2027年2月1日（公開）</td></tr>
+<tr><td>撮影・インタビュー</td><td>2026年12月23日（水）　午前 10:00–12:00 広尾／午後 14:00–18:00 新宿</td></tr>
+<tr><td>ご協力いただくこと</td><td>ヒアリングへのご参加、掲載内容のご確認、撮影・インタビューへのご出演、記事のご確認</td></tr>
 </table>
 <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
 </section>
 <section class="slide">
-<p class="no">04 ／ DELIVERABLES</p>
+<p class="no">04 ／ TEAM</p>
+<h2>体制</h2>
+<p class="lead">unouは以下の5名で担当します。窓口はディレクターの西坂です。</p>
+<div class="crew">
+<div class="m k"><p class="r">DIRECTOR</p><p class="j">ディレクター</p><p class="n">西坂</p><p>全体の進行と窓口。要件定義・コンセプト設計、品質管理を担当します。</p></div>
+<div class="m"><p class="r">DESIGNER</p><p class="j">デザイナー</p><p class="n">西長</p><p>ワイヤーフレーム、採用サイトと採用Deckのデザインを担当します。</p></div>
+<div class="m"><p class="r">PHOTOGRAPHER</p><p class="j">カメラマン</p><p class="n">吉間</p><p>12月23日の撮影と、写真のセレクト・レタッチを担当します。</p></div>
+<div class="m"><p class="r">ENGINEER</p><p class="j">エンジニア</p><p class="n">鈴木</p><p>コーディング、ヘッドレスCMSの構築、貴社サーバーへの納品を担当します。</p></div>
+<div class="m"><p class="r">WRITER</p><p class="j">ライター</p><p class="n">宗和</p><p>インタビューと記事の執筆、サイトの文章を担当します。</p></div>
+</div>
+<div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
+</section>
+<section class="slide">
+<p class="no">05 ／ DELIVERABLES</p>
 <h2>納品物</h2>
-<p class="lead">ご提案時の納品物と納期です。</p>
+<p class="lead">以下を納品します。採用サイトは貴社サーバーに納品し、納品後は自由に編集できます。</p>
 <table>
-<tr><th style="width:240px">納品物</th><th>内容</th><th style="width:140px">納期</th></tr>
+<tr><th style="width:240px">納品物</th><th>内容</th><th style="width:150px">時期</th></tr>
 <tr><td>コンセプト要件定義書</td><td>採用コンセプト・ターゲット要件・6コンテンツの方針</td><td>2026年12月</td></tr>
 <tr><td>ワイヤーフレーム</td><td>採用サイト6コンテンツの構成・情報設計</td><td>2026年内</td></tr>
-<tr><td>採用サイト</td><td>デザイン・コーディング・公開。貴社サーバーに納品し、納品後は自由に編集可能</td><td>2027年2月1日</td></tr>
+<tr><td>採用サイト</td><td>デザイン・コーディング・公開</td><td>2027年2月1日</td></tr>
+<tr><td>ヘッドレスCMS</td><td>記事を自社サイト上で継続して更新できる仕組み。技術スタックは貴社とすり合わせて決定</td><td>2027年2月1日</td></tr>
 <tr><td>採用Deck</td><td>表紙・扉・コンテンツの3種デザイン。中面はサイトの文章と図版から構成</td><td>2027年2月1日</td></tr>
-<tr><td>ヘッドレスCMS</td><td>PHPの脆弱性を回避。技術スタックは貴社とすり合わせて決定。記事を自社サイト上で継続更新できる</td><td>2027年2月1日</td></tr>
-<tr><td>撮影素材・インタビュー記事</td><td>人物中心の撮影データと、事例インタビュー記事（本数は別途）</td><td>2027年1月〜</td></tr>
+<tr><td>撮影写真</td><td>経営陣・マネージャー6名を中心とした撮影データ</td><td>2027年1月</td></tr>
+<tr><td>インタビュー記事</td><td>6名へのインタビューをもとにした記事</td><td>2027年2月1日</td></tr>
 </table>
 <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
 </section>
 <section class="slide">
-<p class="no">05 ／ RECRUIT DECK</p>
-<h2>採用Deck</h2>
-<p class="lead">サイトと同じ文章・図版・写真から構成し、面談やカジュアル面談、リファラルで使える1冊にします。</p>
-<div class="grid3">
-<div class="box k"><p class="lbl">USE</p><h3>使う場面</h3><ul><li>カジュアル面談・面接の冒頭説明</li><li>LinkedIn・YOUTRUSTでのスカウト後の送付</li><li>社員紹介（リファラル）での共有</li></ul></div>
-<div class="box"><p class="lbl">DESIGN</p><h3>デザインする範囲</h3><ul><li>表紙・扉・コンテンツページの3種</li><li>中面はサイトの文章と図版をレイアウト</li><li>撮影写真を表紙・扉に使用</li></ul></div>
-<div class="box"><p class="lbl">PROCESS</p><h3>進め方</h3><ul><li>サイトのデザインFIX後に着手（1/11の週〜）</li><li>サイトと同時に2/1納品</li><li>納品形式（Figma／PDF／Googleスライド等）は要確認</li></ul></div>
+<p class="no">06 ／ PROCESS</p>
+<h2>進め方</h2>
+<p class="lead">進め方の図は追って差し込みます。</p>
+<div class="ph-img">進め方の図（差し込み予定）<small>画像を受領後に反映します</small></div>
+<div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
+</section>
+<section class="slide">
+<p class="no">07 ／ INTERVIEW</p>
+<h2>インタビュー記事｜6名の話</h2>
+<p class="lead">経営陣は「会社の意思」を、各部門のマネージャーは「エンジニアが入社後に一緒に働く相手」として話していただきます。</p>
+<div class="six">
+<div class="p6 ex"><span class="w">12/23 午前・広尾</span><p class="r">代表取締役 CEO</p><p class="n">田村 様</p><p class="t">なぜ今、テクノロジーに投資するのか</p><p>事業が解決したい社会課題、CTO・EMに任せたいこと、3年後のプロダクトと組織の姿</p></div>
+<div class="p6 ex"><span class="w">12/23 午前・広尾</span><p class="r">COO</p><p class="n">小栗 様</p><p class="t">エンジニアの仕事が、現場と事業にどう効くか</p><p>シッター・利用者・運営の現場、技術で変えたいオペレーション、事業側との意思決定の距離感</p></div>
+<div class="p6"><span class="w">12/23 午後・新宿</span><p class="r">事業企画部 GM</p><p class="n">吉井 一貴 様</p><p class="t">事業の方向性が、開発に落ちるまで</p><p>要件をエンジニアと一緒に決めた事例、今後の新規事業と技術に求めること</p></div>
+<div class="p6"><span class="w">12/23 午後・新宿</span><p class="r">プロダクト開発部 MGR</p><p class="n">齋藤 敬一郎 様</p><p class="t">開発体制と、これから任せたいこと</p><p>技術スタック・開発プロセス、いちばん大きい技術課題、CTO・EMに任せたい範囲、働き方の実態</p></div>
+<div class="p6"><span class="w">12/23 午後・新宿</span><p class="r">経営管理部 MGR</p><p class="n">栗山 美緒 様</p><p class="t">開発への投資と、制度づくり</p><p>開発投資の判断のされ方、評価・報酬・制度づくりへのエンジニアの関わり</p></div>
+<div class="p6"><span class="w">12/23 午後・新宿</span><p class="r">品質管理部 MGR</p><p class="n">筑地 咲貴 様</p><p class="t">保育・シッターの安全と品質を、プロダクトで支える</p><p>品質を守る仕組み、プロダクトの役割、エンジニアと改善した具体例</p></div>
 </div>
-<div class="concl"><b>ポイント：</b>サイトとDeckで情報をそろえることで、どのチャネルで出会っても伝わる内容がぶれません。更新はサイトを起点に行い、Deckへ反映する運用を想定しています。</div>
-<div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<section class="slide">
-<p class="no">06 ／ DEVELOPMENT</p>
-<h2>開発・CMS・納品</h2>
-<p class="lead">ヘッドレスCMSで構築し、貴社サーバーに納品します。技術スタックはKick Off後に開発ご担当者さまとすり合わせます。</p>
-<div class="grid2">
-<div class="box k"><p class="lbl">POLICY</p><h3>構築の方針</h3><ul><li>ヘッドレスCMSで構築し、PHPの脆弱性を回避</li><li>記事コンテンツを自社サイト上で継続更新できる</li><li>貴社サーバーに納品。納品後は自由に編集可能</li><li>CMSの操作マニュアルをお渡し</li></ul></div>
-<div class="box"><p class="lbl">TO ALIGN</p><h3>すり合わせたいこと</h3><ul><li>公開先のサーバー・ドメイン（サブドメイン／ディレクトリ）</li><li>CMS・フロントの技術スタック、ホスティング</li><li>セキュリティ要件、アカウント・権限の管理</li><li>計測（GA4等）・応募フォームの連携先</li><li>テスト環境の用意と検収の方法</li></ul></div>
-</div>
-<div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<section class="slide navy divider">
-<p class="part">07 ／ PHOTO &amp; INTERVIEW</p>
-<h1>撮影・インタビュー</h1>
-<p>2026年12月23日（水）　午前 10:00–12:00 広尾 ／ 午後 14:00–18:00 新宿</p>
-<div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<!-- 02 purpose -->
-<section class="slide">
-  <p class="no">07-1 ／ PURPOSE</p>
-  <h2>撮影・インタビューの目的</h2>
-  <p class="lead">求人票だけでは伝わらない「任せる範囲・技術・体制・働き方」を、人と言葉で見せる素材をつくります。<br>撮影データとインタビューは、採用サイト・採用Deckの両方で使います。</p>
-  <div class="grid3">
-    <div class="box k"><p class="lbl">TARGET</p><h3>誰に届けるか</h3><ul><li>CTO・EM・テックリード候補</li><li>媒体に登録していない層（紹介・直接の声かけ・LinkedIn・YOUTRUST）</li><li>どのチャネルで出会っても、判断材料がそろう状態をつくる</li></ul></div>
-    <div class="box"><p class="lbl">OUTPUT</p><h3>何をつくるか</h3><ul><li>人物中心の撮影データ（6名＋集合）</li><li>事例インタビュー記事（経営陣・メンバー）</li><li>採用サイト「働く人」コンテンツと、採用Deckの中面に掲載</li></ul></div>
-    <div class="box"><p class="lbl">MESSAGE</p><h3>何を伝えるか</h3><ul><li>経営陣：なぜ今テクノロジーに投資するのか、CTOに何を任せるのか</li><li>メンバー：エンジニアと日々どう協働しているか、意思決定の距離感</li><li>保育・シッターという事業の手触りと、技術で変えられる余地</li></ul></div>
-  </div>
-  <div class="concl"><b>当日の考え方：</b>経営陣は「会社の意思」、各部門のマネージャーは「エンジニアが入社後に一緒に働く相手」として話していただきます。候補者が入社後の自分を想像できることを、写真と記事のゴールにします。</div>
-  <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<!-- 03 overview -->
-<section class="slide">
-  <p class="no">07-2 ／ OVERVIEW</p>
-  <h2>当日の全体像</h2>
-  <p class="lead">午前は広尾で経営陣2名、午後は新宿で各部門のマネージャー4名。1名あたり「インタビュー＋撮影」を1枠で行います。</p>
-  <div class="day">
-    <div class="sess">
-      <div class="hd"><b>午前｜広尾</b><span>10:00 – 12:00</span></div>
-      <div class="bd">
-        <div class="ppl">
-          <div class="p"><div class="r">代表取締役 CEO</div><div class="n">田村 様</div></div>
-          <div class="p"><div class="r">COO</div><div class="n">小栗 様</div></div>
-        </div>
-        <div class="info">
-          <div><b>内容</b>個別インタビュー（各35分）・ポートレート・2ショット</div>
-          <div><b>使い道</b>トップメッセージ／経営陣インタビュー記事</div>
-          <div><b>会場</b>広尾オフィス（部屋は確認中）<span class="tbd">要確認</span></div>
-          <div><b>準備</b>9:30から機材セッティング<span class="tbd">要確認</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="sess">
-      <div class="hd"><b>午後｜新宿</b><span>14:00 – 18:00</span></div>
-      <div class="bd">
-        <div class="ppl">
-          <div class="p"><div class="r">事業企画部 GM</div><div class="n">吉井 一貴 様</div></div>
-          <div class="p"><div class="r">プロダクト開発部 MGR</div><div class="n">齋藤 敬一郎 様</div></div>
-          <div class="p"><div class="r">経営管理部 MGR</div><div class="n">栗山 美緒 様</div></div>
-          <div class="p"><div class="r">品質管理部 MGR</div><div class="n">筑地 咲貴 様</div></div>
-        </div>
-        <div class="info">
-          <div><b>内容</b>個別インタビュー（各35〜45分）・ポートレート・執務カット・4名カット</div>
-          <div><b>会場</b>新宿オフィス（住所・部屋は確認中）<span class="tbd">要確認</span></div>
-          <div><b>準備</b>13:15から機材セッティング<span class="tbd">要確認</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="concl"><b>unou側の体制（予定）：</b>ディレクター（西坂）／インタビュアー・ライター／フォトグラファー（＋アシスタント）。インタビュー中もフォトグラファーが会話中のカットを撮影します。</div>
-  <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<!-- 04 AM timetable -->
-<section class="slide">
-  <p class="no">07-3 ／ TIMETABLE — AM</p>
-  <h2>タイムテーブル｜午前・広尾（10:00–12:00）</h2>
-  <p class="lead">お二人の拘束は各50分を目安にしています。インタビュー中ではない方は、通常業務に戻っていただいて構いません。</p>
-  <div class="tt">
-    <div class="tr th"><div>時間</div><div>所要</div><div>内容</div><div>参加者</div></div>
-    <div class="tr sub"><div class="t">9:30 – 10:00</div><div class="m">30分</div><div class="c">入館・機材セッティング・ライティング確認<span class="tbd">入館可否を確認</span></div><div class="w">unou</div></div>
-    <div class="tr"><div class="t">10:00 – 10:10</div><div class="m">10分</div><div class="c">ご挨拶・本日の流れと記事の使い道のご説明</div><div class="w">田村様・小栗様・unou</div></div>
-    <div class="tr on"><div class="t">10:10 – 10:45</div><div class="m">35分</div><div class="c"><b>田村 CEO インタビュー</b><small>会話中のカットを並行して撮影</small></div><div class="w">田村様</div></div>
-    <div class="tr on"><div class="t">10:45 – 11:00</div><div class="m">15分</div><div class="c"><b>田村 CEO ポートレート撮影</b><small>正面・横位置・オフィス背景</small></div><div class="w">田村様</div></div>
-    <div class="tr on"><div class="t">11:00 – 11:35</div><div class="m">35分</div><div class="c"><b>小栗 COO インタビュー</b><small>会話中のカットを並行して撮影</small></div><div class="w">小栗様</div></div>
-    <div class="tr on"><div class="t">11:35 – 11:50</div><div class="m">15分</div><div class="c"><b>小栗 COO ポートレート撮影</b></div><div class="w">小栗様</div></div>
-    <div class="tr"><div class="t">11:50 – 12:00</div><div class="m">10分</div><div class="c">お二人の2ショット（対話風景）・予備</div><div class="w">田村様・小栗様</div></div>
-    <div class="tr sub"><div class="t">12:00 – 13:15</div><div class="m">—</div><div class="c">撤収 → 新宿へ移動・昼食</div><div class="w">unou</div></div>
-  </div>
-  <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<!-- 05 PM timetable -->
-<section class="slide">
-  <p class="no">07-4 ／ TIMETABLE — PM</p>
-  <h2>タイムテーブル｜午後・新宿（14:00–18:00）</h2>
-  <p class="lead">エンジニアと最も接点の多いプロダクト開発部は長めに枠を取っています。順番は業務のご都合で入れ替え可能です。</p>
-  <div class="tt">
-    <div class="tr th"><div>時間</div><div>所要</div><div>内容</div><div>参加者</div></div>
-    <div class="tr sub"><div class="t">13:15 – 14:00</div><div class="m">45分</div><div class="c">入館・機材セッティング・執務エリアの撮影範囲確認<span class="tbd">入館可否を確認</span></div><div class="w">unou</div></div>
-    <div class="tr"><div class="t">14:00 – 14:10</div><div class="m">10分</div><div class="c">ご挨拶・本日の流れのご説明</div><div class="w">4名・unou</div></div>
-    <div class="tr on"><div class="t">14:10 – 15:00</div><div class="m">50分</div><div class="c"><b>吉井 GM（事業企画部）</b>　インタビュー35分＋撮影15分</div><div class="w">吉井様</div></div>
-    <div class="tr on"><div class="t">15:00 – 16:00</div><div class="m">60分</div><div class="c"><b>齋藤 MGR（プロダクト開発部）</b>　インタビュー45分＋撮影15分</div><div class="w">齋藤様</div></div>
-    <div class="tr sub"><div class="t">16:00 – 16:10</div><div class="m">10分</div><div class="c">休憩・バッファ</div><div class="w">—</div></div>
-    <div class="tr on"><div class="t">16:10 – 17:00</div><div class="m">50分</div><div class="c"><b>栗山 MGR（経営管理部）</b>　インタビュー35分＋撮影15分</div><div class="w">栗山様</div></div>
-    <div class="tr on"><div class="t">17:00 – 17:45</div><div class="m">45分</div><div class="c"><b>筑地 MGR（品質管理部）</b>　インタビュー30分＋撮影15分</div><div class="w">筑地様</div></div>
-    <div class="tr"><div class="t">17:45 – 18:00</div><div class="m">15分</div><div class="c">4名の集合カット・打合せ風景・予備</div><div class="w">4名</div></div>
-    <div class="tr sub"><div class="t">18:00 –</div><div class="m">—</div><div class="c">撤収</div><div class="w">unou</div></div>
-  </div>
-  <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<!-- 06 shot list -->
-<section class="slide">
-  <p class="no">07-5 ／ SHOT LIST</p>
-  <h2>撮影カットリスト</h2>
-  <p class="lead">サイト（横長）とDeck・スマホ（縦長）の両方で使えるよう、同じカットを横位置・縦位置で押さえます。</p>
-  <table>
-    <tr><th style="width:190px">カット</th><th>内容</th><th style="width:250px">主な使い道</th><th style="width:120px">対象</th></tr>
-    <tr><td>ポートレート</td><td>正面・やや斜め。バストアップ／ウエストアップ。オフィスを背景に、余白を広めに取る</td><td>記事のメインビジュアル、メンバー一覧、Deck</td><td>全員</td></tr>
-    <tr><td>インタビュー中</td><td>話している表情・手元・聞き手越し。自然な表情を複数</td><td>記事の本文中</td><td>全員</td></tr>
-    <tr><td>執務・打合せ</td><td>PC作業、ホワイトボード前での議論、1on1風景（画面の内容は写さない）</td><td>「働く人」「働く環境」、トップページ</td><td>新宿の4名</td></tr>
-    <tr><td>2ショット</td><td>CEO・COOの対話風景。立ち／座りの2パターン</td><td>トップメッセージ、Deckの扉</td><td>田村様・小栗様</td></tr>
-    <tr><td>集合カット</td><td>4名で打合せ・並び。部門を越えた距離の近さが伝わる構図</td><td>体制紹介、Deck</td><td>新宿の4名</td></tr>
-    <tr><td>オフィス・イメージ</td><td>エントランス、執務エリア、会議室、ロゴ周り。人物の後ろ姿・手元</td><td>セクション背景、働く環境</td><td>撮影可能な範囲で</td></tr>
-  </table>
-  <div class="concl"><b>写さないもの：</b>お客様・シッターさんの個人情報、お子さまの写真や名前、PC画面・ホワイトボードの業務情報、撮影の同意を得ていない社員の方の顔。事前に写してよい範囲をご指定ください。</div>
-  <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<!-- 07 questions exec -->
-<section class="slide">
-  <p class="no">07-6 ／ INTERVIEW — EXECUTIVES</p>
-  <h2>質問案｜経営陣（案）</h2>
-  <p class="lead">事前にお送りし、ご確認のうえ当日に臨みます。話しやすい順に入れ替えて進めます。</p>
-  <div class="grid2">
-    <div class="qcol">
-      <h3>田村 CEO</h3>
-      <p class="ang">切り口：会社の意思。なぜ今、テクノロジーに投資するのか</p>
-      <ol>
-        <li>ポピンズシッターが解決したい社会課題と、事業の現在地</li>
-        <li>この数年で、プロダクト・技術の重要性はどう変わったか</li>
-        <li>なぜ今、CTO・EMクラスを迎えたいのか</li>
-        <li>技術責任者に任せたいこと、経営として約束できること</li>
-        <li>保育・シッター領域だからこそ面白い技術的な課題</li>
-        <li>3年後、プロダクトと組織はどうなっていたいか</li>
-        <li>まだ会ったことのないエンジニアへのメッセージ</li>
-      </ol>
-    </div>
-    <div class="qcol">
-      <h3>小栗 COO</h3>
-      <p class="ang">切り口：現場と事業の接点。エンジニアの仕事がどう事業に効くか</p>
-      <ol>
-        <li>COOとして見ている現場（シッター・利用者・運営）の今</li>
-        <li>オペレーションの中で、技術で変えたい／変えられる部分</li>
-        <li>事業側とエンジニアの意思決定はどう進むか（距離感・スピード）</li>
-        <li>これまでの開発で、事業に効いたと感じた取り組み</li>
-        <li>入社するエンジニアに期待する関わり方</li>
-        <li>働き方・評価・体制について、伝えておきたいこと</li>
-      </ol>
-    </div>
-  </div>
-  <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<!-- 08 questions members -->
-<section class="slide">
-  <p class="no">07-7 ／ INTERVIEW — MEMBERS</p>
-  <h2>質問案｜各部門のマネージャー（案）</h2>
-  <p class="lead">共通の質問に加えて、部門ごとに「エンジニアとどう働くか」を深掘りします。</p>
-  <div class="box" style="margin-top:20px;padding:16px 22px">
-    <p class="lbl">COMMON ／ 全員共通</p>
-    <p>① ご経歴と入社のきっかけ　② 部門のミッションと今の役割　③ エンジニアと一緒に進めている仕事　④ この会社の意思決定の特徴　⑤ これから来るエンジニアに期待すること</p>
-  </div>
-  <div class="mini">
-    <div class="qcol"><p class="r">事業企画部 GM</p><h3>吉井 様</h3><ol><li>事業の方向性が開発に落ちるまでの流れ</li><li>要件をエンジニアと一緒に決めた事例</li><li>今後の新規事業と、技術に求めること</li></ol></div>
-    <div class="qcol"><p class="r">プロダクト開発部 MGR</p><h3>齋藤 様</h3><ol><li>開発体制・技術スタック・開発プロセス</li><li>今いちばん大きい技術課題と負債</li><li>CTO・EMに任せたい範囲と裁量</li><li>リモート・出社の実態、チームの雰囲気</li></ol></div>
-    <div class="qcol"><p class="r">経営管理部 MGR</p><h3>栗山 様</h3><ol><li>開発投資の判断はどう行われるか</li><li>評価・報酬・制度づくりへのエンジニアの関わり</li><li>管理部門から見たプロダクトの重要性</li></ol></div>
-    <div class="qcol"><p class="r">品質管理部 MGR</p><h3>筑地 様</h3><ol><li>保育・シッターの「安全・品質」を守る仕組み</li><li>品質を支えるうえでのプロダクトの役割</li><li>エンジニアと改善した具体例</li></ol></div>
-  </div>
-  <div class="concl" style="bottom:58px"><b>ポイント：</b>CTO・EM候補が気にする「任せる範囲・技術・体制・働き方」に、4名の話がそれぞれ答えるよう構成します。プロダクト開発部（齋藤様）の記事は技術面の主軸です。</div>
-  <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<!-- 09 requests -->
-<section class="slide">
-  <p class="no">07-8 ／ PREPARATION</p>
-  <h2>撮影の事前準備・お願い</h2>
-  <p class="lead">当日をスムーズに進めるため、以下のご準備をお願いします。unou側の準備もあわせて記載します。</p>
-  <div class="grid2">
-    <div class="box k">
-      <p class="lbl">POPPINS SITTER ／ ポピンズシッター様</p>
-      <h3>ご準備いただきたいこと</h3>
-      <ul>
-        <li>会場の確保：インタビュー用の個室（静かな部屋）＋撮影用スペース（広尾・新宿とも）</li>
-        <li>入館手続き：unouスタッフ3〜4名分、機材の搬入経路</li>
-        <li>撮影範囲のご指定：写してよいエリア・NGのもの、映り込む社員の方への事前周知</li>
-        <li>出演者の皆さまへの周知：日時・本資料・質問案の共有</li>
-        <li>事前アンケートのご回答（12/11まで）：経歴・役割・印象に残っている仕事など</li>
-        <li>当日の窓口のご担当者さまのご指名</li>
-      </ul>
-    </div>
-    <div class="box">
-      <p class="lbl">UNOU ／ unou</p>
-      <h3>unou側の準備</h3>
-      <ul>
-        <li>フォトグラファー・インタビュアーの手配、機材（照明・背景・録音）</li>
-        <li>撮影プラン・質問案・事前アンケートの作成（11/30の週にご提出）</li>
-        <li>最終の進行表の作成（12/16）</li>
-        <li>撮影・記事掲載に関する同意書のご用意</li>
-      </ul>
-      <p class="lbl" style="margin-top:18px">DRESS ／ 服装のお願い</p>
-      <p>普段の服装で構いません。無地・落ち着いた色がおすすめです。細かいチェックやストライプは画面でちらつくため避けてください。着替えを1着お持ちいただくと、カットの幅が広がります。</p>
-    </div>
-  </div>
-  <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<!-- 10 flow -->
-<section class="slide">
-  <p class="no">07-9 ／ FLOW</p>
-  <h2>撮影前後の流れ</h2>
-  <p class="lead">撮影の写真はトップページのデザインに反映し、記事は2月1日の公開にあわせて仕上げます。</p>
-  <div class="flow">
-    <div class="st"><div class="d">11/30の週</div><div class="dot"></div><div class="x">撮影プラン・<br>質問案のご提出</div><div class="who">unou</div></div>
-    <div class="st cl"><div class="d">12/7の週</div><div class="dot"></div><div class="x">内容のご確認・<br>フィードバック</div><div class="who">ポピンズ様</div></div>
-    <div class="st cl"><div class="d">12/11（金）</div><div class="dot"></div><div class="x">事前アンケート<br>回収</div><div class="who">出演者の皆さま</div></div>
-    <div class="st"><div class="d">12/16（水）</div><div class="dot"></div><div class="x">最終の進行表<br>FIX・送付</div><div class="who">unou</div></div>
-    <div class="st key"><div class="d">12/23（水）</div><div class="dot"></div><div class="x">撮影・<br>インタビュー</div><div class="who">広尾・新宿</div></div>
-    <div class="st"><div class="d">1/8（金）</div><div class="dot"></div><div class="x">写真セレクトの<br>ご共有</div><div class="who">unou</div></div>
-    <div class="st"><div class="d">1/15（金）</div><div class="dot"></div><div class="x">記事初稿の<br>ご提出</div><div class="who">unou</div></div>
-    <div class="st cl"><div class="d">1/22（金）</div><div class="dot"></div><div class="x">記事のご確認・<br>FIX</div><div class="who">ポピンズ様・出演者</div></div>
-    <div class="st key"><div class="d">2/1（月）</div><div class="dot"></div><div class="x">採用サイト・<br>Deck公開</div><div class="who">—</div></div>
-  </div>
-  <div class="concl"><b>記事の確認：</b>初稿はご担当者さま経由で出演者ご本人にも確認いただきます。年末年始をはさむため、1/22のFIXに向けて確認の期間を1週間取っています。</div>
-  <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<section class="slide">
-<p class="no">08 ／ MATERIALS</p>
-<h2>ご準備いただきたいもの</h2>
-<p class="lead">Kick Offの前後で、以下をご共有いただけると要件定義がスムーズに進みます。</p>
-<div class="grid3">
-<div class="box k"><p class="lbl">RECRUITING</p><h3>採用まわり</h3><ul><li>エンジニア職の求人票（CTO・EM・TL・Rails）</li><li>媒体別の応募・面談・承諾の実績</li><li>既存の採用ピッチ資料・会社紹介資料</li><li>評価制度・働き方の制度資料</li></ul></div>
-<div class="box"><p class="lbl">BRAND</p><h3>ブランド・素材</h3><ul><li>ロゴデータ・ブランドガイドライン</li><li>コーポレートサイトの既存素材（写真・図版）</li><li>技術ブログ・登壇資料など発信の実績</li></ul></div>
-<div class="box"><p class="lbl">DEVELOPMENT</p><h3>開発・公開</h3><ul><li>公開先サーバー・ドメインの情報</li><li>開発ご担当者さまのご連絡先</li><li>セキュリティ・公開ルールの社内規定</li><li>応募フォームの連携先（ATS等）</li></ul></div>
-</div>
-<div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
-</section>
-<section class="slide">
-<p class="no">08 ／ TO CONFIRM</p>
-<h2>確認させていただきたいこと</h2>
-<p class="lead">Kick Offまでに、以下をすり合わせさせてください。</p>
-<table>
-<tr><th style="width:44px">#</th><th style="width:240px">項目</th><th>内容</th></tr>
-<tr><td>1</td><td>Kick Offの日程・参加者</td><td>11/16の週を想定。意思決定者・窓口・開発ご担当者のご参加</td></tr>
-<tr><td>2</td><td>連絡手段・定例</td><td>Slack（共有チャンネル）またはメール。定例MTGの頻度（隔週を想定）</td></tr>
-<tr><td>3</td><td>撮影会場の詳細</td><td>広尾・新宿の住所・部屋・セッティング開始時間（9:30／13:15）、撮影してよい範囲</td></tr>
-<tr><td>4</td><td>記事の本数と公開時期</td><td>経営陣＋メンバー4本を想定。2/1に全本公開か、公開後に順次追加か</td></tr>
-<tr><td>5</td><td>素材の使用範囲</td><td>サイト・Deck以外（求人媒体、SNS、コーポレートサイト等）での利用、退職時の扱い</td></tr>
-<tr><td>6</td><td>Deckの納品形式</td><td>Figma／PDF／Googleスライド／PowerPoint</td></tr>
-<tr><td>7</td><td>費用のお支払い時期</td><td>撮影を12月に実施しても、撮影＋記事（100万円・税別）はご提案通り2027年のお支払いを想定</td></tr>
-</table>
 <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
 </section>
 </div>
