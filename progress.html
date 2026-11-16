@@ -256,6 +256,25 @@ td:first-child{font-weight:700;color:var(--navy2);white-space:nowrap}
 .crew2 .r{font-family:Inter,sans-serif;font-size:10px;letter-spacing:.22em;color:var(--gray)}
 .crew2 .j{font-size:13px;color:var(--navy2);font-weight:700;margin-top:3px}
 .crew2 .n{font-size:24px;font-weight:700;letter-spacing:.12em;margin-top:6px}
+
+.ov{display:grid;grid-template-columns:1fr 1.3fr;gap:18px;margin-top:30px}
+.ovb{background:var(--card);padding:26px 30px;min-height:170px}
+.ovb .lbl,.tl .lbl{font-family:Inter,"Noto Sans JP",sans-serif;font-size:11px;letter-spacing:.16em;color:var(--gray)}
+.ovb .big{font-size:30px;font-weight:700;color:var(--navy2);line-height:1.45;margin-top:14px;letter-spacing:.04em}
+.chips2{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.chips2 span{background:#fff;border:1.5px solid var(--navy2);color:var(--navy2);font-size:18px;font-weight:700;padding:10px 18px;letter-spacing:.04em}
+.tl{margin-top:30px;padding:0 4px}
+.tl .line{position:relative;height:3px;background:var(--navy2);margin:34px 8px 0}
+.tl .line i{position:absolute;top:-7px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--navy2);transform:translateX(-50%)}
+.tl .line i.k{background:var(--orange);border-color:var(--orange);width:20px;height:20px;top:-9px}
+.tl .line i.end{background:var(--navy2)}
+.tl .pts{position:relative;height:90px;margin:0 8px}
+.tl .pts div{position:absolute;top:18px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.tl .pts div:first-child{transform:none;text-align:left}
+.tl .pts div.r{transform:translateX(-100%);text-align:right}
+.tl .pts b{display:block;font-size:20px;font-weight:700;color:var(--ink);letter-spacing:.03em}
+.tl .pts span{display:block;font-size:13px;color:var(--sec);margin-top:4px;line-height:1.6}
+.tl .pts div:nth-child(2) b{color:#C2410C}
 </style></head><body>
 <div class="wrap" id="wrap">
 <section class="slide navy cover">
@@ -317,13 +336,15 @@ td:first-child{font-weight:700;color:var(--navy2);white-space:nowrap}
 <p class="no">03 ／ OVERVIEW</p>
 <h2>プロジェクト概要</h2>
 <p class="lead">2027年2月1日の公開を目指します。</p>
-<table style="margin-top:40px;font-size:15px">
-<tr><th style="width:240px">項目</th><th>内容</th></tr>
-<tr><td>ターゲット</td><td>CTO・EM・テックリード候補</td></tr>
-<tr><td>つくるもの</td><td>採用サイト、採用Deck、撮影写真、インタビュー記事</td></tr>
-<tr><td>期間</td><td>2026年11月 〜 2027年2月1日（公開）</td></tr>
-<tr><td>撮影・インタビュー</td><td>2026年12月23日（水）　午前：広尾／午後：新宿</td></tr>
-</table>
+<div class="ov">
+<div class="ovb"><p class="lbl">TARGET ／ ターゲット</p><p class="big">CTO・EM・<br>テックリード候補</p></div>
+<div class="ovb"><p class="lbl">OUTPUT ／ つくるもの</p><div class="chips2"><span>採用サイト</span><span>採用Deck</span><span>撮影写真</span><span>インタビュー記事</span></div></div>
+</div>
+<div class="tl">
+<p class="lbl">SCHEDULE ／ 期間</p>
+<div class="line"><i style="left:0"></i><i class="k" style="left:58%"></i><i class="end" style="left:100%"></i></div>
+<div class="pts"><div style="left:0"><b>2026年11月</b><span>プロジェクト開始</span></div><div style="left:58%"><b>12月23日（水）</b><span>撮影・インタビュー<br>午前：広尾／午後：新宿</span></div><div style="left:100%" class="r"><b>2027年2月1日</b><span>採用サイト・Deck公開</span></div></div>
+</div>
 <div class="foot">株式会社ポピンズシッター 御中<b>unou inc.</b></div>
 </section>
 <section class="slide">
