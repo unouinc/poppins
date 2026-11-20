@@ -122,6 +122,23 @@ ul.b li::before{content:"・";position:absolute;left:0}
 .dv h3{font-size:24px;font-weight:400;margin-top:8px}
 /* process */
 .ph{height:100%;border:1px dashed #aaa;display:flex;align-items:center;justify-content:center;color:#888;font-size:14px;background:var(--card)}
+
+.pcs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;height:332px}
+.pc{padding:18px 16px}
+.pd{font-size:13px;color:#444;margin-top:4px}
+.pt{font-size:17px;margin-top:8px}
+.pc ul.b li{font-size:12px}
+.pbar{position:relative;height:60px;margin-top:22px}
+.pbar .seg{position:absolute;top:0;height:6px}
+.pbar .seg.y{left:0;width:59.5%;background:var(--dark)}
+.pbar .seg.j{left:60.5%;right:0;background:var(--gray)}
+.pbar .seg span{position:absolute;top:12px;left:0;font-size:11px;color:#555}
+.pbar .mk{position:absolute;top:-5px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.pbar .mk i{display:block;width:14px;height:14px;border-radius:50%;background:var(--red);margin:0 auto}
+.pbar .mk b{display:block;font-weight:400;font-family:Arimo,Arial,sans-serif;font-size:14px;margin-top:4px}
+.pbar .mk span{display:block;font-size:11px;color:#555}
+.pbar .m1{left:54%}.pbar .m2{left:100%;transform:translateX(-100%);text-align:right}
+.pbar .m2 i{margin:0 0 0 auto;background:var(--dark)}
 /* interview */
 .iv{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:16px;height:100%}
 .iv .card{padding:18px 22px}
@@ -208,9 +225,10 @@ ul.b li::before{content:"・";position:absolute;left:0}
 </section>
 <section class="slide">
 <div class="hd"><span>Process</span><span>Page 08</span></div>
-<p class="no">08</p><h2>進め方</h2>
-<div class="body" style="top:166px"><div class="ph">進め方の図（差し込み予定）</div></div>
-<div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+<p class="no">08</p><h2>進め方</h2><p class="lead">年内に情報設計まで終え、1月にデザインコンセプトとビジュアルデザインを進めます</p>
+<div class="body"><div class="pcs"><div class="card pc"><p class="clbl ar">Phase 01</p><p class="pd ar">11/24〜12/4</p><p class="pt">リサーチと構想</p><div class="hr"></div><ul class="b"><li>仮説ベースのターゲットの意思決定マトリクス</li></ul></div><div class="card pc"><p class="clbl ar">Phase 02</p><p class="pd ar">12/1〜12/11</p><p class="pt">新田様インタビュー</p><div class="hr"></div><ul class="b"><li>面談で話しているストーリー、刺さっている点・難しい点のヒアリング</li><li>簡易レポート</li></ul></div><div class="card pc"><p class="clbl ar">Phase 03</p><p class="pd ar">12/7〜12/25</p><p class="pt">分析と情報設計</p><div class="hr"></div><ul class="b"><li>意思決定マトリクス（競合・自社）</li><li>ユーザーインタビュー（必要に応じて）</li><li>8P分析</li><li>ポジショニングマップ</li><li>サイトと資料の情報設計</li></ul></div><div class="card pc"><p class="clbl ar">Phase 04</p><p class="pd ar">1/5〜1/9</p><p class="pt">デザインコンセプト</p><div class="hr"></div><ul class="b"><li>デザインコンセプト</li><li>ムードボード</li></ul></div><div class="card pc"><p class="clbl ar">Phase 05</p><p class="pd ar">1/12〜1/23</p><p class="pt">ビジュアルデザイン</p><div class="hr"></div><ul class="b"><li>サイトのデザイン</li><li>採用Deckのデザイン</li></ul></div></div>
+<div class="pbar"><div class="seg y"><span>年内</span></div><div class="seg j"><span>1月</span></div><div class="mk m1"><i></i><b>12/23</b><span>撮影・インタビュー</span></div><div class="mk m2"><i></i><b>2/1</b><span>公開</span></div></div></div>
+<p class="note">※ 実装は1月中旬からデザインと並行して進めます。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
 <div class="hd"><span>Interview</span><span>Page 09</span></div>
