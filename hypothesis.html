@@ -303,6 +303,13 @@ ul.b li::before{content:"・";position:absolute;left:0}
 .ob .r b{display:block;font-weight:500;font-size:16px}
 .ob .r p{font-size:12px;line-height:1.65;color:#444;margin-top:4px}
 .ob .r span{display:inline-block;margin-top:6px;font-size:10.5px;border:1px solid #bbb;background:#fff;padding:1px 8px;color:#555}
+.ap2.two{grid-template-columns:420px 1fr}
+.ap2.two>.card{padding:18px 24px;min-height:0;overflow:hidden}
+.th4 .r{display:grid;grid-template-columns:48px 1fr;align-items:baseline;padding:4px 0;border-bottom:1px solid var(--line)}
+.th4 .r b{font-weight:500;font-size:15px}
+.th4 .r p{font-size:12px;color:#444}
+.ap2 .st{font-size:11px;color:#777;margin-top:11px}
+.ap2 .sx{font-size:12.5px;line-height:1.65;color:#333;margin-top:4px}
 /* questions */
 .qs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;height:100%}
 .qs .card{padding:20px 22px}
@@ -319,14 +326,11 @@ ul.b li::before{content:"・";position:absolute;left:0}
 </section>
 <section class="slide">
 <div class="hd"><span>Approach</span><span>Page 01</span></div>
-<p class="no">01</p><h2>アプローチの考え方｜人が組織を選ぶ理由</h2><p class="lead">集団凝集性理論をもとに、人が組織を選ぶ理由を4つの観点・8因子に分け、ターゲット・自社・競合を同じ物差しで観察します</p>
-<div class="body"><div class="ap2">
-<div class="card"><p class="clbl">理論｜集団凝集性</p><p class="tt">人は、その集団に<br>惹きつけられる力で<br>組織を選ぶ</p><div class="hr" style="margin:16px 0 0"></div><p class="tx">社会心理学者レオン・フェスティンガーらは、人を集団にとどまらせる心理的な力を「集団凝集性」と定義しました。</p><p class="tx">この考え方をもとに、人が組織に惹かれる理由を「目標」「活動」「人材」「条件」の4つの観点で捉えます。</p></div>
-<div class="card mid"><p class="clbl">4つの観点と8因子</p><div class="q4"><div class="qd"><div class="qh"><b>目標</b><span>Philosophy</span><em>目標の魅力</em></div><div class="fx"><small>01</small><p>会社基盤</p><i>A 企業認知／B 財務基盤</i></div><div class="fx"><small>02</small><p>理念戦略</p><i>C 企業理念／D 経営戦略</i></div></div><div class="qd"><div class="qh"><b>人材</b><span>People</span><em>構成員の魅力</em></div><div class="fx"><small>05</small><p>組織風土</p><i>I 開放的風土／J 進取的風土</i></div><div class="fx"><small>06</small><p>人的資源</p><i>K 共感性／L 有能性</i></div></div><div class="qd"><div class="qh"><b>活動</b><span>Provision</span><em>活動の魅力</em></div><div class="fx"><small>03</small><p>事業内容</p><i>E 社会的意義／F 競争優位</i></div><div class="fx"><small>04</small><p>仕事内容</p><i>G 貢献実感／H 成長実感</i></div></div><div class="qd"><div class="qh"><b>条件</b><span>Privilege</span><em>特権の魅力</em></div><div class="fx"><small>07</small><p>報酬体系</p><i>M 経済報酬／N 感情報酬</i></div><div class="fx"><small>08</small><p>仕事環境</p><i>O 制度環境／P 施設環境</i></div></div></div><p class="ft2">各因子をA〜Pの16項目（64の設問）に分けて事実を集め、強みを ◎・○・△・× で評価します。</p></div>
-<div class="card ob"><p class="clbl">観察する対象</p>
-<div class="r"><b>ターゲット</b><p>8因子のうち、何を重視して転職先を選ぶか</p><span>意思決定マトリクス</span></div>
-<div class="r"><b>自社</b><p>8因子のうち、どこが強く、どこが弱いか</p><span>8因子分析</span></div>
-<div class="r"><b>競合</b><p>同じ候補者を取り合う会社が、どこで強いか</p><span>8因子分析</span></div></div>
+<p class="no">01</p><h2>アプローチの考え方｜人が組織を選ぶ理由</h2><p class="lead">集団凝集性理論をもとに、人が組織を選ぶ理由を4つの観点・8因子に分け、同じ物差しで自社と競合を比べます</p>
+<div class="body"><div class="ap2 two"><div class="card"><p class="clbl">理論｜集団凝集性理論</p><p class="tt" style="font-size:18px;margin-top:6px">人は、惹きつけられる力が<br>強い組織を選び、そこにとどまる</p>
+<p class="st">集団凝集性とは</p><p class="sx">人を集団に引きつけ、とどまらせる力のこと。社会心理学者レオン・フェスティンガーらが提唱しました。</p>
+<p class="st">採用に置き換えると</p><p class="sx">候補者が「この会社に入りたい」と感じる力。その強さは、会社の何に惹かれるかで決まります。</p>
+<p class="st">惹かれる理由は4つ</p><div class="th4"><div class="r"><b>目標</b><p>どこを目指す会社か</p></div><div class="r"><b>活動</b><p>どんな事業・仕事をするか</p></div><div class="r"><b>人材</b><p>誰と働くか</p></div><div class="r" style="border:none"><b>条件</b><p>どんな待遇・環境で働くか</p></div></div></div><div class="card mid"><p class="clbl">4つの観点と8因子</p><div class="q4"><div class="qd"><div class="qh"><b>目標</b><span>Philosophy</span><em>目標の魅力</em></div><div class="fx"><small>01</small><p>会社基盤</p><i>A 企業認知／B 財務基盤</i></div><div class="fx"><small>02</small><p>理念戦略</p><i>C 企業理念／D 経営戦略</i></div></div><div class="qd"><div class="qh"><b>人材</b><span>People</span><em>構成員の魅力</em></div><div class="fx"><small>05</small><p>組織風土</p><i>I 開放的風土／J 進取的風土</i></div><div class="fx"><small>06</small><p>人的資源</p><i>K 共感性／L 有能性</i></div></div><div class="qd"><div class="qh"><b>活動</b><span>Provision</span><em>活動の魅力</em></div><div class="fx"><small>03</small><p>事業内容</p><i>E 社会的意義／F 競争優位</i></div><div class="fx"><small>04</small><p>仕事内容</p><i>G 貢献実感／H 成長実感</i></div></div><div class="qd"><div class="qh"><b>条件</b><span>Privilege</span><em>特権の魅力</em></div><div class="fx"><small>07</small><p>報酬体系</p><i>M 経済報酬／N 感情報酬</i></div><div class="fx"><small>08</small><p>仕事環境</p><i>O 制度環境／P 施設環境</i></div></div></div><p class="ft2">各因子をA〜Pの16項目（64の設問）に分けて事実を集め、強みを ◎・○・△・× で評価します。</p></div>
 </div></div>
 <p class="note">※ 4つの観点は、集団凝集性の考え方を採用の場面に当てはめて整理したものです。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
