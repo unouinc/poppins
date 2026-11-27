@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>仮説：意思決定マトリクスと8P分析｜ポピンズシッター エンジニア採用サイト</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EDEDED;--card:#F6F6F6;--ink:#1F1F1F;--sec:#555;--mut:#8A8A8A;--line:#CFCFCF;--dark:#222;--gray:#BDBDBD;--red:#C0392B}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#d9d9d9;font-family:"Noto Sans JP",sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased;padding:32px 0}
+.num,.ar{font-family:Arimo,Arial,"Helvetica Neue","Noto Sans JP",sans-serif}
+.wrap{width:1280px;margin:0 auto;transform-origin:top left}
+.slide{width:1280px;height:720px;background:var(--bg);margin:0 0 32px;position:relative;padding:0 40px;overflow:hidden}
+.hd{position:absolute;left:40px;right:40px;top:22px;display:flex;justify-content:space-between;font-family:Arimo,Arial,sans-serif;font-size:11.5px;color:#333}
+.ft{position:absolute;left:40px;right:40px;bottom:22px;display:grid;grid-template-columns:1fr 1fr 1fr;font-size:11px;color:#333;align-items:end}
+.ft .co{letter-spacing:.14em}
+.ft .c{text-align:center;font-family:Arimo,Arial,sans-serif}
+.ft .y{text-align:right;font-family:Arimo,Arial,sans-serif}
+.note{position:absolute;left:40px;bottom:48px;font-size:10px;color:#666}
+.no{position:absolute;left:40px;top:78px;font-family:Arimo,Arial,sans-serif;font-size:13px;color:var(--mut)}
+h2{position:absolute;left:40px;top:96px;font-size:34px;font-weight:400;letter-spacing:.02em;color:var(--ink)}
+.lead{position:absolute;left:40px;right:40px;top:166px;border-left:2px solid var(--ink);padding-left:12px;font-size:17px;line-height:1.3;letter-spacing:.03em}
+.body{position:absolute;left:40px;right:40px;top:214px;bottom:72px}
+.card{background:var(--card);padding:20px 22px}
+.clbl{font-size:11px;color:#666}
+.ctl{font-size:14.5px;margin-top:6px;line-height:1.5}
+.hr{height:1px;background:var(--line);margin:12px 0}
+ul.b{list-style:none}
+ul.b li{font-size:12.5px;line-height:1.75;padding-left:14px;position:relative;margin-bottom:6px}
+ul.b li::before{content:"・";position:absolute;left:0}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:20px;height:100%}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;height:100%}
+/* cover & divider */
+.dark{background:radial-gradient(ellipse at 25% 55%,#353535 0%,#262626 60%,#202020 100%);color:#fff}
+.dark .hd{color:#fff;letter-spacing:.14em;padding-bottom:20px;border-bottom:1px solid #666}
+.cover .t{position:absolute;left:0;right:0;top:288px;text-align:center}
+.cover h1{font-size:40px;font-weight:400;letter-spacing:.2em}
+.cover .s{font-size:13.5px;color:#c8c8c8;letter-spacing:.2em;margin-top:22px}
+.cover .meta{position:absolute;left:40px;right:40px;bottom:66px;border-top:1px solid #666;padding-top:22px;display:grid;grid-template-columns:repeat(3,1fr)}
+.cover .meta span{display:block;font-family:Arimo,Arial,sans-serif;font-size:11px;color:#aaa}
+.cover .meta b{display:block;font-weight:400;font-size:15px;margin-top:8px}
+/* issue1 */
+.i1{display:grid;grid-template-columns:350px 1fr;gap:20px;height:100%}
+.big{font-size:64px;line-height:1;margin:18px 0 6px;letter-spacing:-.01em}
+.big small{font-size:18px;margin-left:4px}
+.hb .r{display:grid;grid-template-columns:92px 1fr;align-items:center;margin-top:12px;font-size:12px}
+.hb .f{height:22px;background:var(--gray);position:relative}
+.hb .f.k{background:var(--dark)}
+.hb .f span{position:absolute;left:calc(100% + 8px);top:1px;font-family:Arimo,Arial,sans-serif;font-size:16px;color:var(--ink)}
+.st3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.st3 div{background:#fff;padding:8px 12px}
+.st3 b{font-family:Arimo,Arial,sans-serif;font-weight:400;font-size:24px;line-height:1}
+.st3 b small{font-size:12px;color:var(--sec)}
+.st3 p{font-size:11px;color:var(--sec);line-height:1.6;margin-top:4px}
+.cmp{margin-top:8px}
+.cmp .r{display:grid;grid-template-columns:104px 122px 1fr 92px 82px 92px;align-items:center;height:24px;border-bottom:1px solid var(--line);font-size:11.5px;white-space:nowrap}
+.cmp .r>div{padding-right:8px}
+.cmp .r.h{height:22px;font-size:10px;color:#666;border-bottom:1px solid #999}
+.cmp .r.me{font-weight:700}
+.cmp .rng{position:relative;height:9px;background:linear-gradient(90deg,#ddd 0 1px,transparent 1px) 0 0/50% 100%}
+.cmp .rng i{position:absolute;top:0;height:9px;background:var(--gray)}
+.cmp .me .rng i{background:var(--dark)}
+.cmp .ar{font-family:Arimo,Arial,sans-serif}
+.cmp .red{color:var(--red)}
+.cmp .meframe{outline:1.5px solid var(--red);outline-offset:-1px}
+/* issue2 */
+.i2{display:grid;grid-template-columns:1fr 22px 1.15fr 22px 1fr;height:100%}
+.i2 .arw{display:flex;align-items:center;justify-content:center;color:#999;font-size:13px}
+.i2 .card{display:flex;flex-direction:column}
+.media{width:100%;border-collapse:collapse;font-size:11px}
+.media td{padding:3px 0;border-bottom:1px solid #ddd}
+.media td:nth-child(2){color:#777}
+.media td:last-child{text-align:right;font-family:Arimo,Arial,"Noto Sans JP",sans-serif}
+.media tr.sum td{border-bottom:1px solid var(--ink);font-weight:700}
+.cum .r{display:grid;grid-template-columns:38px 1fr;align-items:center;font-size:11px;margin-top:6px}
+.cum .f{height:14px;background:var(--dark);position:relative}
+.cum .f span{position:absolute;left:calc(100% + 6px);top:-1px;white-space:nowrap;font-family:Arimo,Arial,"Noto Sans JP";font-size:11.5px}
+.fl{display:grid;grid-template-columns:120px 14px 1fr 14px 40px;align-items:center;margin:4px 0 10px}
+.fl .ch div{border:1px solid #bbb;background:#fff;font-size:10.5px;text-align:center;padding:4px 0;margin:3px 0;white-space:nowrap}
+.fl .site{border:1.5px solid var(--red);background:#fff;text-align:center;padding:14px 4px;white-space:nowrap}
+.fl .site b{display:block;font-size:13.5px;font-weight:500}
+.fl .site small{display:block;font-size:10px;color:var(--red);margin-top:3px}
+.fl .end{background:#ddd;font-size:10.5px;text-align:center;padding:8px 2px;line-height:1.5}
+.fl .ln{color:#999;text-align:center;font-size:12px}
+/* solution */
+.sol{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:20px;height:100%}
+.sol .card{display:flex;flex-direction:column;justify-content:center;padding:26px 32px}
+.sol .wide{grid-column:1/3}
+.sol .n{font-family:Arimo,Arial,sans-serif;font-size:28px}
+.sol h3{font-size:30px;font-weight:400;letter-spacing:.04em;margin-top:6px}
+.sol p{font-size:13px;color:var(--sec);margin-top:8px}
+/* overview */
+.ov{display:grid;grid-template-columns:1fr 1.35fr;gap:20px;height:190px}
+.ov .tgt{font-size:28px;line-height:1.45;margin-top:14px;letter-spacing:.02em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tags span{background:#fff;border:1px solid #bbb;font-size:16px;padding:8px 16px}
+.tlc{margin-top:20px;height:192px}
+.tl{position:relative;height:3px;background:var(--dark);margin:36px 10px 0}
+.tl i{position:absolute;top:-6px;width:15px;height:15px;border-radius:50%;background:var(--card);border:2px solid var(--dark);transform:translateX(-50%)}
+.tl i.k{background:var(--red);border-color:var(--red)}
+.tl i.e{background:var(--dark)}
+.pts{position:relative;margin:0 10px}
+.pts div{position:absolute;top:18px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.pts div.l{transform:none;text-align:left}
+.pts div.rt{transform:translateX(-100%);text-align:right}
+.pts b{display:block;font-weight:400;font-size:20px;font-family:Arimo,Arial,"Noto Sans JP",sans-serif}
+.pts span{display:block;font-size:12px;color:var(--sec);margin-top:4px;line-height:1.6}
+.pts .k b{color:var(--red)}
+/* team */
+.tm{display:grid;grid-template-columns:repeat(3,1fr) 210px;gap:20px;height:100%}
+.tm .card{padding:22px 22px}
+.who{display:flex;gap:14px;align-items:center}
+.av{width:66px;height:66px;border-radius:50%;background-size:cover;background-position:50% 25%;flex:none}
+.who .nm{font-size:21px}
+.who .rl{font-size:12px;color:#666;margin-top:2px}
+.bio{font-size:11.5px;line-height:1.8;color:#333}
+.side{display:grid;grid-template-rows:1fr 1fr;gap:20px}
+.side .card{display:flex;flex-direction:column;justify-content:center}
+/* portfolio */
+.pf{position:absolute;left:40px;right:40px;top:166px;bottom:56px;display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(4,1fr);grid-auto-flow:dense;gap:4px}
+.pf div{background-size:cover;background-position:center}
+.pf .w2{grid-column:span 2}.pf .h2{grid-row:span 2}
+/* deliverables */
+.dv .card{display:flex;flex-direction:column}
+.dv h3{font-size:24px;font-weight:400;margin-top:8px}
+/* process */
+.ph{height:100%;border:1px dashed #aaa;display:flex;align-items:center;justify-content:center;color:#888;font-size:14px;background:var(--card)}
+
+.pcs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;height:332px}
+.pc{padding:18px 16px}
+.pd{font-size:13px;color:#444;margin-top:4px}
+.pt{font-size:17px;margin-top:8px}
+.pc ul.b li{font-size:12px}
+.pbar{position:relative;height:60px;margin-top:22px}
+.pbar .seg{position:absolute;top:0;height:6px}
+.pbar .seg.y{left:0;width:59.5%;background:var(--dark)}
+.pbar .seg.j{left:60.5%;right:0;background:var(--gray)}
+.pbar .seg span{position:absolute;top:12px;left:0;font-size:11px;color:#555}
+.pbar .mk{position:absolute;top:-5px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.pbar .mk i{display:block;width:14px;height:14px;border-radius:50%;background:var(--red);margin:0 auto}
+.pbar .mk b{display:block;font-weight:400;font-family:Arimo,Arial,sans-serif;font-size:14px;margin-top:4px}
+.pbar .mk span{display:block;font-size:11px;color:#555}
+.pbar .m1{left:54%}.pbar .m2{left:100%;transform:translateX(-100%);text-align:right}
+.pbar .m2 i{margin:0 0 0 auto;background:var(--dark)}
+/* interview */
+.iv{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:16px;height:100%}
+.iv .card{padding:18px 22px}
+.iv .w{display:inline-block;background:#fff;border:1px solid #ccc;font-size:10.5px;padding:1px 8px;color:#555}
+.iv .r{font-size:11.5px;color:#666;margin-top:10px}
+.iv .nm{font-size:20px;margin-top:2px}
+.iv .t{font-size:13.5px;line-height:1.6;margin-top:4px}
+/* analysis */
+.an{display:grid;grid-template-columns:1fr 18px 1fr 18px 1fr 18px 1fr;height:322px}
+.an .arw{display:flex;align-items:center;justify-content:center;color:#999;font-size:12px}
+.an .card{display:flex;flex-direction:column;padding:18px 18px}
+.an .card.ia{outline:1.5px solid var(--red);outline-offset:-1px}
+.an .tt{font-size:18px;margin-top:4px}
+.an .q{font-size:12px;color:#444;line-height:1.6;margin-top:6px;min-height:38px}
+.an svg{display:block;margin:4px 0 8px}
+.an .dl{font-size:11.5px;line-height:1.7;color:#333}
+.an .op{margin-top:auto;border-top:1px solid var(--line);padding-top:8px}
+.an .op span{display:block;font-size:10px;color:#777}
+.an .op b{display:block;font-weight:500;font-size:12.5px;margin-top:2px;line-height:1.5}
+.ain{display:grid;grid-template-columns:1fr 300px;gap:20px;margin-top:16px;height:82px}
+.ain .card{padding:14px 20px}
+.ain .tg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.ain .tg span{background:#fff;border:1px solid #bbb;font-size:11.5px;padding:3px 10px}
+.ain .dt{display:grid;grid-template-columns:52px 1fr;font-size:12px;margin-top:6px;row-gap:3px}
+.ain .dt b{font-weight:400;font-family:Arimo,Arial,sans-serif}
+/* request */
+.rq{width:100%;border-collapse:collapse;font-size:12px}
+.rq th{font-weight:400;font-size:10.5px;color:#666;text-align:left;padding:0 10px 6px 0;border-bottom:1px solid #999}
+.rq td{padding:0 10px 0 0;height:33px;border-bottom:1px solid var(--line);vertical-align:middle}
+.rq td.gp{background:var(--card);padding:0 12px;vertical-align:top;padding-top:6px;border-bottom:4px solid var(--bg);line-height:1.35}
+.rq td.gp b{display:block;font-weight:500;font-size:13px}
+.rq td.gp span{display:block;font-size:11px;color:var(--red);margin-top:3px;font-family:Arimo,Arial,"Noto Sans JP",sans-serif}
+.rq td.n{font-family:Arimo,Arial,sans-serif;padding-top:2px;color:var(--mut);width:34px;padding-left:12px}
+.rq td.it{font-weight:500;width:150px}
+.rq td.us{color:#555;font-size:11.5px;width:220px}
+.rq td.ex{color:#333}
+.rq td.stt{width:64px;text-align:center}
+.rq td.stt span{display:inline-block;font-size:10.5px;padding:2px 10px;background:var(--dark);color:#fff}
+.rq tr.done td.it,.rq tr.done td.ex,.rq tr.done td.us,.rq tr.done td.n{color:#9a9a9a}
+
+.tag{display:inline-block;font-size:10.5px;border:1px solid var(--red);color:var(--red);padding:1px 8px;margin-left:10px;vertical-align:middle;letter-spacing:.05em}
+/* persona */
+.ps{display:grid;grid-template-columns:1fr 1fr;gap:20px;height:100%}
+.ps .card{padding:20px 24px}
+.ps .rl{font-size:24px;margin-top:4px}
+.ps .rl small{font-size:12px;color:#666;margin-left:10px}
+.ps dl{display:grid;grid-template-columns:96px 1fr;row-gap:8px;margin-top:12px;font-size:12px;line-height:1.65}
+.ps dt{color:#666}
+/* matrix */
+.mx{width:100%;border-collapse:collapse;font-size:11.5px}
+.mx th{font-weight:400;font-size:10.5px;color:#666;text-align:left;padding:0 8px 6px 0;border-bottom:1px solid #999}
+.mx td{padding:5px 10px 5px 0;border-bottom:1px solid var(--line);vertical-align:middle;line-height:1.5}
+.mx td.ax{font-weight:500;font-size:12.5px;width:180px;white-space:nowrap}
+.mx td.w{width:46px;text-align:center;font-size:13px}
+.mx td.ev{width:58px}
+.mx td.ev span{display:inline-block;font-size:10.5px;padding:1px 8px;white-space:nowrap}
+.ev .s{background:var(--dark);color:#fff}.ev .m{background:#fff;border:1px solid #999;color:#333}.ev .l{background:#fff;border:1px solid var(--red);color:var(--red)}
+.mx td.fc{color:#333}
+.mx td.ac{width:250px;color:#555}
+/* 8p */
+.p8{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto 1fr 1fr;gap:10px 14px;height:100%}
+.p8 .ct{font-family:Arimo,Arial,sans-serif;font-size:13px;border-bottom:1.5px solid var(--ink);padding-bottom:4px}
+.p8 .ct small{font-family:"Noto Sans JP";font-size:11px;color:#666;margin-left:8px}
+.p8 .card{padding:12px 14px;display:flex;flex-direction:column}
+.p8 .nm{display:flex;justify-content:space-between;align-items:center;font-size:14.5px}
+.p8 .nm span{font-size:10px;padding:1px 7px}
+.p8 .lb{font-size:10px;color:#777;margin-top:8px}
+.p8 .tx{font-size:11px;line-height:1.6;color:#333}
+.p8 .mn{font-size:11.5px;line-height:1.6;font-weight:500;margin-top:auto;padding-top:6px;border-top:1px solid var(--line)}
+.p8 .q{color:var(--red)}
+/* questions */
+.qs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;height:100%}
+.qs .card{padding:20px 22px}
+.qs ol{list-style:none;counter-reset:q;margin-top:4px}
+.qs li{counter-increment:q;font-size:12.5px;line-height:1.65;padding-left:26px;position:relative;margin-bottom:10px}
+.qs li::before{content:counter(q,decimal-leading-zero);position:absolute;left:0;top:1px;font-family:Arimo,Arial,sans-serif;font-size:11px;color:var(--mut)}
+.qs li small{display:block;font-size:11px;color:#777}
+</style></head><body>
+<div class="wrap" id="wrap">
+<section class="slide dark cover">
+<div class="hd"><span>UNOU株式会社</span><span>2026</span></div>
+<div class="t"><h1>ターゲットの意思決定マトリクスと8P分析</h1><p class="s">仮説（新田様インタビューをもとに作成）／ 11月27日版</p></div>
+<div class="meta"><div><span>Client</span><b>株式会社ポピンズシッター 様</b></div><div><span>Status</span><b>仮説（先方インタビューで更新）</b></div><div><span>Date</span><b class="ar">Nov 27, 2026</b></div></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Target</span><span>Page 01</span></div>
+<p class="no">01</p><h2>ターゲット像<span class="tag">仮説</span></h2><p class="lead">採用の主な対象はEMとテックリードの2名。どちらも「開発組織を変える側」に回りたい人を想定します</p>
+<div class="body"><div class="ps"><div class="card"><p class="clbl">ターゲット</p><p class="rl">EM<small>エンジニアリングマネージャー</small></p><div class="hr"></div><dl><dt>今の立場</dt><dd>メガベンチャーやSaaS企業で、5名以上のチームの評価・育成を担うEM。組織の一部を任されている</dd><dt>転職の動機</dt><dd>決まった組織を回す中間管理ではなく、開発組織のあるべき姿を自分で定義し、つくる側に回りたい</dd><dt>惹かれる点</dt><dd>開発組織のトップに近い裁量、経営との距離の近さ、子育てという事業への共感（当事者であることも多い）</dd><dt>不安・懸念</dt><dd>年収が下がらないか、グループ傘下で自由に動けるか、週1出社、事業の成長スピード</dd><dt>決め手</dt><dd>新田様と経営が、組織変革にどこまで本気で投資するか</dd></dl></div><div class="card"><p class="clbl">ターゲット</p><p class="rl">テックリード<small>開発エンジニア</small></p><div class="hr"></div><dl><dt>今の立場</dt><dd>Railsを中心にWebサービスを開発し、設計・レビューを担うシニアエンジニア</dd><dt>転職の動機</dt><dd>負債の返済やアーキテクチャの刷新、AIを前提にした開発を、自分の判断で進めたい</dd><dt>惹かれる点</dt><dd>約10年運用のシステムを立て直す手応え、データ基盤やマッチング改善の余地、企画段階から関われること</dd><dt>不安・懸念</dt><dd>負債の深さ、技術選定の自由度、一緒に働くメンバーの力量、週1出社</dd><dt>決め手</dt><dd>技術課題の実態と、それを任せてもらえる範囲が具体的に見えること</dd></dl></div></div></div>
+<p class="note">※ 新田様インタビュー（11/25）と公開中の求人票をもとにした仮説です。CTOは今回の主な対象から外しています。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Decision Matrix</span><span>Page 02</span></div>
+<p class="no">02</p><h2>意思決定マトリクス<span class="tag">仮説</span></h2><p class="lead">裁量と変革フェーズで勝ち、待遇と出社は隠さず補う。事業への共感は入口として使う</p>
+<div class="body"><table class="mx"><tr><th>判断軸</th><th style="text-align:center">EM</th><th style="text-align:center">TL</th><th>自社</th><th>自社の状況（根拠）</th><th>サイト・Deckでの扱い</th></tr><tr><td class="ax">裁量・任される範囲</td><td class="w">◎</td><td class="w">○</td><td class="ev"><span class="s">強み</span></td><td class="fc">開発組織の理想像が未定義で、ゼロから定義・推進できる</td><td class="ac">トップで打ち出す</td></tr><tr><td class="ax">変革フェーズの手応え</td><td class="w">◎</td><td class="w">◎</td><td class="ev"><span class="s">強み</span></td><td class="fc">単一事業からマルチプロダクトへ。約10年の負債返済とAI前提の開発への移行</td><td class="ac">トップで打ち出す</td></tr><tr><td class="ax">事業への共感・社会的意義</td><td class="w">○</td><td class="w">○</td><td class="ev"><span class="s">強み</span></td><td class="fc">国内No.1のベビーシッター事業。子育て当事者の関心が入口になっている</td><td class="ac">入口として最初に見せる</td></tr><tr><td class="ax">経営との距離</td><td class="w">◎</td><td class="w">△</td><td class="ev"><span class="s">強み</span></td><td class="fc">代表との定例で技術投資を合意する。決裁が早い</td><td class="ac">EM向けに具体例で見せる</td></tr><tr><td class="ax">技術・開発環境</td><td class="w">△</td><td class="w">◎</td><td class="ev"><span class="m">中立</span></td><td class="fc">Rails中心で見直しを予定。データ基盤の設計もこれから。負債・セキュリティ対応が急務</td><td class="ac">課題を「任せたいこと」として見せる</td></tr><tr><td class="ax">一緒に働く人</td><td class="w">○</td><td class="w">◎</td><td class="ev"><span class="m">中立</span></td><td class="fc">社員5名＋業務委託約10名。若手EMは就任1年目。現場の人柄が伝わっていない</td><td class="ac">12/23の撮影・インタビューで補う</td></tr><tr><td class="ax">事業の成長性・安定性</td><td class="w">○</td><td class="w">○</td><td class="ev"><span class="m">中立</span></td><td class="fc">事業は130%成長、上場グループの基盤。一方で急成長（Jカーブ）型ではない</td><td class="ac">正直に書き、合う人を選ぶ</td></tr><tr><td class="ax">年収・待遇</td><td class="w">◎</td><td class="w">◎</td><td class="ev"><span class="l">弱み</span></td><td class="fc">競合よりやや低い（EM・TL 800〜1,200万円）</td><td class="ac">隠さず、他の軸の魅力で補う</td></tr><tr><td class="ax">働き方（出社・場所）</td><td class="w">○</td><td class="w">◎</td><td class="ev"><span class="l">弱み</span></td><td class="fc">週1出社が必須寄り。関東圏外の候補者が保留になりやすい。残業は月10時間程度</td><td class="ac">条件を明記し、ミスマッチを防ぐ</td></tr><tr><td class="ax">グループ内の独立性</td><td class="w">○</td><td class="w">△</td><td class="ev"><span class="m">中立</span></td><td class="fc">「傘下でやりづらいのでは」という懸念。グリー発祥で開発は独立運営（口頭のみ）</td><td class="ac">掲載できるか先方に確認</td></tr></table></div>
+<p class="note">※ 重要度　◎ 高い　○ 中くらい　△ 低い（仮説）。自社の状況は新田様インタビューと求人票から。競合との比較は分析フェーズで加えます。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>8P Analysis</span><span>Page 03</span></div>
+<p class="no">03</p><h2>8P分析<span class="tag">仮説</span></h2><p class="lead">Philosophy・People・Provision・Privilegeを2つずつに分け、事実と候補者にとっての意味を並べます</p>
+<div class="body"><div class="p8"><p class="ct">Philosophy<small>理念・目指す姿</small></p><p class="ct">People<small>人・組織</small></p><p class="ct">Provision<small>仕事・機会</small></p><p class="ct">Privilege<small>待遇・制度</small></p><div class="card"><p class="nm">01　ビジョン<span class="ev"><span class="m" style="font-size:10px;padding:1px 7px">中立</span></span></p><p class="lb">事実（根拠）</p><p class="tx">家族のライフステージを支える事業群の構想（教育・家事支援・ペットケアなど）。会社としての公式な言葉は<span class="q">要確認</span></p><p class="mn">長く関われる事業の広がりが見える</p></div><div class="card"><p class="nm">03　リーダー<span class="ev"><span class="s" style="font-size:10px;padding:1px 7px">強み</span></span></p><p class="lb">事実（根拠）</p><p class="tx">新田様：サイバーエージェントで開発責任者、子会社CTOを経験。代表との定例で技術投資を合意</p><p class="mn">組織変革に本気で、相談できる上司がいる</p></div><div class="card"><p class="nm">05　仕事と裁量<span class="ev"><span class="s" style="font-size:10px;padding:1px 7px">強み</span></span></p><p class="lb">事実（根拠）</p><p class="tx">開発組織のあるべき姿を定義するところから任せる。マルチプロダクトに向けた組織の再編</p><p class="mn">自分の判断で組織をつくれる</p></div><div class="card"><p class="nm">07　報酬・待遇<span class="ev"><span class="l" style="font-size:10px;padding:1px 7px">弱み</span></span></p><p class="lb">事実（根拠）</p><p class="tx">EM・TL 800〜1,200万円、CTO 1,000〜1,500万円。競合よりやや低い</p><p class="mn">単体では選ばれる理由にならない</p></div><div class="card"><p class="nm">02　事業の意義<span class="ev"><span class="s" style="font-size:10px;padding:1px 7px">強み</span></span></p><p class="lb">事実（根拠）</p><p class="tx">国内No.1のベビーシッター事業。子育てのインフラを技術でつくる。国が注力する成長市場</p><p class="mn">「子どもは社会の未来」に関われる</p></div><div class="card"><p class="nm">04　チーム・風土<span class="ev"><span class="m" style="font-size:10px;padding:1px 7px">中立</span></span></p><p class="lb">事実（根拠）</p><p class="tx">社員5名＋業務委託約10名。若手EMは就任1年目。グリー発祥で開発は独立運営。人柄は<span class="q">要取材</span></p><p class="mn">小さいチームだから、文化から一緒につくれる</p></div><div class="card"><p class="nm">06　技術と挑戦<span class="ev"><span class="s" style="font-size:10px;padding:1px 7px">強み</span></span></p><p class="lb">事実（根拠）</p><p class="tx">約10年運用の負債返済、AI前提の開発への移行、セキュリティ強化、データを生かしたマッチング改善</p><p class="mn">解きがいのある技術課題がそろっている</p></div><div class="card"><p class="nm">08　働き方・制度<span class="ev"><span class="m" style="font-size:10px;padding:1px 7px">中立</span></span></p><p class="lb">事実（根拠）</p><p class="tx">フレックス（コア11〜16時）、残業月10時間程度、週1出社（新宿・広尾）。評価制度は<span class="q">要確認</span></p><p class="mn">子育てと両立しやすい。出社は条件として明示</p></div></div></div>
+<p class="note">※ 下段の太字は、ターゲットにとっての意味。赤字の「要確認」「要取材」は、先方インタビューと12/23の取材で埋めます。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Next</span><span>Page 04</span></div>
+<p class="no">04</p><h2>先方インタビューで確かめること</h2><p class="lead">この仮説をもとに、ターゲット像と判断軸の重みを伺い、マトリクスと8P分析を更新します</p>
+<div class="body"><div class="qs"><div class="card"><p class="clbl">ターゲット</p><div class="hr"></div><ol><li>採用したいのはEMとテックリードの2名で合っていますか<small>CTOの採用は続けるか、今回の対象外か</small></li><li>それぞれ、どんな経歴の人を想定していますか<small>前職の会社規模、役割、年齢層のイメージ</small></li><li>入社後1年で任せたいこと、期待する成果は何ですか<small>EMとテックリードそれぞれ</small></li><li>最近、良いと思った候補者と見送った候補者の違いは何ですか</li></ol></div><div class="card"><p class="clbl">判断軸と重み</p><div class="hr"></div><ol><li>候補者が比較している会社はどこですか<small>面談や辞退の場で名前が出た会社</small></li><li>承諾した人は、最後に何で決めましたか<small>受領した辞退理由の補足として</small></li><li>年収はレンジを超えて調整できますか<small>どこまで出せるか</small></li><li>週1出社は必須ですか。関東圏外の人はどう扱いますか</li></ol></div><div class="card"><p class="clbl">事実の確認</p><div class="hr"></div><ol><li>会社として公式に使っているミッション・ビジョンの言葉はありますか</li><li>グリー発祥と、グループ内で独立した開発運営をしていることを、サイトに書けますか</li><li>評価制度と、技術投資の予算の決め方を教えてください</li><li>チームの人柄が伝わるエピソードはありますか<small>12/23の取材で深掘りする話</small></li></ol></div></div></div>
+<p class="note">※ 伺った内容は、意思決定マトリクス・8P分析に反映し、分析と情報設計（Phase 03）に使います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+</div>
+<script>
+const fit=()=>{const w=document.getElementById('wrap');const sc=Math.min(1,(window.innerWidth-16)/1280);w.style.transform=`scale(${sc})`;w.style.marginLeft=Math.max(0,(window.innerWidth-1280*sc)/2)+'px';document.body.style.height=(w.scrollHeight*sc+64)+'px';document.body.style.overflowX='hidden';};
+addEventListener('resize',fit);addEventListener('load',fit);fit();
+</script>
+</body></html>
