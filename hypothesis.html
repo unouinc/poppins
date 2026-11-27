@@ -278,6 +278,29 @@ ul.b li::before{content:"・";position:absolute;left:0}
 .flow .s b{font-weight:400;font-family:Arimo,Arial,sans-serif;font-size:12px;color:var(--mut)}
 .flow .s p{font-size:13px}
 .flow .s p span{display:block;font-size:11px;color:#777;margin-top:1px}
+/* approach v2 */
+.ap2{display:grid;grid-template-columns:270px 1fr 260px;gap:20px;height:100%}
+.ap2 .card{padding:22px 24px;display:flex;flex-direction:column}
+.ap2 .tt{font-size:20px;line-height:1.5;margin-top:10px}
+.ap2 .tx{font-size:12px;line-height:1.85;color:#444;margin-top:14px}
+.ap2 .mid{display:flex;flex-direction:column}
+.q4{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;flex:1;margin-top:12px}
+.q4 .qd{background:#fff;padding:14px 16px;display:flex;flex-direction:column}
+.q4 .qh{display:flex;align-items:baseline;gap:8px;border-bottom:1.5px solid var(--ink);padding-bottom:6px}
+.q4 .qh b{font-weight:500;font-size:17px}
+.q4 .qh span{font-family:Arimo,Arial,sans-serif;font-size:12px;color:#666}
+.q4 .qh em{margin-left:auto;font-style:normal;font-size:10.5px;color:#888}
+.q4 .fx{display:grid;grid-template-columns:22px 76px 1fr;align-items:baseline;padding:10px 0 0;flex:1}
+.q4 .fx+.fx{border-top:1px solid var(--line)}
+.q4 .fx small{font-family:Arimo,Arial,sans-serif;font-size:10.5px;color:var(--mut)}
+.q4 .fx p{font-size:14px}
+.q4 .fx i{font-style:normal;font-size:11.5px;color:#666}
+.ap2 .ft2{font-size:12px;color:#444;margin-top:12px;line-height:1.6}
+.ob .r{padding:14px 0;border-bottom:1px solid var(--line)}
+.ob .r:last-child{border:none}
+.ob .r b{display:block;font-weight:500;font-size:16px}
+.ob .r p{font-size:12px;line-height:1.65;color:#444;margin-top:4px}
+.ob .r span{display:inline-block;margin-top:6px;font-size:10.5px;border:1px solid #bbb;background:#fff;padding:1px 8px;color:#555}
 /* questions */
 .qs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;height:100%}
 .qs .card{padding:20px 22px}
@@ -295,13 +318,13 @@ ul.b li::before{content:"・";position:absolute;left:0}
 <section class="slide">
 <div class="hd"><span>Approach</span><span>Page 01</span></div>
 <p class="no">01</p><h2>アプローチの考え方｜人が組織を選ぶ理由</h2><p class="lead">集団凝集性理論をもとに、人が組織を選ぶ理由を4つの観点・8因子に分け、ターゲット・自社・競合を同じ物差しで観察します</p>
-<div class="body"><div class="ap">
-<div class="card"><p class="clbl">理論｜集団凝集性</p><p class="tt">人は、その集団に<br>惹きつけられる力で<br>組織を選ぶ</p><p class="tx">社会心理学者レオン・フェスティンガーらは、人を集団にとどまらせる心理的な力を「集団凝集性」と定義しました。<br><br>この考え方をもとに、人が組織に惹かれる理由を「目標」「活動」「人材」「条件」の4つの観点で捉えます。</p></div>
-<div class="card"><p class="clbl">4つの観点と8因子</p><p class="ctl">4つの観点を、それぞれ2つの因子に分けて観察します</p><div class="tree"><div><div class="p"><b>Philosophy</b><span>目標</span><small>目標の魅力</small></div><div class="f"><small>01</small>会社基盤<em>A 企業認知／B 財務基盤</em></div><div class="f"><small>02</small>理念戦略<em>C 企業理念／D 経営戦略</em></div></div><div><div class="p"><b>People</b><span>人材</span><small>構成員の魅力</small></div><div class="f"><small>05</small>組織風土<em>I 開放的風土／J 進取的風土</em></div><div class="f"><small>06</small>人的資源<em>K 共感性／L 有能性</em></div></div><div><div class="p"><b>Provision</b><span>活動</span><small>活動の魅力</small></div><div class="f"><small>03</small>事業内容<em>E 社会的意義／F 競争優位</em></div><div class="f"><small>04</small>仕事内容<em>G 貢献実感／H 成長実感</em></div></div><div><div class="p"><b>Privilege</b><span>条件</span><small>特権の魅力</small></div><div class="f"><small>07</small>報酬体系<em>M 経済報酬／N 感情報酬</em></div><div class="f"><small>08</small>仕事環境<em>O 制度環境／P 施設環境</em></div></div></div><p class="tx" style="margin-top:auto">8因子をさらにA〜Pの16項目（64の設問）に分け、事実（根拠）を集めて強みを◎・○・△・×で評価します。</p></div>
-<div class="card obs"><p class="clbl">観察する対象</p>
-<div class="r"><b>ターゲット</b><p>8因子のうち、何を重視して転職先を選ぶか<span>→ 意思決定マトリクス</span></p></div>
-<div class="r"><b>自社</b><p>8因子のうち、どこが強く、どこが弱いか<span>→ 8因子分析</span></p></div>
-<div class="r" style="border:none"><b>競合</b><p>同じ候補者を取り合う会社が、どこで強いか<span>→ 8因子分析</span></p></div></div>
+<div class="body"><div class="ap2">
+<div class="card"><p class="clbl">理論｜集団凝集性</p><p class="tt">人は、その集団に<br>惹きつけられる力で<br>組織を選ぶ</p><div class="hr" style="margin:16px 0 0"></div><p class="tx">社会心理学者レオン・フェスティンガーらは、人を集団にとどまらせる心理的な力を「集団凝集性」と定義しました。</p><p class="tx">この考え方をもとに、人が組織に惹かれる理由を「目標」「活動」「人材」「条件」の4つの観点で捉えます。</p></div>
+<div class="card mid"><p class="clbl">4つの観点と8因子</p><div class="q4"><div class="qd"><div class="qh"><b>目標</b><span>Philosophy</span><em>目標の魅力</em></div><div class="fx"><small>01</small><p>会社基盤</p><i>A 企業認知／B 財務基盤</i></div><div class="fx"><small>02</small><p>理念戦略</p><i>C 企業理念／D 経営戦略</i></div></div><div class="qd"><div class="qh"><b>人材</b><span>People</span><em>構成員の魅力</em></div><div class="fx"><small>05</small><p>組織風土</p><i>I 開放的風土／J 進取的風土</i></div><div class="fx"><small>06</small><p>人的資源</p><i>K 共感性／L 有能性</i></div></div><div class="qd"><div class="qh"><b>活動</b><span>Provision</span><em>活動の魅力</em></div><div class="fx"><small>03</small><p>事業内容</p><i>E 社会的意義／F 競争優位</i></div><div class="fx"><small>04</small><p>仕事内容</p><i>G 貢献実感／H 成長実感</i></div></div><div class="qd"><div class="qh"><b>条件</b><span>Privilege</span><em>特権の魅力</em></div><div class="fx"><small>07</small><p>報酬体系</p><i>M 経済報酬／N 感情報酬</i></div><div class="fx"><small>08</small><p>仕事環境</p><i>O 制度環境／P 施設環境</i></div></div></div><p class="ft2">各因子をA〜Pの16項目（64の設問）に分けて事実を集め、強みを ◎・○・△・× で評価します。</p></div>
+<div class="card ob"><p class="clbl">観察する対象</p>
+<div class="r"><b>ターゲット</b><p>8因子のうち、何を重視して転職先を選ぶか</p><span>意思決定マトリクス</span></div>
+<div class="r"><b>自社</b><p>8因子のうち、どこが強く、どこが弱いか</p><span>8因子分析</span></div>
+<div class="r"><b>競合</b><p>同じ候補者を取り合う会社が、どこで強いか</p><span>8因子分析</span></div></div>
 </div></div>
 <p class="note">※ 4つの観点は、集団凝集性の考え方を採用の場面に当てはめて整理したものです。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
