@@ -146,6 +146,35 @@ ul.b li::before{content:"・";position:absolute;left:0}
 .iv .r{font-size:11.5px;color:#666;margin-top:10px}
 .iv .nm{font-size:20px;margin-top:2px}
 .iv .t{font-size:13.5px;line-height:1.6;margin-top:4px}
+/* analysis */
+.an{display:grid;grid-template-columns:1fr 18px 1fr 18px 1fr 18px 1fr;height:322px}
+.an .arw{display:flex;align-items:center;justify-content:center;color:#999;font-size:12px}
+.an .card{display:flex;flex-direction:column;padding:18px 18px}
+.an .card.ia{outline:1.5px solid var(--red);outline-offset:-1px}
+.an .tt{font-size:18px;margin-top:4px}
+.an .q{font-size:12px;color:#444;line-height:1.6;margin-top:6px;min-height:38px}
+.an svg{display:block;margin:4px 0 8px}
+.an .dl{font-size:11.5px;line-height:1.7;color:#333}
+.an .op{margin-top:auto;border-top:1px solid var(--line);padding-top:8px}
+.an .op span{display:block;font-size:10px;color:#777}
+.an .op b{display:block;font-weight:500;font-size:12.5px;margin-top:2px;line-height:1.5}
+.ain{display:grid;grid-template-columns:1fr 300px;gap:20px;margin-top:16px;height:82px}
+.ain .card{padding:14px 20px}
+.ain .tg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.ain .tg span{background:#fff;border:1px solid #bbb;font-size:11.5px;padding:3px 10px}
+.ain .dt{display:grid;grid-template-columns:52px 1fr;font-size:12px;margin-top:6px;row-gap:3px}
+.ain .dt b{font-weight:400;font-family:Arimo,Arial,sans-serif}
+/* request */
+.rq{width:100%;border-collapse:collapse;font-size:12px}
+.rq th{font-weight:400;font-size:10.5px;color:#666;text-align:left;padding:0 10px 6px 0;border-bottom:1px solid #999}
+.rq td{padding:0 10px 0 0;height:36px;border-bottom:1px solid var(--line);vertical-align:middle}
+.rq td.gp{background:var(--card);padding:0 12px;vertical-align:top;padding-top:6px;border-bottom:4px solid var(--bg);line-height:1.35}
+.rq td.gp b{display:block;font-weight:500;font-size:13px}
+.rq td.gp span{display:block;font-size:11px;color:var(--red);margin-top:3px;font-family:Arimo,Arial,"Noto Sans JP",sans-serif}
+.rq td.n{font-family:Arimo,Arial,sans-serif;padding-top:2px;color:var(--mut);width:34px;padding-left:12px}
+.rq td.it{font-weight:500;width:150px}
+.rq td.us{color:#555;font-size:11.5px;width:220px}
+.rq td.ex{color:#333}
 </style></head><body>
 <div class="wrap" id="wrap">
 <section class="slide dark cover">
@@ -231,8 +260,44 @@ ul.b li::before{content:"・";position:absolute;left:0}
 <p class="note">※ 実装は1月中旬からデザインと並行して進めます。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Interview</span><span>Page 09</span></div>
-<p class="no">09</p><h2>インタビュー記事｜6名の話</h2><p class="lead">12月23日に、経営陣とマネージャー6名にお話を伺います</p>
+<div class="hd"><span>Analysis &amp; Information Architecture</span><span>Page 09</span></div>
+<p class="no">09</p><h2>分析と情報設計（Phase 03）</h2><p class="lead">3つの分析で「誰に・何を・なぜ自社なのか」を決め、それをサイトとDeckの構成に落とし込みます</p>
+<div class="body">
+<div class="an">
+<div class="card"><p class="clbl ar">01</p><p class="tt">意思決定マトリクス</p><p class="q">候補者は、何を基準に転職先を決めるのか</p>
+<svg viewBox="0 0 200 70" width="100%" height="70"><g fill="#fff" stroke="#ccc"><rect x="50" y="4" width="48" height="14"/><rect x="100" y="4" width="48" height="14"/><rect x="150" y="4" width="48" height="14"/><rect x="50" y="20" width="48" height="14"/><rect x="100" y="20" width="48" height="14"/><rect x="150" y="20" width="48" height="14"/><rect x="50" y="36" width="48" height="14"/><rect x="100" y="36" width="48" height="14"/><rect x="150" y="36" width="48" height="14"/><rect x="50" y="52" width="48" height="14"/><rect x="100" y="52" width="48" height="14"/><rect x="150" y="52" width="48" height="14"/></g><g fill="#DCDCDC"><rect x="0" y="4" width="46" height="14"/><rect x="0" y="20" width="46" height="14"/><rect x="0" y="36" width="46" height="14"/><rect x="0" y="52" width="46" height="14"/></g><g fill="#1F1F1F"><rect x="56" y="8" width="30" height="6"/><rect x="106" y="24" width="36" height="6"/><rect x="156" y="8" width="24" height="6"/><rect x="56" y="40" width="20" height="6"/><rect x="106" y="56" width="14" height="6"/><rect x="156" y="40" width="34" height="6"/></g></svg>
+<p class="dl">CTO・EM・TLごとに判断軸と重みを整理し、自社と競合6社を軸ごとに比べます</p>
+<div class="op"><span>アウトプット</span><b>勝てる軸と、説明で補う軸</b></div></div>
+<div class="arw">▶</div>
+<div class="card"><p class="clbl ar">02</p><p class="tt">8P分析</p><p class="q">自社の魅力は何か。その根拠は何か</p>
+<svg viewBox="0 0 200 70" width="100%" height="70"><g fill="#fff" stroke="#ccc"><rect x="0" y="4" width="48" height="30"/><rect x="50" y="4" width="48" height="30"/><rect x="100" y="4" width="48" height="30"/><rect x="150" y="4" width="48" height="30"/><rect x="0" y="37" width="48" height="30"/><rect x="50" y="37" width="48" height="30"/><rect x="100" y="37" width="48" height="30"/><rect x="150" y="37" width="48" height="30"/></g><g fill="#DCDCDC"><rect x="6" y="10" width="28" height="5"/><rect x="6" y="19" width="18" height="5"/><rect x="56" y="10" width="20" height="5"/><rect x="56" y="19" width="30" height="5"/><rect x="106" y="10" width="32" height="5"/><rect x="106" y="19" width="16" height="5"/><rect x="156" y="10" width="24" height="5"/><rect x="156" y="19" width="26" height="5"/><rect x="6" y="43" width="28" height="5"/><rect x="6" y="52" width="18" height="5"/><rect x="56" y="43" width="20" height="5"/><rect x="56" y="52" width="30" height="5"/><rect x="106" y="43" width="32" height="5"/><rect x="106" y="52" width="16" height="5"/><rect x="156" y="43" width="24" height="5"/><rect x="156" y="52" width="26" height="5"/></g></svg>
+<p class="dl">会社の魅力を8つの観点で棚卸しし、事実（根拠）と候補者にとっての意味を並べます</p>
+<div class="op"><span>アウトプット</span><b>サイトで語る魅力と、その根拠</b></div></div>
+<div class="arw">▶</div>
+<div class="card"><p class="clbl ar">03</p><p class="tt">ポジショニングマップ</p><p class="q">競合の中で、自社はどこに立つのか</p>
+<svg viewBox="0 0 200 70" width="100%" height="70"><line x1="100" y1="2" x2="100" y2="68" stroke="#999"/><line x1="20" y1="35" x2="180" y2="35" stroke="#999"/><g fill="#BDBDBD"><circle cx="62" cy="20" r="5"/><circle cx="78" cy="50" r="5"/><circle cx="120" cy="54" r="5"/><circle cx="48" cy="44" r="5"/><circle cx="132" cy="44" r="5"/><circle cx="88" cy="14" r="5"/></g><circle cx="152" cy="14" r="7" fill="#C0392B"/></svg>
+<p class="dl">重みの大きい2軸で自社と競合を配置し、自社だけが立てる場所を言葉にします</p>
+<div class="op"><span>アウトプット</span><b>メッセージの核</b></div></div>
+<div class="arw">▶</div>
+<div class="card ia"><p class="clbl ar">04</p><p class="tt">情報設計</p><p class="q">何を、どの順番で伝えるのか</p>
+<svg viewBox="0 0 200 70" width="100%" height="70"><rect x="80" y="2" width="40" height="14" fill="#1F1F1F"/><path d="M100 16v8M25 24h150M25 24v8M75 24v8M125 24v8M175 24v8" stroke="#999" fill="none"/><g fill="#fff" stroke="#bbb"><rect x="8" y="32" width="34" height="12"/><rect x="58" y="32" width="34" height="12"/><rect x="108" y="32" width="34" height="12"/><rect x="158" y="32" width="34" height="12"/><rect x="8" y="50" width="34" height="12"/><rect x="58" y="50" width="34" height="12"/></g></svg>
+<p class="dl">サイトマップ、6コンテンツの役割、ワイヤーフレーム、Deckのページ構成、記事6本の置き場所を決めます</p>
+<div class="op"><span>アウトプット</span><b>ワイヤーフレーム（.fig）とDeck構成案</b></div></div>
+</div>
+<div class="ain"><div class="card"><p class="clbl">インプット</p><div class="tg"><span>新田様インタビュー</span><span>会社説明資料</span><span>求人票</span><span>競合の採用サイト・求人</span><span>ご提供いただく情報（次ページ）</span></div></div>
+<div class="card"><p class="clbl">ご確認いただくタイミング</p><div class="dt"><b>12/18</b><span>分析の結果（01〜03）</span><b>12/25</b><span>情報設計（04）</span></div></div></div>
+</div>
+<p class="note">※ 判断軸の裏付けが足りない場合は、CTO・EM・TL経験者2〜3名へのインタビューを追加で行います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Request</span><span>Page 10</span></div>
+<p class="no">10</p><h2>ご提供いただきたい情報</h2><p class="lead">分析と情報設計の精度を上げるため、以下の情報をご共有ください。社外秘のものは、出せる範囲でかまいません</p>
+<div class="body"><table class="rq"><tr><th style="width:150px">使うフェーズ／目安</th><th></th><th>情報</th><th>内容</th><th>使い道</th></tr><tr><td class="gp" rowspan="8"><b>分析</b><span>12/4まで</span></td><td class="n">01</td><td class="it">会社説明資料</td><td class="ex">面談・カジュアル面談で使っている資料</td><td class="us">8P分析、情報設計</td></tr><tr><td class="n">02</td><td class="it">求人票</td><td class="ex">CTO・EM・TLの最新の求人票と、要件を決めた背景</td><td class="us">意思決定マトリクス</td></tr><tr><td class="n">03</td><td class="it">選考の状況</td><td class="ex">直近1年の応募・面談・内定・承諾の件数</td><td class="us">どこで候補者が離れているかの把握</td></tr><tr><td class="n">04</td><td class="it">承諾と辞退の理由</td><td class="ex">入社の決め手、辞退・選考離脱の理由（分かる範囲で）</td><td class="us">意思決定マトリクス</td></tr><tr><td class="n">05</td><td class="it">比較されている企業</td><td class="ex">候補者が併願・比較している会社</td><td class="us">競合比較、ポジショニングマップ</td></tr><tr><td class="n">06</td><td class="it">開発組織</td><td class="ex">人数と構成、技術スタック、開発の進め方、今後の体制計画</td><td class="us">8P分析、サイトのコンテンツ</td></tr><tr><td class="n">07</td><td class="it">プロダクトと事業</td><td class="ex">サービスの概要と利用規模、今後のロードマップ（公開できる範囲）</td><td class="us">8P分析、サイトのコンテンツ</td></tr><tr><td class="n">08</td><td class="it">制度と働き方</td><td class="ex">評価・報酬の考え方、出社・リモートの運用、福利厚生</td><td class="us">8P分析、意思決定マトリクス</td></tr><tr><td class="gp" rowspan="2"><b>情報設計・デザイン</b><span>12/18まで</span></td><td class="n">09</td><td class="it">ブランド素材</td><td class="ex">ロゴ、ブランドガイドライン、既存の写真、テックブログ・登壇資料</td><td class="us">ムードボード、デザイン</td></tr><tr><td class="n">10</td><td class="it">掲載できない情報</td><td class="ex">公開できない数値・表現、社内確認が必要な項目</td><td class="us">情報設計、インタビュー記事</td></tr><tr><td class="gp" rowspan="1"><b>実装</b><span>1/9まで</span></td><td class="n">11</td><td class="it">公開環境</td><td class="ex">サーバー・ドメイン、CMSのご希望、計測ツール</td><td class="us">実装</td></tr></table></div>
+<p class="note">※ 資料の形式は問いません。既存の資料がない項目は、打ち合わせでお話を伺う形でも大丈夫です。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Interview</span><span>Page 11</span></div>
+<p class="no">11</p><h2>インタビュー記事｜6名の話</h2><p class="lead">12月23日に、経営陣とマネージャー6名にお話を伺います</p>
 <div class="body"><div class="iv"><div class="card"><span class="w">12/23 午前・広尾</span><p class="r">代表取締役 CEO</p><p class="nm">田村 様</p><div class="hr" style="margin:10px 0"></div><p class="t">なぜ今、テクノロジーに投資するのか</p></div><div class="card"><span class="w">12/23 午前・広尾</span><p class="r">COO</p><p class="nm">小栗 様</p><div class="hr" style="margin:10px 0"></div><p class="t">エンジニアの仕事が、現場と事業にどう効くか</p></div><div class="card"><span class="w">12/23 午後・新宿</span><p class="r">事業企画部 GM</p><p class="nm">吉井 一貴 様</p><div class="hr" style="margin:10px 0"></div><p class="t">事業の方向性が、開発に落ちるまで</p></div><div class="card"><span class="w">12/23 午後・新宿</span><p class="r">プロダクト開発部 MGR</p><p class="nm">齋藤 敬一郎 様</p><div class="hr" style="margin:10px 0"></div><p class="t">開発体制と、これから任せたいこと</p></div><div class="card"><span class="w">12/23 午後・新宿</span><p class="r">経営管理部 MGR</p><p class="nm">栗山 美緒 様</p><div class="hr" style="margin:10px 0"></div><p class="t">開発への投資と、制度づくり</p></div><div class="card"><span class="w">12/23 午後・新宿</span><p class="r">品質管理部 MGR</p><p class="nm">筑地 咲貴 様</p><div class="hr" style="margin:10px 0"></div><p class="t">保育・シッターの安全と品質を、プロダクトで支える</p></div></div></div>
 <div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
