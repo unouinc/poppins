@@ -254,6 +254,28 @@ ul.b li::before{content:"・";position:absolute;left:0}
 .pm .side ul.b li{font-size:11.5px;line-height:1.6;margin-bottom:2px}
 .pm .bf{border:1px dashed #999;background:transparent}
 .pm .af{outline:1.5px solid var(--red);outline-offset:-1px}
+/* approach */
+.ap{display:grid;grid-template-columns:300px 1fr 280px;gap:20px;height:100%}
+.ap .card{padding:20px 22px;display:flex;flex-direction:column}
+.ap .tt{font-size:19px;margin-top:6px;line-height:1.45}
+.ap .tx{font-size:12px;line-height:1.8;color:#444;margin-top:10px}
+.tree{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.tree .p{background:var(--dark);color:#fff;padding:10px 12px}
+.tree .p b{display:block;font-weight:400;font-family:Arimo,Arial,sans-serif;font-size:15px}
+.tree .p span{display:block;font-size:11px;color:#ccc;margin-top:2px}
+.tree .p small{display:block;font-size:10px;color:#aaa;margin-top:6px}
+.tree .f{background:#fff;border:1px solid #ccc;padding:8px 12px;font-size:12.5px;margin-top:6px}
+.tree .f small{font-family:Arimo,Arial,sans-serif;font-size:10px;color:var(--mut);margin-right:6px}
+.obs .r{display:grid;grid-template-columns:80px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.obs .r b{font-weight:500;font-size:14px}
+.obs .r p{font-size:11.5px;line-height:1.6;color:#444}
+.obs .r p span{display:block;color:#888;font-size:10.5px;margin-top:2px}
+.po{display:grid;grid-template-columns:560px 1fr;gap:20px;height:100%}
+.po .card{padding:18px 22px}
+.flow .s{display:grid;grid-template-columns:84px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);align-items:center}
+.flow .s b{font-weight:400;font-family:Arimo,Arial,sans-serif;font-size:12px;color:var(--mut)}
+.flow .s p{font-size:13px}
+.flow .s p span{display:block;font-size:11px;color:#777;margin-top:1px}
 /* questions */
 .qs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;height:100%}
 .qs .card{padding:20px 22px}
@@ -269,44 +291,66 @@ ul.b li::before{content:"・";position:absolute;left:0}
 <div class="meta"><div><span>Client</span><b>株式会社ポピンズシッター 様</b></div><div><span>Status</span><b>仮説（先方インタビューで更新）</b></div><div><span>Date</span><b class="ar">Nov 27, 2026</b></div></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Target</span><span>Page 01</span></div>
-<p class="no">01</p><h2>ターゲット像<span class="tag">仮説</span></h2><p class="lead">採用の主な対象はEMとテックリードの2名。どちらも「開発組織を変える側」に回りたい人を想定します</p>
+<div class="hd"><span>Approach</span><span>Page 01</span></div>
+<p class="no">01</p><h2>アプローチの考え方｜人が組織を選ぶ理由</h2><p class="lead">集団凝集性理論をもとに、人が組織を選ぶ理由を4つの観点・8因子に分け、ターゲット・自社・競合を同じ物差しで観察します</p>
+<div class="body"><div class="ap">
+<div class="card"><p class="clbl">理論｜集団凝集性</p><p class="tt">人は、その集団に<br>惹きつけられる力で<br>組織を選ぶ</p><p class="tx">社会心理学者レオン・フェスティンガーらは、人を集団にとどまらせる心理的な力を「集団凝集性」と定義しました。<br><br>この考え方をもとに、人が組織に惹かれる理由を「目標」「人」「活動」「特権」の4つの魅力で捉えます。</p></div>
+<div class="card"><p class="clbl">4つの観点と8因子</p><p class="ctl">4つの観点を、それぞれ2つの因子に分けて観察します</p><div class="tree"><div><div class="p"><b>Philosophy</b><span>理念・目指す姿</span><small>目標の魅力</small></div><div class="f"><small>01</small>ビジョン</div><div class="f"><small>02</small>事業の意義</div></div><div><div class="p"><b>People</b><span>人・組織</span><small>構成員の魅力</small></div><div class="f"><small>03</small>リーダー</div><div class="f"><small>04</small>チーム・風土</div></div><div><div class="p"><b>Provision</b><span>仕事・機会</span><small>活動の魅力</small></div><div class="f"><small>05</small>仕事と裁量</div><div class="f"><small>06</small>技術と挑戦</div></div><div><div class="p"><b>Privilege</b><span>待遇・制度</span><small>特権の魅力</small></div><div class="f"><small>07</small>報酬・待遇</div><div class="f"><small>08</small>働き方・制度</div></div></div><p class="tx" style="margin-top:auto">8因子それぞれについて、事実（根拠）を集め、強みを◎・○・△・×で評価します。</p></div>
+<div class="card obs"><p class="clbl">観察する対象</p>
+<div class="r"><b>ターゲット</b><p>8因子のうち、何を重視して転職先を選ぶか<span>→ 意思決定マトリクス</span></p></div>
+<div class="r"><b>自社</b><p>8因子のうち、どこが強く、どこが弱いか<span>→ 8因子分析</span></p></div>
+<div class="r" style="border:none"><b>競合</b><p>同じ候補者を取り合う会社が、どこで強いか<span>→ 8因子分析</span></p></div></div>
+</div></div>
+<p class="note">※ 4つの観点は、集団凝集性の考え方を採用の場面に当てはめて整理したものです。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Approach</span><span>Page 02</span></div>
+<p class="no">02</p><h2>アプローチの考え方｜取るべきポジション</h2><p class="lead">ターゲットが重視し、自社が強く、競合が弱い。この3つが重なる場所をポジションとして取りにいきます</p>
+<div class="body"><div class="po">
+<div class="card"><p class="clbl">ポジショニングの考え方</p><svg viewBox="0 20 520 380" width="100%" height="360"><g fill-opacity=".55"><circle cx="200" cy="150" r="118" fill="#DADADA"/><circle cx="320" cy="150" r="118" fill="#CFCFCF"/><circle cx="260" cy="250" r="118" fill="#E3E3E3"/></g><g fill="none" stroke="#999"><circle cx="200" cy="150" r="118"/><circle cx="320" cy="150" r="118"/><circle cx="260" cy="250" r="118"/></g><circle cx="260" cy="184" r="40" fill="#C0392B" fill-opacity=".16" stroke="#C0392B" stroke-width="1.2"/><text x="140" y="110" font-size="14" text-anchor="middle" fill="#1F1F1F">ターゲットが</text><text x="140" y="128" font-size="14" text-anchor="middle" fill="#1F1F1F">重視している</text><text x="380" y="110" font-size="14" text-anchor="middle" fill="#1F1F1F">自社が</text><text x="380" y="128" font-size="14" text-anchor="middle" fill="#1F1F1F">強い</text><text x="260" y="320" font-size="14" text-anchor="middle" fill="#1F1F1F">競合が</text><text x="260" y="338" font-size="14" text-anchor="middle" fill="#1F1F1F">弱い</text><text x="260" y="180" font-size="13" text-anchor="middle" fill="#C0392B" font-weight="500">取るべき</text><text x="260" y="198" font-size="13" text-anchor="middle" fill="#C0392B" font-weight="500">ポジション</text><text x="12" y="394" font-size="10.5" fill="#777">ターゲットが重視していても、競合も強い軸では差がつかない</text></svg></div>
+<div class="card"><p class="clbl">この資料の流れ</p><div class="hr"></div><div class="flow"><div class="s"><b>Page 03</b><p>ターゲット像<span>EM・テックリードの今の立場、動機、不安</span></p></div><div class="s"><b>Page 04–06</b><p>意思決定マトリクス<span>CTO・EM・TLが重視する軸と、訴求の方針</span></p></div><div class="s"><b>Page 07–08</b><p>8因子分析<span>自社と競合の強みを、事実と評価で比べる</span></p></div><div class="s"><b>Page 09</b><p>ポジショニングマップ<span>重視される2軸で、今の認識と目指す認識を置く</span></p></div><div class="s"><b>Page 10</b><p>先方インタビュー<span>仮説を確かめ、ターゲット像と重みを更新する</span></p></div></div><p style="font-size:12px;line-height:1.7;color:#444;margin-top:14px">今回の仮説では、「任される範囲」と「事業への共感」の2軸が、3つの重なる場所にあたります。</p></div>
+</div></div>
+<div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Target</span><span>Page 03</span></div>
+<p class="no">03</p><h2>ターゲット像<span class="tag">仮説</span></h2><p class="lead">採用の主な対象はEMとテックリードの2名。どちらも「開発組織を変える側」に回りたい人を想定します</p>
 <div class="body"><div class="ps"><div class="card"><p class="clbl">ターゲット</p><p class="rl">EM<small>エンジニアリングマネージャー</small></p><div class="hr"></div><dl><dt>今の立場</dt><dd>メガベンチャーやSaaS企業で、5名以上のチームの評価・育成を担うEM。組織の一部を任されている</dd><dt>転職の動機</dt><dd>決まった組織を回す中間管理ではなく、開発組織のあるべき姿を自分で定義し、つくる側に回りたい</dd><dt>惹かれる点</dt><dd>開発組織のトップに近い裁量、経営との距離の近さ、子育てという事業への共感（当事者であることも多い）</dd><dt>不安・懸念</dt><dd>年収が下がらないか、グループ傘下で自由に動けるか、週1出社、事業の成長スピード</dd><dt>決め手</dt><dd>新田様と経営が、組織変革にどこまで本気で投資するか</dd></dl></div><div class="card"><p class="clbl">ターゲット</p><p class="rl">テックリード<small>開発エンジニア</small></p><div class="hr"></div><dl><dt>今の立場</dt><dd>Railsを中心にWebサービスを開発し、設計・レビューを担うシニアエンジニア</dd><dt>転職の動機</dt><dd>負債の返済やアーキテクチャの刷新、AIを前提にした開発を、自分の判断で進めたい</dd><dt>惹かれる点</dt><dd>約10年運用のシステムを立て直す手応え、データ基盤やマッチング改善の余地、企画段階から関われること</dd><dt>不安・懸念</dt><dd>負債の深さ、技術選定の自由度、一緒に働くメンバーの力量、週1出社</dd><dt>決め手</dt><dd>技術課題の実態と、それを任せてもらえる範囲が具体的に見えること</dd></dl></div></div></div>
 <p class="note">※ 新田様インタビュー（11/25）と公開中の求人票をもとにした仮説です。採用の優先はEMとテックリード。CTOは意思決定マトリクスで訴求の方針のみ整理しています。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Decision Matrix</span><span>Page 02</span></div>
-<p class="no">02</p><h2>意思決定マトリクス｜CTO<span class="tag">仮説</span><span style="font-size:15px;color:#666;margin-left:14px">技術と開発組織の責任者</span></h2><p class="lead">経営の一員として、事業の行方を技術で決められるかを見ています</p>
+<div class="hd"><span>Decision Matrix</span><span>Page 04</span></div>
+<p class="no">04</p><h2>意思決定マトリクス｜CTO<span class="tag">仮説</span><span style="font-size:15px;color:#666;margin-left:14px">技術と開発組織の責任者</span></h2><p class="lead">経営の一員として、事業の行方を技術で決められるかを見ています</p>
 <div class="body"><div class="mt"><div class="th">判断軸</div><div class="th">候補者が見ていること</div><div class="th">ポピンズシッターの訴求方針</div><div class="th">根拠として見せる事実</div><div class="ax"><small>Axis 01</small><b>経営への関与と権限</b></div><div class="c"><p class="lk">技術投資や予算を、経営の場で決められるか。お飾りのCTOにならないか</p></div><div class="c"><p class="ms">技術と開発組織の未来を、経営の一員として決める</p></div><div class="c"><ul class="b"><li>全社の技術戦略と開発予算を持つ</li><li>代表と直接、技術投資を合意できる</li></ul></div><div class="ax"><small>Axis 02</small><b>事業の将来性と挑戦の大きさ</b></div><div class="c"><p class="lk">事業が伸びる余地があり、技術がその鍵を握っているか</p></div><div class="c"><p class="ms">事業が次に進めるかは、開発にかかっている</p></div><div class="c"><ul class="b"><li>単一事業からマルチプロダクトへの転換</li><li>開発がボトルネックだからこそ、変革の余地が大きい</li></ul></div><div class="ax"><small>Axis 03</small><b>事業の社会的意義</b></div><div class="c"><p class="lk">自分の名前で語れる事業か。長く関わる意味があるか</p></div><div class="c"><p class="ms">子育てのインフラを、技術でつくる</p></div><div class="c"><ul class="b"><li>国内No.1のベビーシッター事業、上場グループの基盤</li><li>家族のライフステージを支える事業群の構想</li></ul></div></div></div>
 <p class="note">※ 転職で重視すると想定される3つの軸。年収と週1出社は弱みのため訴求の軸にはせず、条件として明記したうえで補います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Decision Matrix</span><span>Page 03</span></div>
-<p class="no">03</p><h2>意思決定マトリクス｜EM<span class="tag">仮説</span><span style="font-size:15px;color:#666;margin-left:14px">エンジニアリングマネージャー</span></h2><p class="lead">決まった組織を回すのではなく、組織をつくる側に回れるかを見ています</p>
+<div class="hd"><span>Decision Matrix</span><span>Page 05</span></div>
+<p class="no">05</p><h2>意思決定マトリクス｜EM<span class="tag">仮説</span><span style="font-size:15px;color:#666;margin-left:14px">エンジニアリングマネージャー</span></h2><p class="lead">決まった組織を回すのではなく、組織をつくる側に回れるかを見ています</p>
 <div class="body"><div class="mt"><div class="th">判断軸</div><div class="th">候補者が見ていること</div><div class="th">ポピンズシッターの訴求方針</div><div class="th">根拠として見せる事実</div><div class="ax"><small>Axis 01</small><b>組織づくりの裁量</b></div><div class="c"><p class="lk">組織の形、評価、開発プロセスを自分で設計できるか</p></div><div class="c"><p class="ms">開発組織の「あるべき姿」を、ゼロから定義する</p></div><div class="c"><ul class="b"><li>あるべき姿がまだ定義されていない今だから関われる</li><li>マルチプロダクトに向けた組織の再編を担う</li></ul></div><div class="ax"><small>Axis 02</small><b>上司と経営の本気度</b></div><div class="c"><p class="lk">組織変革に、上司と経営がどこまで本気で投資するか</p></div><div class="c"><p class="ms">組織を変えることに、会社が本気で向き合っている</p></div><div class="c"><ul class="b"><li>新田様（サイバーエージェントで開発責任者、子会社CTO）と並走</li><li>代表との定例で、技術投資と組織投資を合意する</li></ul></div><div class="ax"><small>Axis 03</small><b>事業への共感</b></div><div class="c"><p class="lk">自分ごととして関われる事業か。家族との両立もできるか</p></div><div class="c"><p class="ms">自分の家族にも関わる事業を、育てる</p></div><div class="c"><ul class="b"><li>子育ての当事者だからこそ分かる課題</li><li>フレックス、残業は月10時間程度</li></ul></div></div></div>
 <p class="note">※ 転職で重視すると想定される3つの軸。年収と週1出社は弱みのため訴求の軸にはせず、条件として明記したうえで補います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Decision Matrix</span><span>Page 04</span></div>
-<p class="no">04</p><h2>意思決定マトリクス｜TL<span class="tag">仮説</span><span style="font-size:15px;color:#666;margin-left:14px">テックリード／開発エンジニア</span></h2><p class="lead">技術で解きがいのある課題と、それを任せてもらえる範囲を見ています</p>
+<div class="hd"><span>Decision Matrix</span><span>Page 06</span></div>
+<p class="no">06</p><h2>意思決定マトリクス｜TL<span class="tag">仮説</span><span style="font-size:15px;color:#666;margin-left:14px">テックリード／開発エンジニア</span></h2><p class="lead">技術で解きがいのある課題と、それを任せてもらえる範囲を見ています</p>
 <div class="body"><div class="mt"><div class="th">判断軸</div><div class="th">候補者が見ていること</div><div class="th">ポピンズシッターの訴求方針</div><div class="th">根拠として見せる事実</div><div class="ax"><small>Axis 01</small><b>技術課題の面白さ</b></div><div class="c"><p class="lk">解く価値のある技術課題があるか。経験として残るか</p></div><div class="c"><p class="ms">約10年のシステムを、次の10年に耐えるものへ</p></div><div class="c"><ul class="b"><li>負債の返済、セキュリティ強化、AI前提の開発への移行</li><li>大量のデータを生かしたマッチングの改善</li></ul></div><div class="ax"><small>Axis 02</small><b>技術判断の裁量</b></div><div class="c"><p class="lk">技術選定や設計を、自分の判断で進められるか</p></div><div class="c"><p class="ms">技術の判断を、任せる</p></div><div class="c"><ul class="b"><li>Railsの見直し、データ基盤の設計がこれから</li><li>企画段階から事業側と機能を提案できる</li></ul></div><div class="ax"><small>Axis 03</small><b>チームと開発環境</b></div><div class="c"><p class="lk">一緒に働く人の力量と、開発のしやすさ</p></div><div class="c"><p class="ms">小さいチームだから、つくったものがすぐ届く</p></div><div class="c"><ul class="b"><li>ユーザーの声をすぐ反映でき、決裁が早い</li><li>チームの人柄は12/23の取材で見せる（要取材）</li></ul></div></div></div>
 <p class="note">※ 転職で重視すると想定される3つの軸。年収と週1出社は弱みのため訴求の軸にはせず、条件として明記したうえで補います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>8-Factor Analysis</span><span>Page 05</span></div>
-<p class="no">05</p><h2>8因子分析｜ポピンズシッター<span class="tag">仮説</span></h2><p class="lead">強いのは事業の意義と、組織をゼロから定義できる裁量。待遇・働き方・チームの見え方が弱い</p>
+<div class="hd"><span>8-Factor Analysis</span><span>Page 07</span></div>
+<p class="no">07</p><h2>8因子分析｜ポピンズシッター<span class="tag">仮説</span></h2><p class="lead">強いのは事業の意義と、組織をゼロから定義できる裁量。待遇・働き方・チームの見え方が弱い</p>
 <div class="body"><div class="f8"><div class="qd"><p class="qh">Philosophy<small>理念・目指す姿</small></p><div class="fr"><p class="fn"><small>01</small>ビジョン</p><ul class="b"><li>家族のライフステージを支える事業群の構想（教育・家事支援・ペットケアなど）</li><li>会社としての公式なミッション・ビジョンの言葉は要確認</li></ul><div class="sc"><span>強み</span><b class="">△</b></div></div><div class="fr"><p class="fn"><small>02</small>事業の意義</p><ul class="b"><li>国内No.1のベビーシッター事業</li><li>子育てのインフラを技術でつくる。国が注力する成長市場</li><li>事業は130%成長、上場グループの基盤</li></ul><div class="sc"><span>強み</span><b class="">◎</b></div></div></div><div class="qd"><p class="qh">People<small>人・組織</small></p><div class="fr"><p class="fn"><small>03</small>リーダー</p><ul class="b"><li>新田様：サイバーエージェントで開発責任者、子会社CTOを経験</li><li>代表との定例で技術投資を合意する</li></ul><div class="sc"><span>強み</span><b class="">○</b></div></div><div class="fr"><p class="fn"><small>04</small>チーム・風土</p><ul class="b"><li>社員5名＋業務委託約10名。若手EMは就任1年目</li><li>グリー発祥で開発は独立運営（口頭のみ）。人柄は発信できていない</li></ul><div class="sc"><span>強み</span><b class="">△</b></div></div></div><div class="qd"><p class="qh">Provision<small>仕事・機会</small></p><div class="fr"><p class="fn"><small>05</small>仕事と裁量</p><ul class="b"><li>開発組織のあるべき姿を、定義するところから任せる</li><li>マルチプロダクトに向けた組織の再編を担う</li></ul><div class="sc"><span>強み</span><b class="">◎</b></div></div><div class="fr"><p class="fn"><small>06</small>技術と挑戦</p><ul class="b"><li>約10年運用の負債返済、セキュリティ強化、AI前提の開発への移行</li><li>Rails中心で見直し予定。データ基盤の設計はこれから</li></ul><div class="sc"><span>強み</span><b class="">○</b></div></div></div><div class="qd"><p class="qh">Privilege<small>待遇・制度</small></p><div class="fr"><p class="fn"><small>07</small>報酬・待遇</p><ul class="b"><li>EM・TL 800〜1,200万円、CTO 1,000〜1,500万円</li><li>競合よりやや低い</li></ul><div class="sc"><span>強み</span><b class="">△</b></div></div><div class="fr"><p class="fn"><small>08</small>働き方・制度</p><ul class="b"><li>フレックス（コア11〜16時）、残業は月10時間程度</li><li>週1出社（新宿・広尾）が必須寄り。関東圏外は保留になりやすい</li></ul><div class="sc"><span>強み</span><b class="">△</b></div></div></div></div></div>
 <p class="note">※ 強み　◎ 強い　○ やや強い　△ 弱い　× 劣る。事実は新田様インタビュー（11/25）と公開中の求人票から。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>8-Factor Analysis</span><span>Page 06</span></div>
-<p class="no">06</p><h2>8因子分析｜競合（仮：タイミー）<span class="tag">仮説</span></h2><p class="lead">規模・待遇・働き方では勝てない。勝負どころは「ゼロから定義できる裁量」と「事業への当事者性」</p>
+<div class="hd"><span>8-Factor Analysis</span><span>Page 08</span></div>
+<p class="no">08</p><h2>8因子分析｜競合（仮：タイミー）<span class="tag">仮説</span></h2><p class="lead">規模・待遇・働き方では勝てない。勝負どころは「ゼロから定義できる裁量」と「事業への当事者性」</p>
 <div class="body"><div class="f8"><div class="qd"><p class="qh">Philosophy<small>理念・目指す姿</small></p><div class="fr"><p class="fn"><small>01</small>ビジョン</p><ul class="b"><li>ミッション「『はたらく』を通じて人生の可能性を広げるインフラをつくる」</li><li>VISION2030「積み重ねた『信頼』が報われる社会をつくる」</li></ul><div class="sc"><span>強み</span><b class="">◎</b></div></div><div class="fr"><p class="fn"><small>02</small>事業の意義</p><ul class="b"><li>スキマバイトで国内最大級。ワーカー1,420万人、事業者23.8万社（2026年4月末）</li><li>人手不足という社会課題に向き合う</li></ul><div class="sc"><span>強み</span><b class="">◎</b></div></div></div><div class="qd"><p class="qh">People<small>人・組織</small></p><div class="fr"><p class="fn"><small>03</small>リーダー</p><ul class="b"><li>CTO・VPoEのもとに、組織化されたEMチームがある</li><li>若い創業者（代表 小川嶺）が率いる</li></ul><div class="sc"><span>強み</span><b class="">○</b></div></div><div class="fr"><p class="fn"><small>04</small>チーム・風土</p><ul class="b"><li>従業員1,593名。Spotifyモデル／Team Topologiesの組織</li><li>RubyKaigiなどのスポンサー、技術コミュニティ活動が活発</li></ul><div class="sc"><span>強み</span><b class="">◎</b></div></div></div><div class="qd"><p class="qh">Provision<small>仕事・機会</small></p><div class="fr"><p class="fn"><small>05</small>仕事と裁量</p><ul class="b"><li>裁量はスクラムチームに移譲</li><li>組織はすでにできあがっており、ゼロから定義する余地は小さい</li></ul><div class="sc"><span>強み</span><b class="">○</b></div></div><div class="fr"><p class="fn"><small>06</small>技術と挑戦</p><ul class="b"><li>第二創業期。マルチプロダクト化に向けた共通基盤の再構築</li><li>AI前提の開発プロセスへの移行、大規模データ</li></ul><div class="sc"><span>強み</span><b class="">◎</b></div></div></div><div class="qd"><p class="qh">Privilege<small>待遇・制度</small></p><div class="fr"><p class="fn"><small>07</small>報酬・待遇</p><ul class="b"><li>シニアWebエンジニアで900〜1,500万円</li><li>累計約403億円の資金調達</li></ul><div class="sc"><span>強み</span><b class="">◎</b></div></div><div class="fr"><p class="fn"><small>08</small>働き方・制度</p><ul class="b"><li>フルリモート可、フレックス</li><li>副業可</li></ul><div class="sc"><span>強み</span><b class="">◎</b></div></div></div></div></div>
 <p class="note">※ 強み　◎ 強い　○ やや強い　△ 弱い　× 劣る。競合は仮に1社を置いています。事実はタイミーの採用ページ（HRMOS）・Greenの求人掲載（2026年11月時点）から。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Positioning Map</span><span>Page 07</span></div>
-<p class="no">07</p><h2>ポジショニングマップ<span class="tag">仮説</span></h2><p class="lead">「任される範囲」と「事業への共感」の2軸で、右上の誰もいない場所を取りにいきます</p>
+<div class="hd"><span>Positioning Map</span><span>Page 09</span></div>
+<p class="no">09</p><h2>ポジショニングマップ<span class="tag">仮説</span></h2><p class="lead">「任される範囲」と「事業への共感」の2軸で、右上の誰もいない場所を取りにいきます</p>
 <div class="body"><div class="pm"><div class="card" style="padding:10px 14px"><svg viewBox="0 0 660 400" width="660" height="400" style="display:block"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0L10 5L0 10z" fill="#C0392B"/></marker></defs><rect x="345.0" y="14" width="305.0" height="178.0" fill="#F3E6E4"/><line x1="40" y1="192.0" x2="650" y2="192.0" stroke="#999"/><line x1="345.0" y1="14" x2="345.0" y2="370" stroke="#999"/><rect x="40" y="14" width="610" height="356" fill="none" stroke="#bbb"/><text x="345.0" y="388" font-size="12" text-anchor="middle" fill="#1F1F1F">任される範囲</text><text x="44" y="388" font-size="10.5" fill="#666">決まった組織を回す</text><text x="646" y="388" font-size="10.5" text-anchor="end" fill="#666">組織・技術をゼロから定義する</text><text transform="translate(26,192.0) rotate(-90)" font-size="12" text-anchor="middle" fill="#1F1F1F">事業への共感</text><text transform="translate(26,366) rotate(-90)" font-size="10.5" fill="#666">事業に距離を感じる</text><text transform="translate(26,18) rotate(-90)" font-size="10.5" text-anchor="end" fill="#666">当事者として共感できる</text><text x="640" y="182.0" font-size="10.5" text-anchor="end" fill="#C0392B">ポピンズシッターだけが立てる場所</text><circle cx="320.6" cy="85.19999999999999" r="6" fill="#BDBDBD"/><text x="330.6" y="89.19999999999999" font-size="11" fill="#555">タイミー</text><circle cx="357.2" cy="220.48" r="6" fill="#BDBDBD"/><text x="367.2" y="224.48" font-size="11" fill="#555">ココナラ</text><circle cx="284.0" cy="277.44" r="6" fill="#BDBDBD"/><text x="294.0" y="281.44" font-size="11" fill="#555">エニグモ</text><circle cx="247.4" cy="206.24" r="6" fill="#BDBDBD"/><text x="257.4" y="210.24" font-size="11" fill="#555">GMO OMAKASE</text><circle cx="186.4" cy="256.08" r="6" fill="#BDBDBD"/><text x="196.4" y="260.08" font-size="11" fill="#555">カカクコム</text><line x1="195.4" y1="166.64" x2="540.4" y2="76.95999999999998" stroke="#C0392B" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ar)"/><circle cx="186.4" cy="170.64" r="9" fill="#fff" stroke="#1F1F1F" stroke-width="1.5" stroke-dasharray="3 2"/><text x="186.4" y="194.64" font-size="11.5" text-anchor="middle" fill="#1F1F1F">Before：今の認識</text><circle cx="552.4" cy="70.95999999999998" r="10" fill="#C0392B"/><text x="552.4" y="52.95999999999998" font-size="12" text-anchor="middle" fill="#C0392B" font-weight="500">After：目指す認識</text></svg></div><div class="side">
 <div class="card bf"><p class="clbl">Before｜今の認識（仮説）</p><p class="h">保育の会社の、グループ傘下の開発部門</p><div class="hr" style="margin:8px 0"></div><ul class="b"><li>ポピンズグループの傘下で、自由に動けなさそう</li><li>技術の会社に見えず、解く課題が分からない</li><li>待遇と出社の条件が見劣りする</li></ul></div>
 <div class="card af"><p class="clbl" style="color:var(--red)">After｜目指す認識</p><p class="h">子育てのインフラを、自分の手で定義できる開発組織</p><div class="hr" style="margin:8px 0"></div><ul class="b"><li>開発組織のあるべき姿を、ゼロからつくれる</li><li>当事者として共感できる事業に、技術で関われる</li></ul></div>
@@ -315,8 +359,8 @@ ul.b li::before{content:"・";position:absolute;left:0}
 <p class="note">※ 軸は意思決定マトリクスでCTO・EM・TLに共通する判断軸から選定。競合の位置は採用ページ・求人から見た仮置きで、分析フェーズで更新します。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Next</span><span>Page 08</span></div>
-<p class="no">08</p><h2>先方インタビューで確かめること</h2><p class="lead">この仮説をもとに、ターゲット像と判断軸の重みを伺い、マトリクスと8因子分析を更新します</p>
+<div class="hd"><span>Next</span><span>Page 10</span></div>
+<p class="no">10</p><h2>先方インタビューで確かめること</h2><p class="lead">この仮説をもとに、ターゲット像と判断軸の重みを伺い、マトリクスと8因子分析を更新します</p>
 <div class="body"><div class="qs"><div class="card"><p class="clbl">ターゲット</p><div class="hr"></div><ol><li>採用したいのはEMとテックリードの2名で合っていますか<small>CTOの採用は続けるか、今回の対象外か</small></li><li>それぞれ、どんな経歴の人を想定していますか<small>前職の会社規模、役割、年齢層のイメージ</small></li><li>入社後1年で任せたいこと、期待する成果は何ですか<small>EMとテックリードそれぞれ</small></li><li>最近、良いと思った候補者と見送った候補者の違いは何ですか</li></ol></div><div class="card"><p class="clbl">判断軸と重み</p><div class="hr"></div><ol><li>候補者が比較している会社はどこですか<small>面談や辞退の場で名前が出た会社</small></li><li>承諾した人は、最後に何で決めましたか<small>受領した辞退理由の補足として</small></li><li>年収はレンジを超えて調整できますか<small>どこまで出せるか</small></li><li>週1出社は必須ですか。関東圏外の人はどう扱いますか</li></ol></div><div class="card"><p class="clbl">事実の確認</p><div class="hr"></div><ol><li>会社として公式に使っているミッション・ビジョンの言葉はありますか</li><li>グリー発祥と、グループ内で独立した開発運営をしていることを、サイトに書けますか</li><li>評価制度と、技術投資の予算の決め方を教えてください</li><li>チームの人柄が伝わるエピソードはありますか<small>12/23の取材で深掘りする話</small></li></ol></div></div></div>
 <p class="note">※ 伺った内容は、意思決定マトリクス・8因子分析に反映し、分析と情報設計（Phase 03）に使います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
