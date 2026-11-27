@@ -178,6 +178,177 @@ ul.b li::before{content:"・";position:absolute;left:0}
 .rq td.stt{width:64px;text-align:center}
 .rq td.stt span{display:inline-block;font-size:10.5px;padding:2px 10px;background:var(--dark);color:#fff}
 .rq tr.done td.it,.rq tr.done td.ex,.rq tr.done td.us,.rq tr.done td.n{color:#9a9a9a}
+
+.tag{display:inline-block;font-size:10.5px;border:1px solid var(--red);color:var(--red);padding:1px 8px;margin-left:10px;vertical-align:middle;letter-spacing:.05em}
+/* persona */
+.ps{display:grid;grid-template-columns:1fr 1fr;gap:20px;height:100%}
+.ps .card{padding:20px 24px}
+.ps .rl{font-size:24px;margin-top:4px}
+.ps .rl small{font-size:12px;color:#666;margin-left:10px}
+.ps dl{display:grid;grid-template-columns:96px 1fr;row-gap:8px;margin-top:12px;font-size:12px;line-height:1.65}
+.ps dt{color:#666}
+/* matrix */
+.mx{width:100%;border-collapse:collapse;font-size:11.5px}
+.mx th{font-weight:400;font-size:10.5px;color:#666;text-align:left;padding:0 8px 6px 0;border-bottom:1px solid #999}
+.mx td{padding:5px 10px 5px 0;border-bottom:1px solid var(--line);vertical-align:middle;line-height:1.5}
+.mx td.ax{font-weight:500;font-size:12.5px;width:180px;white-space:nowrap}
+.mx td.w{width:46px;text-align:center;font-size:13px}
+.mx td.ev{width:58px}
+.mx td.ev span{display:inline-block;font-size:10.5px;padding:1px 8px;white-space:nowrap}
+.ev .s{background:var(--dark);color:#fff}.ev .m{background:#fff;border:1px solid #999;color:#333}.ev .l{background:#fff;border:1px solid var(--red);color:var(--red)}
+.mx td.fc{color:#333}
+.mx td.ac{width:250px;color:#555}
+/* matrix2 */
+.m3{display:grid;grid-template-columns:170px repeat(3,1fr);grid-template-rows:42px repeat(3,1fr);gap:8px;height:100%}
+.m3 .rh{display:flex;flex-direction:column;justify-content:flex-end;border-bottom:1.5px solid var(--ink);padding-bottom:5px}
+.m3 .rh b{font-weight:400;font-family:Arimo,Arial,"Noto Sans JP",sans-serif;font-size:17px}
+.m3 .rh span{font-size:10.5px;color:#666}
+.m3 .ax{background:var(--dark);color:#fff;padding:12px 14px;display:flex;flex-direction:column;justify-content:center}
+.m3 .ax small{font-family:Arimo,Arial,sans-serif;font-size:10px;color:#aaa}
+.m3 .ax b{font-weight:400;font-size:15px;margin-top:2px}
+.m3 .ax span{font-size:11px;color:#ccc;margin-top:6px;line-height:1.5}
+.m3 .c{background:var(--card);padding:16px 18px}
+.m3 .c p{font-size:15px;font-weight:500;line-height:1.45}
+.m3 .c ul.b{margin-top:10px}
+.m3 .c ul.b li{font-size:12px;line-height:1.6;margin-bottom:3px;color:#444}
+/* matrix per target */
+.mt{display:grid;grid-template-columns:200px 250px 1fr 300px;grid-template-rows:30px repeat(3,1fr);gap:8px;height:100%}
+.mt .th{font-size:10.5px;color:#666;border-bottom:1px solid #999;display:flex;align-items:flex-end;padding-bottom:5px}
+.mt .ax{background:#fff;color:var(--ink);padding:14px 16px;display:flex;flex-direction:column;justify-content:center}
+.mt .ax small{font-family:Arimo,Arial,sans-serif;font-size:10px;color:var(--mut)}
+.mt .ax b{font-weight:400;font-size:16px;margin-top:3px;line-height:1.4}
+.mt .c{background:var(--card);padding:14px 16px;display:flex;flex-direction:column;justify-content:center}
+.mt .lk{font-size:12px;line-height:1.7;color:#444}
+.mt .ms{font-size:16px;font-weight:500;line-height:1.5}
+.mt ul.b li{font-size:12px;line-height:1.6;margin-bottom:3px;color:#333}
+/* 8p */
+.p8{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto 1fr 1fr;gap:10px 14px;height:100%}
+.p8 .ct{font-family:Arimo,Arial,sans-serif;font-size:13px;border-bottom:1.5px solid var(--ink);padding-bottom:4px}
+.p8 .ct small{font-family:"Noto Sans JP";font-size:11px;color:#666;margin-left:8px}
+.p8 .card{padding:12px 14px;display:flex;flex-direction:column}
+.p8 .nm{display:flex;justify-content:space-between;align-items:center;font-size:14.5px}
+.p8 .nm span{font-size:10px;padding:1px 7px}
+.p8 .lb{font-size:10px;color:#777;margin-top:8px}
+.p8 .tx{font-size:11px;line-height:1.6;color:#333}
+.p8 .mn{font-size:11.5px;line-height:1.6;font-weight:500;margin-top:auto;padding-top:6px;border-top:1px solid var(--line)}
+.p8 .q{color:var(--red)}
+/* 8 factors quad */
+.f8{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:14px 20px;height:100%}
+.f8 .qd{display:flex;flex-direction:column}
+.f8 .qh{font-family:Arimo,Arial,sans-serif;font-size:13px;border-bottom:1.5px solid var(--ink);padding-bottom:3px;margin-bottom:6px}
+.f8 .qh small{font-family:"Noto Sans JP";font-size:11px;color:#666;margin-left:8px}
+.f8 .fr{flex:1;display:grid;grid-template-columns:150px 1fr 54px;gap:12px;background:var(--card);padding:8px 14px;align-items:center}
+.f8 .fr+.fr{margin-top:6px}
+.f8 .fn{font-size:13.5px}
+.f8 .fn em{display:block;font-style:normal;font-size:10px;color:#777;margin-top:2px;line-height:1.4}
+.f8 .fn small{display:block;font-family:Arimo,Arial,sans-serif;font-size:10px;color:var(--mut)}
+.f8 ul.b li{font-size:11px;line-height:1.5;margin-bottom:1px;color:#333}
+.f8 .sc{text-align:center;border-left:1px solid var(--line);padding-left:10px}
+.f8 .sc span{display:block;font-size:9.5px;color:#777}
+.f8 .sc b{display:block;font-weight:400;font-size:22px;line-height:1.2}
+.f8 .sc b.x{color:var(--red)}
+/* positioning */
+.pm{display:grid;grid-template-columns:700px 1fr;gap:20px;height:100%}
+.pm .card{padding:16px 20px}
+.pm .side{display:grid;grid-template-rows:auto auto 1fr;gap:10px}
+.pm .side .card p.h{font-size:14px;margin-top:2px}
+.pm .side ul.b li{font-size:11.5px;line-height:1.6;margin-bottom:2px}
+.pm .bf{border:1px dashed #999;background:transparent}
+.pm .af{outline:1.5px solid var(--red);outline-offset:-1px}
+/* approach */
+.ap{display:grid;grid-template-columns:300px 1fr 280px;gap:20px;height:100%}
+.ap .card{padding:20px 22px;display:flex;flex-direction:column}
+.ap .tt{font-size:19px;margin-top:6px;line-height:1.45}
+.ap .tx{font-size:12px;line-height:1.8;color:#444;margin-top:10px}
+.tree{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.tree .p{background:var(--dark);color:#fff;padding:10px 12px}
+.tree .p b{display:block;font-weight:400;font-family:Arimo,Arial,sans-serif;font-size:15px}
+.tree .p span{display:block;font-size:11px;color:#ccc;margin-top:2px}
+.tree .p small{display:block;font-size:10px;color:#aaa;margin-top:6px}
+.tree .f{background:#fff;border:1px solid #ccc;padding:8px 12px;font-size:12.5px;margin-top:6px}
+.tree .f em{display:block;font-style:normal;font-size:10px;color:#777;margin-top:2px}
+.tree .f small{font-family:Arimo,Arial,sans-serif;font-size:10px;color:var(--mut);margin-right:6px}
+.obs .r{display:grid;grid-template-columns:80px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.obs .r b{font-weight:500;font-size:14px}
+.obs .r p{font-size:11.5px;line-height:1.6;color:#444}
+.obs .r p span{display:block;color:#888;font-size:10.5px;margin-top:2px}
+.po{display:grid;grid-template-columns:560px 1fr;gap:20px;height:100%}
+.po .card{padding:18px 22px}
+.flow .s{display:grid;grid-template-columns:84px 1fr;gap:12px;padding:6px 0;border-bottom:1px solid var(--line);align-items:center}
+.flow .s b{font-weight:400;font-family:Arimo,Arial,sans-serif;font-size:12px;color:var(--mut)}
+.flow .s p{font-size:13px}
+.flow .s p span{display:block;font-size:11px;color:#777;margin-top:1px}
+.flow .s p{display:grid;grid-template-columns:150px 1fr;align-items:baseline}
+.flow .s p span{margin:0}
+/* approach v2 */
+.ap2{display:grid;grid-template-columns:270px 1fr 260px;gap:20px;height:100%}
+.ap2 .card{padding:22px 24px;display:flex;flex-direction:column}
+.ap2 .tt{font-size:20px;line-height:1.5;margin-top:10px}
+.ap2 .tx{font-size:12px;line-height:1.85;color:#444;margin-top:14px}
+.ap2 .mid{display:flex;flex-direction:column}
+.q4{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;flex:1;margin-top:12px}
+.q4 .qd{background:#fff;padding:14px 16px;display:flex;flex-direction:column}
+.q4 .qh{display:flex;align-items:baseline;gap:8px;border-bottom:1.5px solid var(--ink);padding-bottom:6px}
+.q4 .qh b{font-weight:500;font-size:17px}
+.q4 .qh span{font-family:Arimo,Arial,sans-serif;font-size:12px;color:#666}
+.q4 .qh em{margin-left:auto;font-style:normal;font-size:10.5px;color:#888}
+.q4 .fx{display:grid;grid-template-columns:22px 76px 1fr;align-items:baseline;padding:10px 0 0;flex:1}
+.q4 .fx+.fx{border-top:1px solid var(--line)}
+.q4 .fx small{font-family:Arimo,Arial,sans-serif;font-size:10.5px;color:var(--mut)}
+.q4 .fx p{font-size:14px}
+.q4 .fx i{font-style:normal;font-size:11.5px;color:#666}
+.ap2 .ft2{font-size:12px;color:#444;margin-top:12px;line-height:1.6}
+.ob .r{padding:14px 0;border-bottom:1px solid var(--line)}
+.ob .r:last-child{border:none}
+.ob .r b{display:block;font-weight:500;font-size:16px}
+.ob .r p{font-size:12px;line-height:1.65;color:#444;margin-top:4px}
+.ob .r span{display:inline-block;margin-top:6px;font-size:10.5px;border:1px solid #bbb;background:#fff;padding:1px 8px;color:#555}
+.ap2.two{grid-template-columns:420px 1fr}
+.ap2.two>.card{padding:18px 24px;min-height:0;overflow:hidden}
+.th4 .r{display:grid;grid-template-columns:48px 1fr;align-items:baseline;padding:4px 0;border-bottom:1px solid var(--line)}
+.th4 .r b{font-weight:500;font-size:15px}
+.th4 .r p{font-size:12px;color:#444}
+.ap2 .st{font-size:11px;color:#777;margin-top:11px}
+.ap2 .sx{font-size:12.5px;line-height:1.65;color:#333;margin-top:4px}
+/* analysis */
+.an{display:grid;grid-template-columns:1fr 18px 1fr 18px 1fr 18px 1fr;height:322px}
+.an .arw{display:flex;align-items:center;justify-content:center;color:#999;font-size:12px}
+.an .card{display:flex;flex-direction:column;padding:18px 18px}
+.an .card.ia{outline:1.5px solid var(--red);outline-offset:-1px}
+.an .tt{font-size:18px;margin-top:4px}
+.an .q{font-size:12px;color:#444;line-height:1.6;margin-top:6px;min-height:38px}
+.an svg{display:block;margin:4px 0 8px}
+.an .dl{font-size:11.5px;line-height:1.7;color:#333}
+.an .op{margin-top:auto;border-top:1px solid var(--line);padding-top:8px}
+.an .op span{display:block;font-size:10px;color:#777}
+.an .op b{display:block;font-weight:500;font-size:12.5px;margin-top:2px;line-height:1.5}
+.ain{display:grid;grid-template-columns:1fr 300px;gap:20px;margin-top:16px;height:82px}
+.ain .card{padding:14px 20px}
+.ain .tg{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.ain .tg span{background:#fff;border:1px solid #bbb;font-size:11.5px;padding:3px 10px}
+.ain .dt{display:grid;grid-template-columns:52px 1fr;font-size:12px;margin-top:6px;row-gap:3px}
+.ain .dt b{font-weight:400;font-family:Arimo,Arial,sans-serif}
+/* questions */
+.qs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;height:100%}
+.qs .card{padding:20px 22px}
+.qs ol{list-style:none;counter-reset:q;margin-top:4px}
+.qs li{counter-increment:q;font-size:12.5px;line-height:1.65;padding-left:26px;position:relative;margin-bottom:10px}
+.qs li::before{content:counter(q,decimal-leading-zero);position:absolute;left:0;top:1px;font-family:Arimo,Arial,sans-serif;font-size:11px;color:var(--mut)}
+.qs li small{display:block;font-size:11px;color:#777}
+/* request */
+.rq{width:100%;border-collapse:collapse;font-size:12px}
+.rq th{font-weight:400;font-size:10.5px;color:#666;text-align:left;padding:0 10px 6px 0;border-bottom:1px solid #999}
+.rq td{padding:0 10px 0 0;height:33px;border-bottom:1px solid var(--line);vertical-align:middle}
+.rq td.gp{background:var(--card);padding:0 12px;vertical-align:top;padding-top:6px;border-bottom:4px solid var(--bg);line-height:1.35}
+.rq td.gp b{display:block;font-weight:500;font-size:13px}
+.rq td.gp span{display:block;font-size:11px;color:var(--red);margin-top:3px;font-family:Arimo,Arial,"Noto Sans JP",sans-serif}
+.rq td.n{font-family:Arimo,Arial,sans-serif;padding-top:2px;color:var(--mut);width:34px;padding-left:12px}
+.rq td.it{font-weight:500;width:150px}
+.rq td.us{color:#555;font-size:11.5px;width:220px}
+.rq td.ex{color:#333}
+.rq td.stt{width:64px;text-align:center}
+.rq td.stt span{display:inline-block;font-size:10.5px;padding:2px 10px;background:var(--dark);color:#fff}
+.rq tr.done td.it,.rq tr.done td.ex,.rq tr.done td.us,.rq tr.done td.n{color:#9a9a9a}
 </style></head><body>
 <div class="wrap" id="wrap">
 <section class="slide dark cover">
@@ -186,38 +357,8 @@ ul.b li::before{content:"・";position:absolute;left:0}
 <div class="meta"><div><span>Client</span><b>株式会社ポピンズシッター 様</b></div><div><span>Contact</span><b class="ar">y.nishisaka@unou.design</b></div><div><span>Date</span><b class="ar">Nov 2026</b></div></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Issue</span><span>Page 01</span></div>
-<p class="no">01</p><h2>課題①　エンジニア採用の難易度</h2><p class="lead">求職者1人を約11社が奪い合う市場。競合は年収・条件・働き方のいずれも自社より有利</p>
-<div class="body"><div class="i1">
-<div class="card" style="display:flex;flex-direction:column"><p class="clbl">01／市場</p><p class="ctl">エンジニアの転職求人倍率</p><div class="hr"></div>
-<p class="big num">10.68<small>倍</small></p><p style="font-size:12px;color:#444;line-height:1.7">求職者1人に約11社の求人がある状態。dodaが集計する職種の中で最も高い倍率</p>
-<div class="hb" style="margin-top:auto"><div class="r"><span>エンジニア</span><div><div class="f k" style="width:78%"><span>10.68</span></div></div></div><div class="r"><span>市場全体</span><div><div class="f" style="width:17.5%"><span>2.39</span></div></div></div></div></div>
-<div class="card"><p class="clbl">02／競合比較</p><p class="ctl">年収・経験年数・働き方のいずれも、競合の方が有利</p><div class="hr"></div>
-<div class="st3"><div><b>6<small>/6社</small></b><p>年収の上限が自社EM・TL（1,200万円）を上回る</p></div><div><b>6<small>/6社</small></b><p>経験年数の要件が自社（8年以上）より緩い</p></div><div><b>3<small>/6社</small></b><p>フルリモート・在宅可で働ける</p></div></div>
-<div class="cmp"><div class="r h"><div>企業</div><div>職種</div><div>年収レンジ（500〜1,800万円）</div><div>年収（万円）</div><div>経験年数</div><div>働き方</div></div><div class="r"><div>タイミー</div><div>シニアバックエンド</div><div><div class="rng"><i style="left:30.8%;width:46.2%"></i></div></div><div class="ar">900〜1,500</div><div class="">Rails 2年半</div><div>フルリモート</div></div><div class="r"><div>ココナラ</div><div>EM</div><div><div class="rng"><i style="left:7.7%;width:69.2%"></i></div></div><div class="ar">600〜1,500</div><div class="">開発5年</div><div>在宅可</div></div><div class="r"><div>エニグモ</div><div>EM</div><div><div class="rng"><i style="left:30.8%;width:46.2%"></i></div></div><div class="ar">900〜1,500</div><div class="">指定なし</div><div>リモート週2</div></div><div class="r"><div>エイジレス</div><div>CTO / VPoE</div><div><div class="rng"><i style="left:38.5%;width:53.8%"></i></div></div><div class="ar">1,000〜1,700</div><div class="">開発5年</div><div>リモート週1</div></div><div class="r"><div>GMO OMAKASE</div><div>テックリード</div><div><div class="rng"><i style="left:15.4%;width:61.5%"></i></div></div><div class="ar">700〜1,500</div><div class="">Rails 3年</div><div>リモート週2</div></div><div class="r"><div>カカクコム</div><div>テックリード</div><div><div class="rng"><i style="left:30.8%;width:30.8%"></i></div></div><div class="ar">900〜1,300</div><div class="">指定なし</div><div>在宅可</div></div><div class="r me"><div>自社</div><div>CTO</div><div><div class="rng"><i style="left:38.5%;width:38.5%"></i></div></div><div class="ar">1,000〜1,500</div><div class="red">8年以上</div><div>週1出社</div></div><div class="r me"><div>自社</div><div>EM / TL</div><div><div class="rng"><i style="left:23.1%;width:30.8%"></i></div></div><div class="ar">800〜1,200</div><div class="red">8年以上</div><div>週1出社</div></div></div></div>
-</div></div>
-<p class="note">※ 求人倍率：doda 転職求人倍率レポート（2026年3月）。競合の条件：2026年10月20日時点のdoda掲載内容。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
-</section>
-<section class="slide">
-<div class="hd"><span>Issue</span><span>Page 02</span></div>
-<p class="no">02</p><h2>課題②　媒体だけでは、届く層も応募率も頭打ちになる</h2><p class="lead">求めている層は媒体にいない。媒体を増やすより、どこから来ても判断できる受け皿が必要</p>
-<div class="body"><div class="i2">
-<div class="card"><p class="clbl">01／前提</p><p class="ctl">CTO・優秀なエンジニアは、転職媒体に登録しない傾向がある</p><div class="hr"></div><svg viewBox="0 0 300 200" width="100%" height="160"><circle cx="128" cy="100" r="96" fill="#DCDCDC"/><text x="62" y="66" font-size="13" fill="#1F1F1F">CTO・優秀なエンジニア</text><text x="62" y="84" font-size="10" fill="#666">紹介・直接の声かけ・</text><text x="62" y="98" font-size="10" fill="#666">ヘッドハントで決まる層</text><circle cx="178" cy="146" r="36" fill="#fff" stroke="#999"/><text x="178" y="143" font-size="10" text-anchor="middle" fill="#1F1F1F">媒体に登録</text><text x="178" y="157" font-size="10" text-anchor="middle" fill="#1F1F1F">している層</text><line x1="214" y1="146" x2="230" y2="146" stroke="#999"/><text x="234" y="142" font-size="9.5" fill="#666">媒体で届くのは</text><text x="234" y="155" font-size="9.5" fill="#666">ここだけ</text></svg><ul class="b" style="margin-top:auto"><li>CTOクラスは紹介・直接の声かけで決まる</li><li>媒体だけでは数か月〜1年決まらないことが多い</li></ul></div>
-<div class="arw">▶</div>
-<div class="card"><p class="clbl">02／現状</p><p class="ctl">8媒体に掲載しても、届くのは登録層のみ。続けるほど費用が流出する</p><div class="hr"></div>
-<table class="media"><tr><td>FINDY</td><td>掲載中（固定費）</td><td>180万円</td></tr><tr><td>LAPRAS</td><td>掲載中（固定費）</td><td>132万円</td></tr><tr><td>転職ドラフト</td><td>掲載中</td><td>30万円</td></tr><tr><td>Ruby会議 スポンサー</td><td>協賛</td><td>50万円</td></tr><tr><td>Forkwell Jobs</td><td>EM求人</td><td>成功報酬</td></tr><tr><td>Green</td><td>Rails求人</td><td>成功報酬</td></tr><tr><td>ビズリーチ</td><td>CTO・PM求人</td><td>掲載＋成功報酬</td></tr><tr><td>doda／Wantedly</td><td>掲載あり</td><td>—</td></tr><tr class="sum"><td>固定費の合計（年）</td><td></td><td>約390万円</td></tr></table>
-<p style="font-size:10.5px;color:#666;margin-top:10px">固定費の累計（採用できない場合）</p>
-<div class="cum"><div class="r"><span>1年目</span><div><div class="f" style="width:24%"><span>約390万円</span></div></div></div><div class="r"><span>2年目</span><div><div class="f" style="width:48%"><span>約780万円</span></div></div></div><div class="r"><span>3年目</span><div><div class="f" style="width:72%"><span>約1,170万円</span></div></div></div></div></div>
-<div class="arw">▶</div>
-<div class="card"><p class="clbl">03／必要なこと</p><p class="ctl">チャネルを広げ、どこから来ても認識を変える受け皿をつくる</p><div class="hr"></div>
-<div class="fl"><div class="ch"><div>採用媒体</div><div>LinkedIn</div><div>YOUTRUST</div><div>コミュニティ</div><div>イベント・登壇</div><div>紹介・リファラル</div></div><div class="ln">→</div><div class="site"><b>採用サイト</b><small>認知→興味→理解</small></div><div class="ln">→</div><div class="end">応募<br>面談</div></div>
-<ul class="b" style="margin-top:auto"><li>媒体以外にもLinkedIn・YOUTRUST・コミュニティへ接点を広げる</li><li>一度つくれば全チャネルで効く資産になる</li></ul></div>
-</div></div>
-<p class="note">※ 掲載媒体と費用は2026年11月リサーチ時点。固定費は2026年上期の実績から年額換算（税別）。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
-</section>
-<section class="slide">
-<div class="hd"><span>Solution</span><span>Page 03</span></div>
-<p class="no">03</p><h2>解決策（今回の施策）</h2><p class="lead">どこから来た候補者にも、判断できる情報を届ける「受け皿」をつくる</p>
+<div class="hd"><span>Solution</span><span>Page 01</span></div>
+<p class="no">01</p><h2>解決策（今回の施策）</h2><p class="lead">どこから来た候補者にも、判断できる情報を届ける「受け皿」をつくる</p>
 <div class="body"><div class="sol">
 <div class="card"><p class="n">01</p><h3>採用サイト</h3><p>エンジニア採用に特化した6つのコンテンツ</p></div>
 <div class="card"><p class="n">02</p><h3>採用Deck</h3><p>サイトの内容を1冊にまとめた面談用の資料</p></div>
@@ -226,8 +367,8 @@ ul.b li::before{content:"・";position:absolute;left:0}
 <div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Project Overview</span><span>Page 04</span></div>
-<p class="no">04</p><h2>プロジェクト概要</h2><p class="lead">2027年2月1日の公開に向けて、11月から進めます</p>
+<div class="hd"><span>Project Overview</span><span>Page 02</span></div>
+<p class="no">02</p><h2>プロジェクト概要</h2><p class="lead">2027年2月1日の公開に向けて、11月から進めます</p>
 <div class="body">
 <div class="ov"><div class="card"><p class="clbl">ターゲット</p><p class="tgt">CTO・EM・<br>テックリード候補</p></div>
 <div class="card"><p class="clbl">つくるもの</p><div class="tags"><span>採用サイト</span><span>採用Deck</span><span>撮影写真</span><span>インタビュー記事</span></div></div></div>
@@ -238,43 +379,62 @@ ul.b li::before{content:"・";position:absolute;left:0}
 <div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Team</span><span>Page 05</span></div>
-<p class="no">05</p><h2>体制</h2><p class="lead">unouは5名で担当します</p>
+<div class="hd"><span>Team</span><span>Page 03</span></div>
+<p class="no">03</p><h2>体制</h2><p class="lead">unouは5名で担当します</p>
 <div class="body"><div class="tm"><div class="card"><div class="who"><div class="av" style="background-image:url(assets/nishisaka.jpg);background-position:50% 12%"></div><div><p class="nm">西坂</p><p class="rl">ディレクター</p></div></div><div class="hr"></div><p class="bio">リンクアンドモチベーションにて大手企業のブランディング・組織変革に従事した後、CtoCサービスの立ち上げを経て事業開発を経験。デザインスタジオ「mixer」を創業し、戦略・クリエイティブ・開発をプロデュースしながらスタートアップの成長を牽引。事業成長に直結するクリエイティブを軸に、unouを設立。</p></div><div class="card"><div class="who"><div class="av" style="background-image:url(assets/nishinaga.jpg);background-position:50% 30%"></div><div><p class="nm">西長</p><p class="rl">デザイナー</p></div></div><div class="hr"></div><p class="bio">Webサイトをはじめとするデジタル領域を中心に、アートディレクション、ブランディングをメインに、戦略の設計からコンセプト開発、クリエイティブ統括まで行う。制作会社のデザインアドバイザー・顧問として、組織のクリエイティブ力向上も行う。海外のWebアワード、CSS DESIGN AWARDS審査員。</p></div><div class="card"><div class="who"><div class="av" style="background-image:url(assets/yoshima.jpg);background-position:56% 30%"></div><div><p class="nm">吉間</p><p class="rl">カメラマン</p></div></div><div class="hr"></div><p class="bio">1991年石川県生まれ。2015年日本写真映像専門学校卒業。2016年、都内でスタジオアシスタントを経た後、大阪市内の広告制作会社でカメラマンとして活動。2018年gyroに所属。フリーランスとして活動を始め、現在に至る。</p></div><div class="side"><div class="card"><p class="clbl">エンジニア</p><p style="font-size:21px;margin-top:6px">鈴木</p></div><div class="card"><p class="clbl">ライター</p><p style="font-size:21px;margin-top:6px">宗和</p></div></div></div></div>
 <div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Team</span><span>Page 06</span></div>
-<p class="no">06</p><h2>カメラマン　吉間の撮影実績</h2>
+<div class="hd"><span>Team</span><span>Page 04</span></div>
+<p class="no">04</p><h2>カメラマン　吉間の撮影実績</h2>
 <div class="pf"><div class="w2 h2" style="background-image:url(assets/portfolio/p01.jpg)"></div><div class="w2 h2" style="background-image:url(assets/portfolio/p02.jpg)"></div><div class="w2" style="background-image:url(assets/portfolio/p03.jpg)"></div><div class="h2" style="background-image:url(assets/portfolio/p04.jpg)"></div><div class="h2" style="background-image:url(assets/portfolio/p05.jpg)"></div><div class="h2" style="background-image:url(assets/portfolio/p06.jpg)"></div><div class="w2" style="background-image:url(assets/portfolio/p07.jpg)"></div><div class="w2" style="background-image:url(assets/portfolio/p08.jpg)"></div><div class="" style="background-image:url(assets/portfolio/p09.jpg)"></div><div class="" style="background-image:url(assets/portfolio/p10.jpg)"></div><div class="" style="background-image:url(assets/portfolio/p11.jpg)"></div><div class="" style="background-image:url(assets/portfolio/p12.jpg)"></div></div>
 <div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Deliverables</span><span>Page 07</span></div>
-<p class="no">07</p><h2>納品物</h2><p class="lead">採用サイトは貴社サーバーに納品し、納品後は自由に編集できます</p>
+<div class="hd"><span>Deliverables</span><span>Page 05</span></div>
+<p class="no">05</p><h2>納品物</h2><p class="lead">採用サイトは貴社サーバーに納品し、納品後は自由に編集できます</p>
 <div class="body dv"><div class="g3"><div class="card"><p class="clbl">01</p><h3>採用サイト</h3><div class="hr"></div><ul class="b"><li>ワイヤーフレームデータ（.fig）</li><li>デザインデータ（.fig）</li><li>ソースコード／CMSセットアップ</li></ul></div><div class="card"><p class="clbl">02</p><h3>採用Deck</h3><div class="hr"></div><ul class="b"><li>資料データ（.fig／PDF）</li></ul></div><div class="card"><p class="clbl">03</p><h3>撮影／インタビュー</h3><div class="hr"></div><ul class="b"><li>撮影写真</li><li>インタビュー文章</li></ul></div></div></div>
 <div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Process</span><span>Page 08</span></div>
-<p class="no">08</p><h2>進め方</h2><p class="lead">年内に情報設計まで終え、1月にデザインコンセプトとビジュアルデザインを進めます</p>
-<div class="body"><div class="pcs"><div class="card pc"><p class="clbl ar">Phase 01</p><p class="pd ar">11/24〜12/4</p><p class="pt">リサーチと構想</p><div class="hr"></div><ul class="b"><li>仮説ベースのターゲットの意思決定マトリクス</li></ul></div><div class="card pc"><p class="clbl ar">Phase 02</p><p class="pd ar">12/1〜12/11</p><p class="pt">新田様インタビュー</p><div class="hr"></div><ul class="b"><li>面談で話しているストーリー、刺さっている点・難しい点のヒアリング</li></ul></div><div class="card pc"><p class="clbl ar">Phase 03</p><p class="pd ar">12/7〜12/25</p><p class="pt">分析と情報設計</p><div class="hr"></div><ul class="b"><li>意思決定マトリクス（競合・自社）</li><li>ユーザーインタビュー（必要に応じて）</li><li>8因子分析</li><li>ポジショニングマップ</li><li>サイトと資料の情報設計</li></ul></div><div class="card pc"><p class="clbl ar">Phase 04</p><p class="pd ar">1/5〜1/9</p><p class="pt">デザインコンセプト</p><div class="hr"></div><ul class="b"><li>デザインコンセプト</li><li>ムードボード</li></ul></div><div class="card pc"><p class="clbl ar">Phase 05</p><p class="pd ar">1/12〜1/23</p><p class="pt">ビジュアルデザイン</p><div class="hr"></div><ul class="b"><li>サイトのデザイン</li><li>採用Deckのデザイン</li></ul></div></div>
+<div class="hd"><span>Process</span><span>Page 06</span></div>
+<p class="no">06</p><h2>進め方</h2><p class="lead">年内に情報設計まで終え、1月にデザインコンセプトとビジュアルデザインを進めます</p>
+<div class="body"><div class="pcs"><div class="card pc"><p class="clbl ar">Phase 01</p><p class="pd ar">11/24〜12/4</p><p class="pt">リサーチと構想</p><div class="hr"></div><ul class="b"><li>仮説の意思決定マトリクス</li><li>仮説の8因子分析（自社・競合）</li><li>仮説のポジショニングマップ</li></ul></div><div class="card pc"><p class="clbl ar">Phase 02</p><p class="pd ar">11/25〜12/11</p><p class="pt">インタビュー</p><div class="hr"></div><ul class="b"><li>新田様インタビュー（11/25実施）</li><li>ターゲット像・判断軸のヒアリング</li><li>仮説の更新</li></ul></div><div class="card pc"><p class="clbl ar">Phase 03</p><p class="pd ar">12/7〜12/25</p><p class="pt">分析と情報設計</p><div class="hr"></div><ul class="b"><li>意思決定マトリクス・8因子分析の更新（競合を追加）</li><li>ユーザーインタビュー（必要に応じて）</li><li>ポジショニングマップ</li><li>サイトと資料の情報設計</li></ul></div><div class="card pc"><p class="clbl ar">Phase 04</p><p class="pd ar">1/5〜1/9</p><p class="pt">デザインコンセプト</p><div class="hr"></div><ul class="b"><li>デザインコンセプト</li><li>ムードボード</li></ul></div><div class="card pc"><p class="clbl ar">Phase 05</p><p class="pd ar">1/12〜1/23</p><p class="pt">ビジュアルデザイン</p><div class="hr"></div><ul class="b"><li>サイトのデザイン</li><li>採用Deckのデザイン</li></ul></div></div>
 <div class="pbar"><div class="seg y"><span>年内</span></div><div class="seg j"><span>1月</span></div><div class="mk m1"><i></i><b>12/23</b><span>撮影・インタビュー</span></div><div class="mk m2"><i></i><b>2/1</b><span>公開</span></div></div></div>
 <p class="note">※ 実装は1月中旬からデザインと並行して進めます。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Analysis &amp; Information Architecture</span><span>Page 09</span></div>
-<p class="no">09</p><h2>分析と情報設計（Phase 03）</h2><p class="lead">3つの分析で「誰に・何を・なぜ自社なのか」を決め、それをサイトとDeckの構成に落とし込みます</p>
+<div class="hd"><span>Approach</span><span>Page 07</span></div>
+<p class="no">07</p><h2>アプローチの考え方｜人が組織を選ぶ理由</h2><p class="lead">集団凝集性理論をもとに、人が組織を選ぶ理由を4つの観点・8因子に分け、同じ物差しで自社と競合を比べます</p>
+<div class="body"><div class="ap2 two"><div class="card"><p class="clbl">理論｜集団凝集性理論</p><p class="tt" style="font-size:18px;margin-top:6px">人は、惹きつけられる力が<br>強い組織を選び、そこにとどまる</p>
+<p class="st">集団凝集性とは</p><p class="sx">人を集団に引きつけ、とどまらせる力のこと。社会心理学者レオン・フェスティンガーらが提唱しました。</p>
+<p class="st">採用に置き換えると</p><p class="sx">候補者が「この会社に入りたい」と感じる力。その強さは、会社の何に惹かれるかで決まります。</p>
+<p class="st">惹かれる理由は4つ</p><div class="th4"><div class="r"><b>目標</b><p>どこを目指す会社か</p></div><div class="r"><b>活動</b><p>どんな事業・仕事をするか</p></div><div class="r"><b>人材</b><p>誰と働くか</p></div><div class="r" style="border:none"><b>条件</b><p>どんな待遇・環境で働くか</p></div></div></div><div class="card mid"><p class="clbl">4つの観点と8因子</p><div class="q4"><div class="qd"><div class="qh"><b>目標</b><span>Philosophy</span><em>目標の魅力</em></div><div class="fx"><small>01</small><p>会社基盤</p><i>A 企業認知／B 財務基盤</i></div><div class="fx"><small>02</small><p>理念戦略</p><i>C 企業理念／D 経営戦略</i></div></div><div class="qd"><div class="qh"><b>人材</b><span>People</span><em>構成員の魅力</em></div><div class="fx"><small>05</small><p>組織風土</p><i>I 開放的風土／J 進取的風土</i></div><div class="fx"><small>06</small><p>人的資源</p><i>K 共感性／L 有能性</i></div></div><div class="qd"><div class="qh"><b>活動</b><span>Provision</span><em>活動の魅力</em></div><div class="fx"><small>03</small><p>事業内容</p><i>E 社会的意義／F 競争優位</i></div><div class="fx"><small>04</small><p>仕事内容</p><i>G 貢献実感／H 成長実感</i></div></div><div class="qd"><div class="qh"><b>条件</b><span>Privilege</span><em>特権の魅力</em></div><div class="fx"><small>07</small><p>報酬体系</p><i>M 経済報酬／N 感情報酬</i></div><div class="fx"><small>08</small><p>仕事環境</p><i>O 制度環境／P 施設環境</i></div></div></div><p class="ft2">各因子をA〜Pの16項目（64の設問）に分けて事実を集め、強みを ◎・○・△・× で評価します。</p></div>
+</div></div>
+<p class="note">※ 4つの観点は、集団凝集性の考え方を採用の場面に当てはめて整理したものです。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Approach</span><span>Page 08</span></div>
+<p class="no">08</p><h2>アプローチの考え方｜ポジショニング理論</h2><p class="lead">ターゲットが重視し、自社が強く、競合が弱い。この3つが重なる場所をポジションとして取りにいきます</p>
+<div class="body"><div class="po">
+<div class="card"><p class="clbl">ポジショニングの考え方</p><svg viewBox="0 20 520 380" width="100%" height="360"><g fill-opacity=".55"><circle cx="200" cy="150" r="118" fill="#DADADA"/><circle cx="320" cy="150" r="118" fill="#CFCFCF"/><circle cx="260" cy="250" r="118" fill="#E3E3E3"/></g><g fill="none" stroke="#999"><circle cx="200" cy="150" r="118"/><circle cx="320" cy="150" r="118"/><circle cx="260" cy="250" r="118"/></g><circle cx="260" cy="184" r="40" fill="#C0392B" fill-opacity=".16" stroke="#C0392B" stroke-width="1.2"/><text x="140" y="110" font-size="14" text-anchor="middle" fill="#1F1F1F">ターゲットが</text><text x="140" y="128" font-size="14" text-anchor="middle" fill="#1F1F1F">重視している</text><text x="380" y="110" font-size="14" text-anchor="middle" fill="#1F1F1F">自社が</text><text x="380" y="128" font-size="14" text-anchor="middle" fill="#1F1F1F">強い</text><text x="260" y="320" font-size="14" text-anchor="middle" fill="#1F1F1F">競合が</text><text x="260" y="338" font-size="14" text-anchor="middle" fill="#1F1F1F">弱い</text><text x="260" y="180" font-size="13" text-anchor="middle" fill="#C0392B" font-weight="500">取るべき</text><text x="260" y="198" font-size="13" text-anchor="middle" fill="#C0392B" font-weight="500">ポジション</text><text x="12" y="394" font-size="10.5" fill="#777">ターゲットが重視していても、競合も強い軸では差がつかない</text></svg></div>
+<div style="display:grid;grid-template-rows:auto 1fr;gap:14px"><div class="card"><p class="clbl">理論｜ポジショニング理論</p><p style="font-size:16px;margin-top:6px">競合より有利な位置に、自社を置く</p><p style="font-size:12px;line-height:1.8;color:#444;margin-top:8px">マイケル・ポーターに代表される経営戦略の考え方です。市場の中で、競合よりも有利になる位置に自社を置くことを戦略の要とします。これを採用に当てはめ、候補者の頭の中で自社が占める位置を決めます。</p></div><div class="card"><p class="clbl">この資料の流れ</p><div class="hr" style="margin:8px 0 4px"></div><div class="flow"><div class="s"><b>Page 11</b><p>ターゲット像<span>EM・テックリードの今の立場、動機、不安</span></p></div><div class="s"><b>Page 12–14</b><p>意思決定マトリクス<span>CTO・EM・TLが重視する軸と、訴求の方針</span></p></div><div class="s"><b>Page 15–16</b><p>8因子分析<span>自社と競合の強みを、事実と評価で比べる</span></p></div><div class="s"><b>Page 17</b><p>ポジショニングマップ<span>重視される2軸で、今の認識と目指す認識を置く</span></p></div><div class="s"><b>Page 18</b><p>先方インタビュー<span>仮説を確かめ、ターゲット像と重みを更新する</span></p></div></div></div></div>
+</div></div>
+<p class="note">※ ポジショニング理論（ポーター）は、自社の経営資源を競争優位の源泉とみる資源ベース理論（バーニー）と対比されます。今回は8因子分析で自社の資源も確かめたうえで、取る位置を決めます。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Approach</span><span>Page 09</span></div>
+<p class="no">09</p><h2>アプローチの考え方｜分析から情報設計まで</h2><p class="lead">3つの分析で「誰に・何を・なぜ自社なのか」を決め、それを採用サイトと資料の構成に落とし込みます</p>
 <div class="body">
 <div class="an">
 <div class="card"><p class="clbl ar">01</p><p class="tt">意思決定マトリクス</p><p class="q">候補者は、何を基準に転職先を決めるのか</p>
 <svg viewBox="0 0 200 70" width="100%" height="70"><g fill="#fff" stroke="#ccc"><rect x="50" y="4" width="48" height="14"/><rect x="100" y="4" width="48" height="14"/><rect x="150" y="4" width="48" height="14"/><rect x="50" y="20" width="48" height="14"/><rect x="100" y="20" width="48" height="14"/><rect x="150" y="20" width="48" height="14"/><rect x="50" y="36" width="48" height="14"/><rect x="100" y="36" width="48" height="14"/><rect x="150" y="36" width="48" height="14"/><rect x="50" y="52" width="48" height="14"/><rect x="100" y="52" width="48" height="14"/><rect x="150" y="52" width="48" height="14"/></g><g fill="#DCDCDC"><rect x="0" y="4" width="46" height="14"/><rect x="0" y="20" width="46" height="14"/><rect x="0" y="36" width="46" height="14"/><rect x="0" y="52" width="46" height="14"/></g><g fill="#1F1F1F"><rect x="56" y="8" width="30" height="6"/><rect x="106" y="24" width="36" height="6"/><rect x="156" y="8" width="24" height="6"/><rect x="56" y="40" width="20" height="6"/><rect x="106" y="56" width="14" height="6"/><rect x="156" y="40" width="34" height="6"/></g></svg>
-<p class="dl">CTO・EM・TLごとに判断軸と重みを整理し、自社と競合を軸ごとに比べます</p>
+<p class="dl">ターゲットごとに判断軸と重みを整理し、訴求の方針を決めます</p>
 <div class="op"><span>アウトプット</span><b>勝てる軸と、説明で補う軸</b></div></div>
 <div class="arw">▶</div>
-<div class="card"><p class="clbl ar">02</p><p class="tt">8因子分析</p><p class="q">自社の魅力は何か。その根拠は何か</p>
+<div class="card"><p class="clbl ar">02</p><p class="tt">8因子分析</p><p class="q">自社と競合の魅力は何か。その根拠は何か</p>
 <svg viewBox="0 0 200 70" width="100%" height="70"><g fill="#fff" stroke="#ccc"><rect x="0" y="4" width="48" height="30"/><rect x="50" y="4" width="48" height="30"/><rect x="100" y="4" width="48" height="30"/><rect x="150" y="4" width="48" height="30"/><rect x="0" y="37" width="48" height="30"/><rect x="50" y="37" width="48" height="30"/><rect x="100" y="37" width="48" height="30"/><rect x="150" y="37" width="48" height="30"/></g><g fill="#DCDCDC"><rect x="6" y="10" width="28" height="5"/><rect x="6" y="19" width="18" height="5"/><rect x="56" y="10" width="20" height="5"/><rect x="56" y="19" width="30" height="5"/><rect x="106" y="10" width="32" height="5"/><rect x="106" y="19" width="16" height="5"/><rect x="156" y="10" width="24" height="5"/><rect x="156" y="19" width="26" height="5"/><rect x="6" y="43" width="28" height="5"/><rect x="6" y="52" width="18" height="5"/><rect x="56" y="43" width="20" height="5"/><rect x="56" y="52" width="30" height="5"/><rect x="106" y="43" width="32" height="5"/><rect x="106" y="52" width="16" height="5"/><rect x="156" y="43" width="24" height="5"/><rect x="156" y="52" width="26" height="5"/></g></svg>
-<p class="dl">会社の魅力を8つの観点で棚卸しし、事実（根拠）と候補者にとっての意味を並べます</p>
+<p class="dl">自社と競合を8因子で棚卸しし、事実（根拠）と強みを並べます</p>
 <div class="op"><span>アウトプット</span><b>サイトで語る魅力と、その根拠</b></div></div>
 <div class="arw">▶</div>
 <div class="card"><p class="clbl ar">03</p><p class="tt">ポジショニングマップ</p><p class="q">競合の中で、自社はどこに立つのか</p>
@@ -284,13 +444,12 @@ ul.b li::before{content:"・";position:absolute;left:0}
 <div class="arw">▶</div>
 <div class="card ia"><p class="clbl ar">04</p><p class="tt">情報設計</p><p class="q">何を、どの順番で伝えるのか</p>
 <svg viewBox="0 0 200 70" width="100%" height="70"><rect x="80" y="2" width="40" height="14" fill="#1F1F1F"/><path d="M100 16v8M25 24h150M25 24v8M75 24v8M125 24v8M175 24v8" stroke="#999" fill="none"/><g fill="#fff" stroke="#bbb"><rect x="8" y="32" width="34" height="12"/><rect x="58" y="32" width="34" height="12"/><rect x="108" y="32" width="34" height="12"/><rect x="158" y="32" width="34" height="12"/><rect x="8" y="50" width="34" height="12"/><rect x="58" y="50" width="34" height="12"/></g></svg>
-<p class="dl">サイトマップ、6コンテンツの役割、ワイヤーフレーム、Deckのページ構成、記事6本の置き場所を決めます</p>
-<div class="op"><span>アウトプット</span><b>ワイヤーフレーム（.fig）とDeck構成案</b></div></div>
+<p class="dl">サイトマップ、コンテンツの役割、ワイヤーフレーム、資料のページ構成を決めます</p>
+<div class="op"><span>アウトプット</span><b>ワイヤーフレームと資料の構成案</b></div></div>
 </div>
-<div class="ain"><div class="card"><p class="clbl">インプット</p><div class="tg"><span>新田様インタビュー</span><span>会社説明資料</span><span>求人票</span><span>競合の採用サイト・求人</span><span>ご提供いただく情報（次ページ）</span></div></div>
-<div class="card"><p class="clbl">ご確認いただくタイミング</p><div class="dt"><b>12/18</b><span>分析の結果（01〜03）</span><b>12/25</b><span>情報設計（04）</span></div></div></div>
+<div class="ain"><div class="card"><p class="clbl">インプット</p><div class="tg"><span>経営・現場へのインタビュー</span><span>会社説明資料</span><span>求人票・選考データ</span><span>競合の採用サイト・求人</span></div></div><div class="card"><p class="clbl">進め方</p><p style="font-size:12.5px;margin-top:8px;line-height:1.6">仮説を立てる → インタビューで確かめる → 更新して設計に落とす</p></div></div>
 </div>
-<p class="note">※ 判断軸の裏付けが足りない場合は、CTO・EM・TL経験者2〜3名へのインタビューを追加で行います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+<p class="note">※ 判断軸の裏付けが足りない場合は、ターゲットに近い人へのインタビューで確かめます。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
 <div class="hd"><span>Request</span><span>Page 10</span></div>
@@ -299,8 +458,60 @@ ul.b li::before{content:"・";position:absolute;left:0}
 <p class="note">※ 資料の形式は問いません。既存の資料がない項目は、打ち合わせでお話を伺う形でも大丈夫です。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
-<div class="hd"><span>Interview</span><span>Page 11</span></div>
-<p class="no">11</p><h2>インタビュー記事｜6名の話</h2><p class="lead">12月23日に、経営陣とマネージャー6名にお話を伺います</p>
+<div class="hd"><span>Target</span><span>Page 11</span></div>
+<p class="no">11</p><h2>ターゲット像<span class="tag">仮説</span></h2><p class="lead">採用の主な対象はEMとテックリードの2名。どちらも「開発組織を変える側」に回りたい人を想定します</p>
+<div class="body"><div class="ps"><div class="card"><p class="clbl">ターゲット</p><p class="rl">EM<small>エンジニアリングマネージャー</small></p><div class="hr"></div><dl><dt>今の立場</dt><dd>メガベンチャーやSaaS企業で、5名以上のチームの評価・育成を担うEM。組織の一部を任されている</dd><dt>転職の動機</dt><dd>決まった組織を回す中間管理ではなく、開発組織のあるべき姿を自分で定義し、つくる側に回りたい</dd><dt>惹かれる点</dt><dd>開発組織のトップに近い裁量、経営との距離の近さ、子育てという事業への共感（当事者であることも多い）</dd><dt>不安・懸念</dt><dd>年収が下がらないか、グループ傘下で自由に動けるか、週1出社、事業の成長スピード</dd><dt>決め手</dt><dd>新田様と経営が、組織変革にどこまで本気で投資するか</dd></dl></div><div class="card"><p class="clbl">ターゲット</p><p class="rl">テックリード<small>開発エンジニア</small></p><div class="hr"></div><dl><dt>今の立場</dt><dd>Railsを中心にWebサービスを開発し、設計・レビューを担うシニアエンジニア</dd><dt>転職の動機</dt><dd>負債の返済やアーキテクチャの刷新、AIを前提にした開発を、自分の判断で進めたい</dd><dt>惹かれる点</dt><dd>約10年運用のシステムを立て直す手応え、データ基盤やマッチング改善の余地、企画段階から関われること</dd><dt>不安・懸念</dt><dd>負債の深さ、技術選定の自由度、一緒に働くメンバーの力量、週1出社</dd><dt>決め手</dt><dd>技術課題の実態と、それを任せてもらえる範囲が具体的に見えること</dd></dl></div></div></div>
+<p class="note">※ 新田様インタビュー（11/25）と公開中の求人票をもとにした仮説です。採用の優先はEMとテックリード。CTOは意思決定マトリクスで訴求の方針のみ整理しています。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Decision Matrix</span><span>Page 12</span></div>
+<p class="no">12</p><h2>意思決定マトリクス｜CTO<span class="tag">仮説</span><span style="font-size:15px;color:#666;margin-left:14px">技術と開発組織の責任者</span></h2><p class="lead">経営の一員として、事業の行方を技術で決められるかを見ています</p>
+<div class="body"><div class="mt"><div class="th">判断軸</div><div class="th">候補者が見ていること</div><div class="th">ポピンズシッターの訴求方針</div><div class="th">根拠として見せる事実</div><div class="ax"><small>Axis 01</small><b>経営への関与と権限</b></div><div class="c"><p class="lk">技術投資や予算を、経営の場で決められるか。お飾りのCTOにならないか</p></div><div class="c"><p class="ms">技術と開発組織の未来を、経営の一員として決める</p></div><div class="c"><ul class="b"><li>全社の技術戦略と開発予算を持つ</li><li>代表と直接、技術投資を合意できる</li></ul></div><div class="ax"><small>Axis 02</small><b>事業の将来性と挑戦の大きさ</b></div><div class="c"><p class="lk">事業が伸びる余地があり、技術がその鍵を握っているか</p></div><div class="c"><p class="ms">事業が次に進めるかは、開発にかかっている</p></div><div class="c"><ul class="b"><li>単一事業からマルチプロダクトへの転換</li><li>開発がボトルネックだからこそ、変革の余地が大きい</li></ul></div><div class="ax"><small>Axis 03</small><b>事業の社会的意義</b></div><div class="c"><p class="lk">自分の名前で語れる事業か。長く関わる意味があるか</p></div><div class="c"><p class="ms">子育てのインフラを、技術でつくる</p></div><div class="c"><ul class="b"><li>国内No.1のベビーシッター事業、上場グループの基盤</li><li>家族のライフステージを支える事業群の構想</li></ul></div></div></div>
+<p class="note">※ 転職で重視すると想定される3つの軸。年収と週1出社は弱みのため訴求の軸にはせず、条件として明記したうえで補います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Decision Matrix</span><span>Page 13</span></div>
+<p class="no">13</p><h2>意思決定マトリクス｜EM<span class="tag">仮説</span><span style="font-size:15px;color:#666;margin-left:14px">エンジニアリングマネージャー</span></h2><p class="lead">決まった組織を回すのではなく、組織をつくる側に回れるかを見ています</p>
+<div class="body"><div class="mt"><div class="th">判断軸</div><div class="th">候補者が見ていること</div><div class="th">ポピンズシッターの訴求方針</div><div class="th">根拠として見せる事実</div><div class="ax"><small>Axis 01</small><b>組織づくりの裁量</b></div><div class="c"><p class="lk">組織の形、評価、開発プロセスを自分で設計できるか</p></div><div class="c"><p class="ms">開発組織の「あるべき姿」を、ゼロから定義する</p></div><div class="c"><ul class="b"><li>あるべき姿がまだ定義されていない今だから関われる</li><li>マルチプロダクトに向けた組織の再編を担う</li></ul></div><div class="ax"><small>Axis 02</small><b>上司と経営の本気度</b></div><div class="c"><p class="lk">組織変革に、上司と経営がどこまで本気で投資するか</p></div><div class="c"><p class="ms">組織を変えることに、会社が本気で向き合っている</p></div><div class="c"><ul class="b"><li>新田様（サイバーエージェントで開発責任者、子会社CTO）と並走</li><li>代表との定例で、技術投資と組織投資を合意する</li></ul></div><div class="ax"><small>Axis 03</small><b>事業への共感</b></div><div class="c"><p class="lk">自分ごととして関われる事業か。家族との両立もできるか</p></div><div class="c"><p class="ms">自分の家族にも関わる事業を、育てる</p></div><div class="c"><ul class="b"><li>子育ての当事者だからこそ分かる課題</li><li>フレックス、残業は月10時間程度</li></ul></div></div></div>
+<p class="note">※ 転職で重視すると想定される3つの軸。年収と週1出社は弱みのため訴求の軸にはせず、条件として明記したうえで補います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Decision Matrix</span><span>Page 14</span></div>
+<p class="no">14</p><h2>意思決定マトリクス｜TL<span class="tag">仮説</span><span style="font-size:15px;color:#666;margin-left:14px">テックリード／開発エンジニア</span></h2><p class="lead">技術で解きがいのある課題と、それを任せてもらえる範囲を見ています</p>
+<div class="body"><div class="mt"><div class="th">判断軸</div><div class="th">候補者が見ていること</div><div class="th">ポピンズシッターの訴求方針</div><div class="th">根拠として見せる事実</div><div class="ax"><small>Axis 01</small><b>技術課題の面白さ</b></div><div class="c"><p class="lk">解く価値のある技術課題があるか。経験として残るか</p></div><div class="c"><p class="ms">約10年のシステムを、次の10年に耐えるものへ</p></div><div class="c"><ul class="b"><li>負債の返済、セキュリティ強化、AI前提の開発への移行</li><li>大量のデータを生かしたマッチングの改善</li></ul></div><div class="ax"><small>Axis 02</small><b>技術判断の裁量</b></div><div class="c"><p class="lk">技術選定や設計を、自分の判断で進められるか</p></div><div class="c"><p class="ms">技術の判断を、任せる</p></div><div class="c"><ul class="b"><li>Railsの見直し、データ基盤の設計がこれから</li><li>企画段階から事業側と機能を提案できる</li></ul></div><div class="ax"><small>Axis 03</small><b>チームと開発環境</b></div><div class="c"><p class="lk">一緒に働く人の力量と、開発のしやすさ</p></div><div class="c"><p class="ms">小さいチームだから、つくったものがすぐ届く</p></div><div class="c"><ul class="b"><li>ユーザーの声をすぐ反映でき、決裁が早い</li><li>チームの人柄は12/23の取材で見せる（要取材）</li></ul></div></div></div>
+<p class="note">※ 転職で重視すると想定される3つの軸。年収と週1出社は弱みのため訴求の軸にはせず、条件として明記したうえで補います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>8-Factor Analysis</span><span>Page 15</span></div>
+<p class="no">15</p><h2>8因子分析｜ポピンズシッター<span class="tag">仮説</span></h2><p class="lead">強いのは事業内容と仕事内容。理念の発信、風土と人の見え方、条件面が弱い</p>
+<div class="body"><div class="f8"><div class="qd"><p class="qh">Philosophy<small>目標</small></p><div class="fr"><p class="fn"><small>01</small>会社基盤<em>A 企業認知／B 財務基盤</em></p><ul class="b"><li>国内No.1のベビーシッター事業。上場ポピンズグループ（約6,000名）の基盤</li><li>エンジニアの間での企業認知は低い（仮説）</li></ul><div class="sc"><span>強み</span><b>○</b></div></div><div class="fr"><p class="fn"><small>02</small>理念戦略<em>C 企業理念／D 経営戦略</em></p><ul class="b"><li>家族のライフステージを支える事業群の構想、マルチプロダクト化</li><li>公式の理念の言葉と、社外への発信は要確認</li></ul><div class="sc"><span>強み</span><b>△</b></div></div></div><div class="qd"><p class="qh">People<small>人材</small></p><div class="fr"><p class="fn"><small>05</small>組織風土<em>I 開放的風土／J 進取的風土</em></p><ul class="b"><li>グリー発祥で開発は独立運営、決裁が早い（口頭のみ）</li><li>アジャイル志向だが、スクラムの導入はまだ不十分</li></ul><div class="sc"><span>強み</span><b>△</b></div></div><div class="fr"><p class="fn"><small>06</small>人的資源<em>K 共感性／L 有能性</em></p><ul class="b"><li>新田様：サイバーエージェントで開発責任者、子会社CTO</li><li>社員5名＋業務委託約10名、若手EMは就任1年目。人柄は未発信</li></ul><div class="sc"><span>強み</span><b>△</b></div></div></div><div class="qd"><p class="qh">Provision<small>活動</small></p><div class="fr"><p class="fn"><small>03</small>事業内容<em>E 社会的意義／F 競争優位</em></p><ul class="b"><li>子育てのインフラを技術でつくる。国が注力する成長市場</li><li>業界トップクラスのシェア、事業は130%成長</li></ul><div class="sc"><span>強み</span><b>◎</b></div></div><div class="fr"><p class="fn"><small>04</small>仕事内容<em>G 貢献実感／H 成長実感</em></p><ul class="b"><li>開発組織のあるべき姿を、定義するところから任せる</li><li>負債返済・AI前提の開発・データ活用で、組織変革を経験できる</li></ul><div class="sc"><span>強み</span><b>◎</b></div></div></div><div class="qd"><p class="qh">Privilege<small>条件</small></p><div class="fr"><p class="fn"><small>07</small>報酬体系<em>M 経済報酬／N 感情報酬</em></p><ul class="b"><li>EM・TL 800〜1,200万円。競合よりやや低い</li><li>成果を讃える仕組み・研修制度は要確認</li></ul><div class="sc"><span>強み</span><b>△</b></div></div><div class="fr"><p class="fn"><small>08</small>仕事環境<em>O 制度環境／P 施設環境</em></p><ul class="b"><li>フレックス（コア11〜16時）、残業は月10時間程度</li><li>週1出社（新宿・広尾）が必須寄り。関東圏外は保留になりやすい</li></ul><div class="sc"><span>強み</span><b>△</b></div></div></div></div></div>
+<p class="note">※ 強み　◎ 強い　○ やや強い　△ 弱い　× 劣る。事実は新田様インタビュー（11/25）と公開中の求人票から。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>8-Factor Analysis</span><span>Page 16</span></div>
+<p class="no">16</p><h2>8因子分析｜競合（仮：タイミー）<span class="tag">仮説</span></h2><p class="lead">会社基盤・人材・条件では勝てない。勝負どころは仕事内容（ゼロから定義できる裁量）と事業内容（当事者性）</p>
+<div class="body"><div class="f8"><div class="qd"><p class="qh">Philosophy<small>目標</small></p><div class="fr"><p class="fn"><small>01</small>会社基盤<em>A 企業認知／B 財務基盤</em></p><ul class="b"><li>ワーカー1,420万人、事業者23.8万社（2026年4月末）</li><li>従業員1,593名、累計約403億円の資金調達</li></ul><div class="sc"><span>強み</span><b>◎</b></div></div><div class="fr"><p class="fn"><small>02</small>理念戦略<em>C 企業理念／D 経営戦略</em></p><ul class="b"><li>ミッション「『はたらく』を通じて人生の可能性を広げるインフラをつくる」</li><li>VISION2030を掲げ、第二創業期として新規事業を多数立ち上げ</li></ul><div class="sc"><span>強み</span><b>◎</b></div></div></div><div class="qd"><p class="qh">People<small>人材</small></p><div class="fr"><p class="fn"><small>05</small>組織風土<em>I 開放的風土／J 進取的風土</em></p><ul class="b"><li>多様性を「歓迎」する組織。事業計画は社員に全てオープン</li><li>Spotifyモデル／Team Topologiesの組織</li></ul><div class="sc"><span>強み</span><b>◎</b></div></div><div class="fr"><p class="fn"><small>06</small>人的資源<em>K 共感性／L 有能性</em></p><ul class="b"><li>CTO・VPoEのもとに、組織化されたEMチーム</li><li>RubyKaigiのスポンサーなど、技術コミュニティ活動が活発</li></ul><div class="sc"><span>強み</span><b>◎</b></div></div></div><div class="qd"><p class="qh">Provision<small>活動</small></p><div class="fr"><p class="fn"><small>03</small>事業内容<em>E 社会的意義／F 競争優位</em></p><ul class="b"><li>スキマバイトで国内最大級</li><li>人手不足という社会課題に向き合う</li></ul><div class="sc"><span>強み</span><b>◎</b></div></div><div class="fr"><p class="fn"><small>04</small>仕事内容<em>G 貢献実感／H 成長実感</em></p><ul class="b"><li>裁量はチームに移譲、エンジニアがユーザーインタビューに参加</li><li>組織はできあがっており、ゼロから定義する余地は小さい</li></ul><div class="sc"><span>強み</span><b>○</b></div></div></div><div class="qd"><p class="qh">Privilege<small>条件</small></p><div class="fr"><p class="fn"><small>07</small>報酬体系<em>M 経済報酬／N 感情報酬</em></p><ul class="b"><li>シニアWebエンジニアで900〜1,500万円</li></ul><div class="sc"><span>強み</span><b>◎</b></div></div><div class="fr"><p class="fn"><small>08</small>仕事環境<em>O 制度環境／P 施設環境</em></p><ul class="b"><li>フルリモート可、フレックス</li><li>副業可</li></ul><div class="sc"><span>強み</span><b>◎</b></div></div></div></div></div>
+<p class="note">※ 強み　◎ 強い　○ やや強い　△ 弱い　× 劣る。競合は仮に1社を置いています。事実はタイミーの採用ページ（HRMOS）・Greenの求人掲載（2026年11月時点）から。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Positioning Map</span><span>Page 17</span></div>
+<p class="no">17</p><h2>ポジショニングマップ<span class="tag">仮説</span></h2><p class="lead">「任される範囲」と「事業への共感」の2軸で、右上の誰もいない場所を取りにいきます</p>
+<div class="body"><div class="pm"><div class="card" style="padding:10px 14px"><svg viewBox="0 0 660 400" width="660" height="400" style="display:block"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0L10 5L0 10z" fill="#C0392B"/></marker></defs><rect x="345.0" y="14" width="305.0" height="178.0" fill="#F3E6E4"/><line x1="40" y1="192.0" x2="650" y2="192.0" stroke="#999"/><line x1="345.0" y1="14" x2="345.0" y2="370" stroke="#999"/><rect x="40" y="14" width="610" height="356" fill="none" stroke="#bbb"/><text x="345.0" y="388" font-size="12" text-anchor="middle" fill="#1F1F1F">任される範囲</text><text x="44" y="388" font-size="10.5" fill="#666">決まった組織を回す</text><text x="646" y="388" font-size="10.5" text-anchor="end" fill="#666">組織・技術をゼロから定義する</text><text transform="translate(26,192.0) rotate(-90)" font-size="12" text-anchor="middle" fill="#1F1F1F">事業への共感</text><text transform="translate(26,366) rotate(-90)" font-size="10.5" fill="#666">事業に距離を感じる</text><text transform="translate(26,18) rotate(-90)" font-size="10.5" text-anchor="end" fill="#666">当事者として共感できる</text><text x="640" y="182.0" font-size="10.5" text-anchor="end" fill="#C0392B">ポピンズシッターだけが立てる場所</text><circle cx="320.6" cy="85.19999999999999" r="6" fill="#BDBDBD"/><text x="330.6" y="89.19999999999999" font-size="11" fill="#555">タイミー</text><circle cx="357.2" cy="220.48" r="6" fill="#BDBDBD"/><text x="367.2" y="224.48" font-size="11" fill="#555">ココナラ</text><circle cx="284.0" cy="277.44" r="6" fill="#BDBDBD"/><text x="294.0" y="281.44" font-size="11" fill="#555">エニグモ</text><circle cx="247.4" cy="206.24" r="6" fill="#BDBDBD"/><text x="257.4" y="210.24" font-size="11" fill="#555">GMO OMAKASE</text><circle cx="186.4" cy="256.08" r="6" fill="#BDBDBD"/><text x="196.4" y="260.08" font-size="11" fill="#555">カカクコム</text><line x1="195.4" y1="166.64" x2="540.4" y2="76.95999999999998" stroke="#C0392B" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ar)"/><circle cx="186.4" cy="170.64" r="9" fill="#fff" stroke="#1F1F1F" stroke-width="1.5" stroke-dasharray="3 2"/><text x="186.4" y="194.64" font-size="11.5" text-anchor="middle" fill="#1F1F1F">Before：今の認識</text><circle cx="552.4" cy="70.95999999999998" r="10" fill="#C0392B"/><text x="552.4" y="52.95999999999998" font-size="12" text-anchor="middle" fill="#C0392B" font-weight="500">After：目指す認識</text></svg></div><div class="side">
+<div class="card bf"><p class="clbl">Before｜今の認識（仮説）</p><p class="h">保育の会社の、グループ傘下の開発部門</p><div class="hr" style="margin:8px 0"></div><ul class="b"><li>ポピンズグループの傘下で、自由に動けなさそう</li><li>技術の会社に見えず、解く課題が分からない</li><li>待遇と出社の条件が見劣りする</li></ul></div>
+<div class="card af"><p class="clbl" style="color:var(--red)">After｜目指す認識</p><p class="h">子育てのインフラを、自分の手で定義できる開発組織</p><div class="hr" style="margin:8px 0"></div><ul class="b"><li>開発組織のあるべき姿を、ゼロからつくれる</li><li>当事者として共感できる事業に、技術で関われる</li></ul></div>
+<div class="card"><p class="clbl">動かすための打ち手</p><div class="hr" style="margin:8px 0"></div><ul class="b"><li>横軸：グリー発祥・独立した開発運営と、新田様・代表の本気度を見せる</li><li>横軸：負債・AI・データの課題を「任せたいこと」として具体的に書く</li><li>縦軸：子育て当事者の声と、事業の社会的意義を入口に置く</li></ul></div>
+</div></div></div>
+<p class="note">※ 軸は意思決定マトリクスでCTO・EM・TLに共通する判断軸から選定。競合の位置は採用ページ・求人から見た仮置きで、分析フェーズで更新します。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Next</span><span>Page 18</span></div>
+<p class="no">18</p><h2>先方インタビューで確かめること</h2><p class="lead">この仮説をもとに、ターゲット像と判断軸の重みを伺い、マトリクスと8因子分析を更新します</p>
+<div class="body"><div class="qs"><div class="card"><p class="clbl">ターゲット</p><div class="hr"></div><ol><li>採用したいのはEMとテックリードの2名で合っていますか<small>CTOの採用は続けるか、今回の対象外か</small></li><li>それぞれ、どんな経歴の人を想定していますか<small>前職の会社規模、役割、年齢層のイメージ</small></li><li>入社後1年で任せたいこと、期待する成果は何ですか<small>EMとテックリードそれぞれ</small></li><li>最近、良いと思った候補者と見送った候補者の違いは何ですか</li></ol></div><div class="card"><p class="clbl">判断軸と重み</p><div class="hr"></div><ol><li>候補者が比較している会社はどこですか<small>面談や辞退の場で名前が出た会社</small></li><li>承諾した人は、最後に何で決めましたか<small>受領した辞退理由の補足として</small></li><li>年収はレンジを超えて調整できますか<small>どこまで出せるか</small></li><li>週1出社は必須ですか。関東圏外の人はどう扱いますか</li></ol></div><div class="card"><p class="clbl">事実の確認</p><div class="hr"></div><ol><li>会社として公式に使っているミッション・ビジョンの言葉はありますか</li><li>グリー発祥と、グループ内で独立した開発運営をしていることを、サイトに書けますか</li><li>評価制度と、技術投資の予算の決め方を教えてください</li><li>チームの人柄が伝わるエピソードはありますか<small>12/23の取材で深掘りする話</small></li></ol></div></div></div>
+<p class="note">※ 伺った内容は、意思決定マトリクス・8因子分析に反映し、分析と情報設計（Phase 03）に使います。</p><div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
+</section>
+<section class="slide">
+<div class="hd"><span>Interview</span><span>Page 19</span></div>
+<p class="no">19</p><h2>インタビュー記事｜6名の話</h2><p class="lead">12月23日に、経営陣とマネージャー6名にお話を伺います</p>
 <div class="body"><div class="iv"><div class="card"><span class="w">12/23 午前・広尾</span><p class="r">代表取締役 CEO</p><p class="nm">田村 様</p><div class="hr" style="margin:10px 0"></div><p class="t">なぜ今、テクノロジーに投資するのか</p></div><div class="card"><span class="w">12/23 午前・広尾</span><p class="r">COO</p><p class="nm">小栗 様</p><div class="hr" style="margin:10px 0"></div><p class="t">エンジニアの仕事が、現場と事業にどう効くか</p></div><div class="card"><span class="w">12/23 午後・新宿</span><p class="r">事業企画部 GM</p><p class="nm">吉井 一貴 様</p><div class="hr" style="margin:10px 0"></div><p class="t">事業の方向性が、開発に落ちるまで</p></div><div class="card"><span class="w">12/23 午後・新宿</span><p class="r">プロダクト開発部 MGR</p><p class="nm">齋藤 敬一郎 様</p><div class="hr" style="margin:10px 0"></div><p class="t">開発体制と、これから任せたいこと</p></div><div class="card"><span class="w">12/23 午後・新宿</span><p class="r">経営管理部 MGR</p><p class="nm">栗山 美緒 様</p><div class="hr" style="margin:10px 0"></div><p class="t">開発への投資と、制度づくり</p></div><div class="card"><span class="w">12/23 午後・新宿</span><p class="r">品質管理部 MGR</p><p class="nm">筑地 咲貴 様</p><div class="hr" style="margin:10px 0"></div><p class="t">保育・シッターの安全と品質を、プロダクトで支える</p></div></div></div>
 <div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
