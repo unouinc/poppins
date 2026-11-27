@@ -328,6 +328,28 @@ ul.b li::before{content:"・";position:absolute;left:0}
 .ain .tg span{background:#fff;border:1px solid #bbb;font-size:11.5px;padding:3px 10px}
 .ain .dt{display:grid;grid-template-columns:52px 1fr;font-size:12px;margin-top:6px;row-gap:3px}
 .ain .dt b{font-weight:400;font-family:Arimo,Arial,sans-serif}
+/* solution v2 */
+.sv{display:grid;grid-template-columns:1fr 26px 1.45fr 26px 150px;height:310px}
+.sv .arw{display:flex;align-items:center;justify-content:center;color:#999;font-size:14px}
+.sv .card{display:flex;flex-direction:column;padding:18px 20px}
+.sv .fu{background:transparent;border:1px dashed #999}
+.sv .sc{background:#fff;outline:1.5px solid var(--red);outline-offset:-1px}
+.sv .tg2{display:inline-block;font-size:10.5px;padding:1px 8px;margin-left:8px;vertical-align:middle}
+.sv .tg2.f{border:1px solid #999;color:#555}
+.sv .tg2.s{background:var(--red);color:#fff}
+.sv h3{font-weight:400;font-size:19px;margin-top:6px}
+.sv .gl{font-size:10.5px;color:#777;margin-top:12px}
+.sv .chs{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.sv .chs span{background:#fff;border:1px solid #bbb;font-size:12px;padding:4px 10px}
+.sv .it{display:grid;grid-template-columns:200px 1fr;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line)}
+.sv .it:last-child{border:none}
+.sv .it b{font-weight:400;font-size:17px}
+.sv .it p{font-size:12px;color:#555;line-height:1.6}
+.sv .end{background:#ddd;align-items:center;justify-content:center;text-align:center}
+.sv .end b{font-weight:400;font-size:18px}
+.sv .end p{font-size:11px;color:#555;margin-top:6px;line-height:1.6}
+.svb{display:grid;grid-template-columns:1fr 1.45fr;gap:20px;margin-top:20px}
+.svb .card{padding:12px 20px;font-size:12.5px;line-height:1.7}
 /* questions */
 .qs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;height:100%}
 .qs .card{padding:20px 22px}
@@ -358,12 +380,21 @@ ul.b li::before{content:"・";position:absolute;left:0}
 </section>
 <section class="slide">
 <div class="hd"><span>Solution</span><span>Page 01</span></div>
-<p class="no">01</p><h2>解決策（今回の施策）</h2><p class="lead">どこから来た候補者にも、判断できる情報を届ける「受け皿」をつくる</p>
-<div class="body"><div class="sol">
-<div class="card"><p class="n">01</p><h3>採用サイト</h3><p>エンジニア採用に特化した6つのコンテンツ</p></div>
-<div class="card"><p class="n">02</p><h3>採用Deck</h3><p>サイトの内容を1冊にまとめた面談用の資料</p></div>
-<div class="card wide"><p class="n">03</p><h3>撮影・インタビュー記事</h3><p>経営陣とマネージャー6名の言葉と写真を、サイトとDeckの両方に掲載します</p></div>
-</div></div>
+<p class="no">01</p><h2>解決策（今回の施策）</h2><p class="lead">入口を増やし、受け皿に集約する。今回はその受け皿となる採用サイトと採用Deckをつくります</p>
+<div class="body"><div class="sv">
+<div class="card fu"><p class="clbl">01｜接触を増やす<span class="tg2 f">今後の検討</span></p><h3>媒体以外にも、入口を広げる</h3>
+<p class="gl">オンライン</p><div class="chs"><span>採用媒体</span><span>LinkedIn</span><span>YOUTRUST</span><span>技術ブログ・SNS</span></div>
+<p class="gl">オフライン</p><div class="chs"><span>コミュニティ・勉強会</span><span>イベント・登壇</span><span>紹介・リファラル</span></div></div>
+<div class="arw">▶</div>
+<div class="card sc"><p class="clbl">02｜受け皿に集約する<span class="tg2 s">今回のスコープ</span></p><h3>どこから来ても、認識を変えて判断できる</h3>
+<div style="margin-top:8px"><div class="it"><b>採用サイト</b><p>エンジニア採用に特化した6つのコンテンツ。認知から興味・理解まで</p></div>
+<div class="it"><b>採用Deck</b><p>サイトの内容を1冊にまとめた、面談で使う資料</p></div>
+<div class="it"><b>撮影・インタビュー記事</b><p>経営陣とマネージャー6名の言葉と写真を、サイトとDeckに掲載</p></div></div></div>
+<div class="arw">▶</div>
+<div class="card end"><b>応募・面談</b><p>判断できる状態で<br>面談に進む</p></div>
+</div>
+<div class="svb"><div class="card">接触の数は、チャネルを増やすほど伸びます。ただ、入口ごとに伝え方がばらばらだと、認識は変わりません。</div><div class="card">先に受け皿をつくれば、どのチャネルから来た候補者にも同じ魅力を届けられます。一度つくれば、全チャネルで効く資産になります。</div></div>
+</div>
 <div class="ft"><span class="co">UNOU株式会社</span><span class="c">Engineer Recruiting</span><span class="y">2026</span></div>
 </section>
 <section class="slide">
